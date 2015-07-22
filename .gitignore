@@ -3,3 +3,5 @@ Test_kuro/build/*
 Core_kuro/build_*
 Test_kuro/build_*
 
+Core_kuro/CMakeLists.txt.user
+Test_kuro/CMakeLists.txt.user
