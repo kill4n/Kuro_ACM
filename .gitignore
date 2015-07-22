@@ -1,1 +1,5 @@
-Core_kuro/build/CMakeFiles/3.2.1/CMakeCCompiler.cmake
+Core_kuro/build/*
+Test_kuro/build/*
+Core_kuro/build_*
+Test_kuro/build_*
+
