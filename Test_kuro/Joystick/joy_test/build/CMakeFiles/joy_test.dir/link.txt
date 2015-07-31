@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/joy_test.dir/main.cpp.o  -o joy_test -rdynamic 
