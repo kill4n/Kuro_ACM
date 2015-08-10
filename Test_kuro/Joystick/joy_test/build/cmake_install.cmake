@@ -1,4 +1,4 @@
-# Install script for directory: /home/crhistian/Desktop/Joystick/joy_test
+# Install script for directory: /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/crhistian/Desktop/Joystick/joy_test/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/crhistian/Desktop/Joystick/joy_test/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

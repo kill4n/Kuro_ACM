@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/crhistian/Desktop/Joystick/joy_test/main.cpp" "/home/crhistian/Desktop/Joystick/joy_test/build/CMakeFiles/joy_test.dir/main.cpp.o"
+  "/home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/main.cpp" "/home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build/CMakeFiles/joy_test.dir/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

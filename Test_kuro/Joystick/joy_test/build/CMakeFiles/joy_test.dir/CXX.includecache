@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/main.cpp
+stdio.h
+-
+fcntl.h
+-
+unistd.h
+-
+sys/ioctl.h
+-
+linux/joystick.h
+-
+stdlib.h
+-
+

@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/crhistian/Desktop/Joystick/joy_test
+CMAKE_SOURCE_DIR = /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/crhistian/Desktop/Joystick/joy_test/build
+CMAKE_BINARY_DIR = /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/joy_test.dir/depend.make
@@ -51,17 +54,17 @@ include CMakeFiles/joy_test.dir/flags.make
 
 CMakeFiles/joy_test.dir/main.cpp.o: CMakeFiles/joy_test.dir/flags.make
 CMakeFiles/joy_test.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/crhistian/Desktop/Joystick/joy_test/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/joy_test.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/joy_test.dir/main.cpp.o -c /home/crhistian/Desktop/Joystick/joy_test/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/joy_test.dir/main.cpp.o -c /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/main.cpp
 
 CMakeFiles/joy_test.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/joy_test.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/crhistian/Desktop/Joystick/joy_test/main.cpp > CMakeFiles/joy_test.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/main.cpp > CMakeFiles/joy_test.dir/main.cpp.i
 
 CMakeFiles/joy_test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/joy_test.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/crhistian/Desktop/Joystick/joy_test/main.cpp -o CMakeFiles/joy_test.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/main.cpp -o CMakeFiles/joy_test.dir/main.cpp.s
 
 CMakeFiles/joy_test.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/joy_test.dir/main.cpp.o.requires
@@ -97,6 +100,6 @@ CMakeFiles/joy_test.dir/clean:
 .PHONY : CMakeFiles/joy_test.dir/clean
 
 CMakeFiles/joy_test.dir/depend:
-	cd /home/crhistian/Desktop/Joystick/joy_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/crhistian/Desktop/Joystick/joy_test /home/crhistian/Desktop/Joystick/joy_test /home/crhistian/Desktop/Joystick/joy_test/build /home/crhistian/Desktop/Joystick/joy_test/build /home/crhistian/Desktop/Joystick/joy_test/build/CMakeFiles/joy_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build /home/killan/kuro_min/Kuro_ACM/Test_kuro/Joystick/joy_test/build/CMakeFiles/joy_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/joy_test.dir/depend
 
