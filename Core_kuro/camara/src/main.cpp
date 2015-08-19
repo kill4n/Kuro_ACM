@@ -19,16 +19,32 @@ int main(int, char **)
     //randu(edges,Scalar(0,0,0),Scalar(255,255,255));
     //imshow("imagen",edges);
     //waitKey(0);
+    cv::Mat image;
+
+    namedWindow("Output Window");
     camera.set(CV_CAP_PROP_FRAME_WIDTH,640);
     camera.set(CV_CAP_PROP_FRAME_HEIGHT,480);
     for (;;) {
-        Mat frame;
+        /*Mat frame;
         camera >> frame;
-        imshow("color", frame);
+        imshow("Output Window", frame);
         if (waitKey(30) >= 0) {
             break;
+        }*/
+        if(!camera.read(image)) {
+            std::cout << "No frame" << std::endl;
+            cv::waitKey();
         }
+        cv::imshow("Output Window", image);
+        // encode mat to jpg and copy it to content
+        std::vector<uchar> buf;
+        cv::imencode(".jpg", image, buf, std::vector<int>());
+        std::string content(buf.begin(), buf.end()); //this must be sent to the client
+
+        if(cv::waitKey(1) >= 0) break;
     }
     return 0;
 }
+
+
 

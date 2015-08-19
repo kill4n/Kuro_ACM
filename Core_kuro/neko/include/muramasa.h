@@ -9,6 +9,7 @@ namespace neko {
 
 #define LOG_NAME "Log_Neko.log"
 #define MEMORY_NUM 25
+#define JOY_DEV "/dev/input/js0"
 
 enum STATUS{
     NK_OK = 0,

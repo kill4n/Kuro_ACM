@@ -2,12 +2,14 @@
 #include <stdio.h>
 #include "string"
 #include "fstream"
+#include "neko/include/kurosocket.h"
 
 using namespace std;
 
 int main()
 {
-/*    string data = "HOLa MundO";
+
+    /*    string data = "HOLa MundO";
     cout<< "original: " << data <<endl;
     transform(data.begin(), data.end(), data.begin(), ::tolower);
     cout<< "Final: " << data <<endl;
@@ -28,5 +30,9 @@ int main()
 
     else cout << "Unable to open file";
 */
+    printf("hola mundo \r\n");
+    kuroSocket KS(4444);
+
+    cout <<"Puerto: "<< KS.getPuerto() <<endl;
     return 0;
 }
