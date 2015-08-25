@@ -119,7 +119,7 @@ int main()
         //DXL.WriteDWord( DEFAULT_ID, P_GOAL_POSITION_LL, GoalPos[index], &error);
         // Write goal Speed
         DXL.WriteDWord( DEFAULT_ID, P_GOAL_VELOCITY_LL, GoalVel[index], &error);
-        for(int i=0;i<4;i++)
+        for(int i=0;i<1;i++)
         {
             // Read present position
             //result = DXL.ReadDWord(DEFAULT_ID, P_PRESENT_POSITION_LL, (long*) &PresentPos, &error);
@@ -136,27 +136,17 @@ int main()
                 break;
             }
 
-            // Check moving done
-            result = DXL.ReadByte( DEFAULT_ID, P_MOVING, &Moving, &error);
-            if( result == COMM_RXSUCCESS )
+            if( Moving == 0 )
             {
-                if( Moving == 0 )
-                {
-                    // Change goal position
-                    if( index == 0 )
-                        index = 1;
-                    else
-                        index = 0;
-                }
-
-                PrintErrorCode(error);
-            }
-            else
-            {
-                PrintCommStatus(result);
-                break;
+                // Change goal position
+                if( index == 0 )
+                    index = 1;
+                else
+                    index = 0;
             }
         }//while(Moving == 1);
+        // Change goal position
+
     }
 
     // Close device
