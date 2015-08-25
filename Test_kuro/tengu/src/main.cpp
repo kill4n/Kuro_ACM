@@ -119,7 +119,7 @@ int main()
         //DXL.WriteDWord( DEFAULT_ID, P_GOAL_POSITION_LL, GoalPos[index], &error);
         // Write goal Speed
         DXL.WriteDWord( DEFAULT_ID, P_GOAL_VELOCITY_LL, GoalVel[index], &error);
-        /*do
+        for(int i=0;i<4;i++)
         {
             // Read present position
             //result = DXL.ReadDWord(DEFAULT_ID, P_PRESENT_POSITION_LL, (long*) &PresentPos, &error);
@@ -156,7 +156,7 @@ int main()
                 PrintCommStatus(result);
                 break;
             }
-        }while(Moving == 1);*/
+        }//while(Moving == 1);
     }
 
     // Close device
