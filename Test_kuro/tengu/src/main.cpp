@@ -68,7 +68,7 @@ void PrintCommStatus(int CommStatus);
 void PrintErrorCode(int ErrorCode);
 
 int main()
-{
+{    
     int PresentPos = 0;
     int PresentVel = 0;
     int index = 0, result = COMM_TXFAIL, error = 0, Moving = 1;
@@ -115,6 +115,8 @@ int main()
         if(_getch() == 0x1b)
             break;
 
+        printf("Definir Velocidad (-8000,8000) \r\n");
+        cin>>GoalVel[0];
         // Write goal position
         //DXL.WriteDWord( DEFAULT_ID, P_GOAL_POSITION_LL, GoalPos[index], &error);
         // Write goal Speed
@@ -126,11 +128,6 @@ int main()
         else
             PrintCommStatus(result);
         // Change goal position
-        if( index == 0 )
-            index = 1;
-        else
-            index = 0;
-
         /* for(int i=0;i<1;i++)
         {
             // Read present position
