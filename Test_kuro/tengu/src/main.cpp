@@ -73,7 +73,7 @@ int main()
     int PresentVel = 0;
     int index = 0, result = COMM_TXFAIL, error = 0, Moving = 1;
     int GoalPos[2] = {-125700, 125700};
-    int GoalVel[2] = {-2000, 2000};
+    int GoalVel[2] = {-8000, 8000};
 
     Dynamixel DXL("/dev/ttyUSB0");
 
