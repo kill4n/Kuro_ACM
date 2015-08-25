@@ -1,0 +1,27 @@
+LIBRARY	"dynamixel"
+
+EXPORTS
+    dxl_initialize
+    dxl_terminate
+    dxl_tx_packet
+    dxl_rx_packet
+    dxl_txrx_packet
+    dxl_ping
+    dxl_broadcast_ping
+    dxl_reboot
+    dxl_factory_reset
+    dxl_read
+    dxl_read_byte
+    dxl_read_word
+    dxl_read_dword
+    dxl_write
+    dxl_write_byte
+    dxl_write_word
+    dxl_write_dword
+    dxl_system_write
+    dxl_sync_write
+    dxl_bulk_read
+    dxl_get_bulk_byte
+    dxl_get_bulk_word
+    dxl_get_bulk_dword
+    dxl_change_baudrate
