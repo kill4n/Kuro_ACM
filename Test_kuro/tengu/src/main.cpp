@@ -111,12 +111,12 @@ int main()
 
     while(1)
     {
-        printf( "Press Enter key to continue!(press ESC and Enter to quit)\n" );
+        printf("Definir Velocidad (-8000,8000) \r\n");
+        cin>>GoalVel[0];
+        printf( "Presione Enter para continuar!(presione ESC y Enter para salir)\n" );
         if(_getch() == 0x1b)
             break;
 
-        printf("Definir Velocidad (-8000,8000) \r\n");
-        cin>>GoalVel[0];
         // Write goal position
         //DXL.WriteDWord( DEFAULT_ID, P_GOAL_POSITION_LL, GoalPos[index], &error);
         // Write goal Speed
