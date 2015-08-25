@@ -118,16 +118,20 @@ int main()
         // Write goal position
         //DXL.WriteDWord( DEFAULT_ID, P_GOAL_POSITION_LL, GoalPos[index], &error);
         // Write goal Speed
-        DXL.WriteDWord( DEFAULT_ID, P_GOAL_VELOCITY_LL, GoalVel[index], &error);
-        if( Moving == 0 )
+        result = DXL.WriteDWord( DEFAULT_ID, P_GOAL_VELOCITY_LL, GoalVel[index], &error);
+        if(result == COMM_RXSUCCESS)
         {
-            // Change goal position
-            if( index == 0 )
-                index = 1;
-            else
-                index = 0;
+            PrintErrorCode(error);
         }
-       /* for(int i=0;i<1;i++)
+        else
+            PrintCommStatus(result);
+        // Change goal position
+        if( index == 0 )
+            index = 1;
+        else
+            index = 0;
+
+        /* for(int i=0;i<1;i++)
         {
             // Read present position
             //result = DXL.ReadDWord(DEFAULT_ID, P_PRESENT_POSITION_LL, (long*) &PresentPos, &error);
