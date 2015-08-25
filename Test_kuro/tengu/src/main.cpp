@@ -55,7 +55,9 @@ int kbhit(void)
 // Control table address
 #define P_TORQUE_ENABLE         562
 #define P_GOAL_POSITION_LL      596
+#define P_GOAL_VELOCITY_LL      600
 #define P_PRESENT_POSITION_LL   611
+#define P_PRESENT_VELOCITY_LL   615
 #define P_MOVING                610
 
 // Defulat setting
@@ -68,8 +70,10 @@ void PrintErrorCode(int ErrorCode);
 int main()
 {
     int PresentPos = 0;
+    int PresentVel = 0;
     int index = 0, result = COMM_TXFAIL, error = 0, Moving = 1;
-    int GoalPos[2] = {-150000, 150000};
+    int GoalPos[2] = {-125700, 125700};
+    int GoalVel[2] = {-8000, 8000};
 
     Dynamixel DXL("/dev/ttyUSB0");
 
@@ -112,14 +116,18 @@ int main()
             break;
 
         // Write goal position
-        DXL.WriteDWord( DEFAULT_ID, P_GOAL_POSITION_LL, GoalPos[index], &error);
+        //DXL.WriteDWord( DEFAULT_ID, P_GOAL_POSITION_LL, GoalPos[index], &error);
+        // Write goal Speed
+        DXL.WriteDWord( DEFAULT_ID, P_GOAL_VELOCITY_LL, GoalVel[index], &error);
         do
         {
             // Read present position
-            result = DXL.ReadDWord(DEFAULT_ID, P_PRESENT_POSITION_LL, (long*) &PresentPos, &error);
+            //result = DXL.ReadDWord(DEFAULT_ID, P_PRESENT_POSITION_LL, (long*) &PresentPos, &error);
+            // Read present Velocity
+            result = DXL.ReadDWord(DEFAULT_ID, P_PRESENT_VELOCITY_LL, (long*) &PresentVel, &error);
             if( result == COMM_RXSUCCESS )
             {
-                printf( "%d   %d\n", GoalPos[index], PresentPos );
+                printf( "%d   %d\n", GoalVel[index], PresentVel );
                 PrintErrorCode(error);
             }
             else
