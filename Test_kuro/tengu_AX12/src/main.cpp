@@ -58,7 +58,7 @@ int main()
         dxl_write_word( DEFAULT_ID, 7, 0 );
         dxl_write_word( DEFAULT_ID, 8, 0 );
         dxl_write_word( DEFAULT_ID, 9, 0 );
-        dxl_write_word( DEFAULT_ID, P_GOAL_SPEED_L, 1023 ); //0-1023
+        dxl_write_word( DEFAULT_ID, P_GOAL_SPEED_L, GoalPos[index] ); //0-1023
         dxl_write_word( DEFAULT_ID, P_GOAL_SPEED_H, 0 ); // 00000000 clock wise
         printf( "Succeed to set wheel mode\n" );
 
