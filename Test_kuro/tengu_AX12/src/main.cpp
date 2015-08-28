@@ -52,7 +52,11 @@ int main()
 
         // Write goal position
         dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
-        do
+        if( index == 0 )
+            index = 1;
+        else
+            index = 0;
+       /* do
         {
             // Read present position
             PresentPos = dxl_read_word( DEFAULT_ID, P_PRESENT_POSITION_L );
@@ -90,7 +94,7 @@ int main()
                 PrintCommStatus(CommStatus);
                 break;
             }
-        }while(Moving == 1);
+        }while(Moving == 1);*/
     }
 
     // Close device
