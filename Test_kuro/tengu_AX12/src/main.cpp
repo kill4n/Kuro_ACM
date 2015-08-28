@@ -43,7 +43,12 @@ int main()
     }
     else
         printf( "Succeed to open USB2Dynamixel!\n" );
-
+        //set wheel mode
+        dxl_write_word( DEFAULT_ID, 6, 0 );
+        dxl_write_word( DEFAULT_ID, 7, 0 );
+        dxl_write_word( DEFAULT_ID, 8, 0 );
+        dxl_write_word( DEFAULT_ID, 9, 0 );
+        printf( "Succeed to set wheel mode\n" );
     while(1)
     {
         printf( "Press Enter key to continue!(press ESC and Enter to quit)\n" );
