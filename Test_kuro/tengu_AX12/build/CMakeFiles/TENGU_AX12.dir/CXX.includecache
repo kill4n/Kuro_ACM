@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/dynamixel.h
+
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/main.cpp
+stdio.h
+-
+termio.h
+-
+unistd.h
+-
+dynamixel.h
+-
+

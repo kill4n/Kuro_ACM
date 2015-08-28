@@ -12,7 +12,39 @@ using namespace std;
 using namespace Thor;
 
 Dynamixel DXL("/dev/ttyUSB0");
+/*clase :)
+                               (0 0)
+                       ---oOO-- (_) ----oOO---
+                     ╔═════════════════════════╗
+                     ║  I Love you Bb     !..♥ ║
+                     ╚═════════════════════════╝
+                        -------------------
+                              |__|__|
+                               || ||
+                              ooO Ooo
 
+
+
+                            oooO
+                          (....)     Oooo
+                           ...(     (....)
+                            ._)      )../
+                                     (_/
+                        Solo pasaba por aquí
+                  ¡Saludos!
+
+
+o       o
+ \_____/
+ /=O=O=\     _______
+/   ^   \   /\\\\\\\\
+\ \___/ /  /\   ___  \
+ \_ V _/  /\   /\\\\  \
+  \  \__/\   /\ @_/  /
+   \____\____\______/
+
+
+ *    By: Karin Muñoz*/
 int _getch()
 {
     struct termios oldt, newt;
