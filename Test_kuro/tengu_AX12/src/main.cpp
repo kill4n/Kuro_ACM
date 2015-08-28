@@ -17,7 +17,7 @@
 
 // Defulat setting
 #define DEFAULT_BAUDNUM		1 // 1Mbps
-#define DEFAULT_ID		13
+#define DEFAULT_ID		12
 
 void PrintCommStatus(int CommStatus);
 void PrintErrorCode(void);
