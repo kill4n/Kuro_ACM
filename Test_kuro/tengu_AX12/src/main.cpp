@@ -11,8 +11,12 @@
 // Control table address
 #define P_GOAL_POSITION_L	30
 #define P_GOAL_POSITION_H	31
-#define P_PRESENT_POSITION_L	36
-#define P_PRESENT_POSITION_H	37
+#define P_GOAL_SPEED_L 32
+#define P_GOAL_SPEED_H 33
+#define P_PRESENT_POSITION_L 36
+#define P_PRESENT_POSITION_H 37
+#define P_PRESENT_SPEED_L 38
+#define P_PRESENT_SPEED_H 39
 #define P_MOVING		46
 
 // Defulat setting
@@ -43,20 +47,24 @@ int main()
     }
     else
         printf( "Succeed to open USB2Dynamixel!\n" );
-        //set wheel mode
-        dxl_write_word( DEFAULT_ID, 6, 0 );
-        dxl_write_word( DEFAULT_ID, 7, 0 );
-        dxl_write_word( DEFAULT_ID, 8, 0 );
-        dxl_write_word( DEFAULT_ID, 9, 0 );
-        printf( "Succeed to set wheel mode\n" );
+
     while(1)
     {
         printf( "Press Enter key to continue!(press ESC and Enter to quit)\n" );
         if(getchar() == 0x1b)
             break;
+        //set wheel mode
+        dxl_write_word( DEFAULT_ID, 6, 0 );
+        dxl_write_word( DEFAULT_ID, 7, 0 );
+        dxl_write_word( DEFAULT_ID, 8, 0 );
+        dxl_write_word( DEFAULT_ID, 9, 0 );
+        dxl_write_word( DEFAULT_ID, P_GOAL_SPEED_L, 1023 ); //0-1023
+        dxl_write_word( DEFAULT_ID, P_GOAL_SPEED_H, 0 ); // 00000000 clock wise
+        printf( "Succeed to set wheel mode\n" );
 
         // Write goal position
-        dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
+        //dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
+
         if( index == 0 )
             index = 1;
         else
