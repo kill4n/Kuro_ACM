@@ -1,4 +1,4 @@
-file(REMOVE_RECURSE
+FILE(REMOVE_RECURSE
   "CMakeFiles/TENGU_AX12.dir/src/ax_12_motor.cpp.o"
   "CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.o"
   "CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.o"
@@ -8,6 +8,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
-  include(CMakeFiles/TENGU_AX12.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang C CXX)
+  INCLUDE(CMakeFiles/TENGU_AX12.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

@@ -1,32 +1,29 @@
 # The set of languages for which implicit dependencies are needed:
-set(CMAKE_DEPENDS_LANGUAGES
+SET(CMAKE_DEPENDS_LANGUAGES
   "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.c" "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.o"
-  "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.c" "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.o"
+SET(CMAKE_DEPENDS_CHECK_C
+  "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.c" "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.o"
+  "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.c" "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
-
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../include"
-  "../src"
+SET(CMAKE_C_COMPILER_ID "GNU")
+SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.cpp" "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/ax_12_motor.cpp.o"
+  "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/main.cpp" "/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/main.cpp.o"
   )
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.cpp" "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/ax_12_motor.cpp.o"
-  "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/main.cpp" "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/TENGU_AX12.dir/src/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "Clang")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
-  "../src"
-  )
+SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+SET(CMAKE_TARGET_LINKED_INFO_FILES
   )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
+  "../src"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

@@ -10,7 +10,7 @@
 
 ../include/dynamixel.h
 
-/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.c
+/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.c
 stdio.h
 -
 string.h
@@ -28,11 +28,11 @@ sys/ioctl.h
 sys/time.h
 -
 dxl_hal.h
-/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.h
+/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.h
 
-/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.c
+/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.c
 dxl_hal.h
-/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.h
+/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.h
 dynamixel.h
-/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.h
+/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.h
 

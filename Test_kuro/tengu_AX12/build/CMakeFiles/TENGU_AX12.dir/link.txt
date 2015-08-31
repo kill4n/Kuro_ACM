@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/TENGU_AX12.dir/src/ax_12_motor.cpp.o CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.o CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.o CMakeFiles/TENGU_AX12.dir/src/main.cpp.o  -o TENGU_AX12  
+/usr/bin/c++       CMakeFiles/TENGU_AX12.dir/src/ax_12_motor.cpp.o CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.o CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.o CMakeFiles/TENGU_AX12.dir/src/main.cpp.o  -o TENGU_AX12 -rdynamic 
