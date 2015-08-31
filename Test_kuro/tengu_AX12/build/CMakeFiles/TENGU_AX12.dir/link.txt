@@ -1,1 +1,3 @@
-/usr/bin/c++       CMakeFiles/TENGU_AX12.dir/src/ax_12_motor.cpp.o CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.o CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.o CMakeFiles/TENGU_AX12.dir/src/main.cpp.o  -o TENGU_AX12 -rdynamic 
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\TENGU_AX12.dir/objects.a
+C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\TENGU_AX12.dir/objects.a @CMakeFiles\TENGU_AX12.dir\objects1.rsp
+C:\Qt\Tools\mingw492_32\bin\g++.exe     -Wl,--whole-archive CMakeFiles\TENGU_AX12.dir/objects.a -Wl,--no-whole-archive  -o TENGU_AX12.exe -Wl,--out-implib,libTENGU_AX12.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TENGU_AX12.dir\linklibs.rsp

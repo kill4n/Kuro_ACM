@@ -18,15 +18,19 @@ stdio.h
 
 ../include/motorinterface.h
 
-/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.cpp
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.cpp
 ax_12_motor.h
-/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.h
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.h
 
-/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/main.cpp
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/main.cpp
 stdio.h
 -
+iostream
+-
+iomanip
+-
 motorinterface.h
-/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/motorinterface.h
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/motorinterface.h
 ax_12_motor.h
-/home/pi/usb/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.h
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.h
 

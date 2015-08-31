@@ -53,6 +53,11 @@ void AX_12_Motor::stopMotor()
     printf("Terminar motor\r\n");
 }
 
+double AX_12_Motor::getPosition()
+{
+
+}
+
 void AX_12_Motor::setType(MOTOR_TYPE type)
 {
     _motor=type;
