@@ -11,7 +11,7 @@ int main()
     AX_12_Motor ax12;
     ptrMI = &ax12;
     int goal = 0;
-    ptrMI->setID(10);
+    ptrMI->setID(18);
     ptrMI->startMotor();
     while(1)
     {
@@ -21,7 +21,7 @@ int main()
         if(getchar() == 0x1b)
             break;
         //set wheel mode
-        ptrMI->setType(WHEEL);
+        ptrMI->setType(JOINT);
         printf( "Succeed to set wheel mode\n" );
         // Write goal position
         //dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
