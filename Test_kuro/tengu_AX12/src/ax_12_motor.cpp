@@ -64,9 +64,9 @@ void AX_12_Motor::setType(MOTOR_TYPE type)
     switch (_motor) {
     case JOINT:
         //set angle mode
-        dxl_write_word( _ID_motor, CW_ANGLE_LIMIT_L_RW, 512 );
+        dxl_write_word( _ID_motor, CW_ANGLE_LIMIT_L_RW, 1023 );
         dxl_write_word( _ID_motor, CW_ANGLE_LIMIT_H_RW, 0 );
-        dxl_write_word( _ID_motor, CCW_ANGLE_LIMIT_H_RW, 512 );
+        dxl_write_word( _ID_motor, CCW_ANGLE_LIMIT_H_RW, 0 );
         dxl_write_word( _ID_motor, CCW_ANGLE_LIMIT_H_RW, 0 );
         break;
     case WHEEL:
