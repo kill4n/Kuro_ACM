@@ -11,7 +11,7 @@ int main()
     AX_12_Motor ax12;
     ptrMI = &ax12;
     int goal = 0;
-    ptrMI->setID(18);
+    ptrMI->setID(8);
     ptrMI->startMotor();
     while(1)
     {
