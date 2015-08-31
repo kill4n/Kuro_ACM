@@ -38,7 +38,7 @@ void AX_12_Motor::moveMotor(double goal)
             dxl_write_word( _ID_motor, MOVING_SPEED_L_RW, goal );
             dxl_write_word( _ID_motor, MOVING_SPEED_H_RW, 0 );
         } else {
-            dxl_write_word( _ID_motor, MOVING_SPEED_L_RW, (goal * -1) );
+            dxl_write_word( _ID_motor, MOVING_SPEED_L_RW, (1023+(-1*goal)) );
             dxl_write_word( _ID_motor, MOVING_SPEED_H_RW, 1 );
         }
         break;
