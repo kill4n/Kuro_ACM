@@ -6,15 +6,27 @@
 
 #IncludeRegexTransform: 
 
+../include/ax_12_motor.h
+motorinterface.h
+../include/motorinterface.h
+dynamixel.h
 ../include/dynamixel.h
-
-C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/main.cpp
 stdio.h
 -
-termio.h
+
+../include/dynamixel.h
+
+../include/motorinterface.h
+
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.cpp
+ax_12_motor.h
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.h
+
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/main.cpp
+stdio.h
 -
-unistd.h
--
-dynamixel.h
--
+motorinterface.h
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/motorinterface.h
+ax_12_motor.h
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/ax_12_motor.h
 

@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.obj"
-  "CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.obj"
-  "CMakeFiles/TENGU_AX12.dir/src/main.cpp.obj"
-  "CMakeFiles/TENGU_AX12.dir/src/ReadWrite.c.obj"
+  "CMakeFiles/TENGU_AX12.dir/src/ax_12_motor.cpp.o"
+  "CMakeFiles/TENGU_AX12.dir/src/dxl_hal.c.o"
+  "CMakeFiles/TENGU_AX12.dir/src/dynamixel.c.o"
+  "CMakeFiles/TENGU_AX12.dir/src/main.cpp.o"
   "TENGU_AX12.pdb"
-  "TENGU_AX12.exe"
-  "TENGU_AX12.exe.manifest"
-  "libTENGU_AX12.dll.a"
+  "TENGU_AX12"
 )
 
 # Per-language clean rules from dependency scanning.

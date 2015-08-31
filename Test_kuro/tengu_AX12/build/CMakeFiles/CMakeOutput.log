@@ -1,6 +1,6 @@
-The system is: Windows - 6.1 - AMD64
+The system is: Darwin - 14.5.0 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Qt/Tools/mingw492_32/bin/gcc.exe 
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
 Build flags: 
 Id flags: 
 
@@ -8,12 +8,12 @@ The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/3.3.1/CompilerIdC/a.exe"
+The C compiler identification is AppleClang, found in "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/3.3.0/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Qt/Tools/mingw492_32/bin/g++.exe 
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
 Build flags: 
 Id flags: 
 
@@ -21,344 +21,238 @@ The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/3.3.1/CompilerIdCXX/a.exe"
+The CXX compiler identification is AppleClang, found in "/Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/3.3.0/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_dd5d9/fast"
-C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_dd5d9.dir\build.make CMakeFiles/cmTC_dd5d9.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dd5d9.dir/testCCompiler.c.obj
-C:\Qt\Tools\mingw492_32\bin\gcc.exe    -o CMakeFiles\cmTC_dd5d9.dir\testCCompiler.c.obj   -c C:\Users\killan\Documents\GitHub\Kuro_ACM\Test_kuro\tengu_AX12\build\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_dd5d9.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dd5d9.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_dd5d9.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_dd5d9.dir/objects.a @CMakeFiles\cmTC_dd5d9.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_dd5d9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_dd5d9.exe -Wl,--out-implib,libcmTC_dd5d9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_dd5d9.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_66bb9/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_66bb9.dir/build.make CMakeFiles/cmTC_66bb9.dir/build
+Building C object CMakeFiles/cmTC_66bb9.dir/testCCompiler.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_66bb9.dir/testCCompiler.c.o   -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_66bb9
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66bb9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_66bb9.dir/testCCompiler.c.o  -o cmTC_66bb9  
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_3e722/fast"
-C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_3e722.dir\build.make CMakeFiles/cmTC_3e722.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3e722.dir/CMakeCCompilerABI.c.obj
-C:\Qt\Tools\mingw492_32\bin\gcc.exe    -o CMakeFiles\cmTC_3e722.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTC_3e722.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3e722.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3e722.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_3e722.dir/objects.a @CMakeFiles\cmTC_3e722.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_3e722.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3e722.exe -Wl,--out-implib,libcmTC_3e722.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
-Using built-in specs.
-COLLECT_GCC=C:\Qt\Tools\mingw492_32\bin\gcc.exe
-COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
-Target: i686-w64-mingw32
-Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-cloog=/c/mingw492/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-dwarf-rev1, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/lib -L/c/mingw492/prerequisites/i686-zlib-static/lib -L/c/mingw492/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
-Thread model: posix
-gcc version 4.9.2 (i686-posix-dwarf-rev1, Built by MinGW-W64 project) 
-COMPILER_PATH=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/;C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
-LIBRARY_PATH=C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3e722.exe' '-mtune=generic' '-march=i686'
- C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\killan\AppData\Local\Temp\ccGl0biB.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 -m i386pe -Bdynamic -o cmTC_3e722.exe C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_3e722.dir/objects.a --no-whole-archive --out-implib libcmTC_3e722.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_03ffd/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_03ffd.dir/build.make CMakeFiles/cmTC_03ffd.dir/build
+Building C object CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.3.0/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_03ffd
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03ffd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o  -o cmTC_03ffd   
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_03ffd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-242.2
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_3e722/fast"]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_3e722.dir\build.make CMakeFiles/cmTC_3e722.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_3e722.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\Qt\Tools\mingw492_32\bin\gcc.exe    -o CMakeFiles\cmTC_3e722.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTC_3e722.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3e722.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3e722.dir/objects.a]
-  ignore line: [C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_3e722.dir/objects.a @CMakeFiles\cmTC_3e722.dir\objects1.rsp]
-  ignore line: [C:\Qt\Tools\mingw492_32\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_3e722.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3e722.exe -Wl,--out-implib,libcmTC_3e722.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Qt\Tools\mingw492_32\bin\gcc.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe]
-  ignore line: [Target: i686-w64-mingw32]
-  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-cloog=/c/mingw492/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-dwarf-rev1, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/lib -L/c/mingw492/prerequisites/i686-zlib-static/lib -L/c/mingw492/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_03ffd/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_03ffd.dir/build.make CMakeFiles/cmTC_03ffd.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.3.0/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_03ffd]
+  ignore line: [/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03ffd.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o  -o cmTC_03ffd   ]
+  ignore line: [Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)]
+  ignore line: [Target: x86_64-apple-darwin14.5.0]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.9.2 (i686-posix-dwarf-rev1, Built by MinGW-W64 project) ]
-  ignore line: [COMPILER_PATH=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3e722.exe' '-mtune=generic' '-march=i686']
-  link line: [ C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\killan\AppData\Local\Temp\ccGl0biB.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 -m i386pe -Bdynamic -o cmTC_3e722.exe C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_3e722.dir/objects.a --no-whole-archive --out-implib libcmTC_3e722.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
-    arg [C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\killan\AppData\Local\Temp\ccGl0biB.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-liconv] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--sysroot=C:/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32] ==> ignore
-    arg [-m] ==> ignore
-    arg [i386pe] ==> ignore
-    arg [-Bdynamic] ==> ignore
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_03ffd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3e722.exe] ==> ignore
-    arg [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> ignore
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_3e722.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
-    arg [--out-implib] ==> ignore
-    arg [libcmTC_3e722.dll.a] ==> ignore
-    arg [--major-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [--minor-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lgcc_eh] ==> lib [gcc_eh]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-lpthread] ==> lib [pthread]
-    arg [-ladvapi32] ==> lib [advapi32]
-    arg [-lshell32] ==> lib [shell32]
-    arg [-luser32] ==> lib [user32]
-    arg [-lkernel32] ==> lib [kernel32]
-    arg [-liconv] ==> lib [iconv]
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lgcc_eh] ==> lib [gcc_eh]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o] ==> ignore
-  remove lib [gcc]
-  remove lib [gcc_eh]
-  remove lib [gcc]
-  remove lib [gcc_eh]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> [C:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc] ==> [C:/Qt/Tools/mingw492_32/lib/gcc]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> [C:/Qt/Tools/mingw492_32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> [C:/Qt/Tools/mingw492_32/lib]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> [C:/Qt/Tools/mingw492_32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> [C:/Qt/Tools/mingw492_32/lib]
-  implicit libs: [mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;moldname;mingwex;msvcrt]
-  implicit dirs: [C:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2;C:/Qt/Tools/mingw492_32/lib/gcc;C:/Qt/Tools/mingw492_32/i686-w64-mingw32/lib;C:/Qt/Tools/mingw492_32/lib]
-  implicit fwks: []
+    arg [cmTC_03ffd] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_03ffd.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
 
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a212b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a212b.dir/build.make CMakeFiles/cmTC_a212b.dir/build
+Building C object CMakeFiles/cmTC_a212b.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_a212b.dir/feature_tests.c.o   -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a212b
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a212b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a212b.dir/feature_tests.c.o  -o cmTC_a212b  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_71acf/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_71acf.dir/build.make CMakeFiles/cmTC_71acf.dir/build
+Building C object CMakeFiles/cmTC_71acf.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_71acf.dir/feature_tests.c.o   -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_71acf
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71acf.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_71acf.dir/feature_tests.c.o  -o cmTC_71acf  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3d863/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3d863.dir/build.make CMakeFiles/cmTC_3d863.dir/build
+Building C object CMakeFiles/cmTC_3d863.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_3d863.dir/feature_tests.c.o   -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3d863
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d863.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_3d863.dir/feature_tests.c.o  -o cmTC_3d863  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_88b7a/fast"
-C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_88b7a.dir\build.make CMakeFiles/cmTC_88b7a.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_88b7a.dir/testCXXCompiler.cxx.obj
-C:\Qt\Tools\mingw492_32\bin\g++.exe     -o CMakeFiles\cmTC_88b7a.dir\testCXXCompiler.cxx.obj -c C:\Users\killan\Documents\GitHub\Kuro_ACM\Test_kuro\tengu_AX12\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_88b7a.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_88b7a.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_88b7a.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_88b7a.dir/objects.a @CMakeFiles\cmTC_88b7a.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_88b7a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_88b7a.exe -Wl,--out-implib,libcmTC_88b7a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_88b7a.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_00b29/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_00b29.dir/build.make CMakeFiles/cmTC_00b29.dir/build
+Building CXX object CMakeFiles/cmTC_00b29.dir/testCXXCompiler.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -o CMakeFiles/cmTC_00b29.dir/testCXXCompiler.cxx.o -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_00b29
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00b29.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_00b29.dir/testCXXCompiler.cxx.o  -o cmTC_00b29  
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_d2457/fast"
-C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_d2457.dir\build.make CMakeFiles/cmTC_d2457.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d2457.dir/CMakeCXXCompilerABI.cpp.obj
-C:\Qt\Tools\mingw492_32\bin\g++.exe     -o CMakeFiles\cmTC_d2457.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTC_d2457.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d2457.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d2457.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_d2457.dir/objects.a @CMakeFiles\cmTC_d2457.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_d2457.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d2457.exe -Wl,--out-implib,libcmTC_d2457.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
-Using built-in specs.
-COLLECT_GCC=C:\Qt\Tools\mingw492_32\bin\g++.exe
-COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
-Target: i686-w64-mingw32
-Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-cloog=/c/mingw492/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-dwarf-rev1, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/lib -L/c/mingw492/prerequisites/i686-zlib-static/lib -L/c/mingw492/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
-Thread model: posix
-gcc version 4.9.2 (i686-posix-dwarf-rev1, Built by MinGW-W64 project) 
-COMPILER_PATH=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/;C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
-LIBRARY_PATH=C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/;C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2457.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
- C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\killan\AppData\Local\Temp\ccMCORgc.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_d2457.exe C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_d2457.dir/objects.a --no-whole-archive --out-implib libcmTC_d2457.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_af821/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_af821.dir/build.make CMakeFiles/cmTC_af821.dir/build
+Building CXX object CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -o CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.3.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_af821
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af821.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_af821   
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_af821 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-242.2
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_d2457/fast"]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_d2457.dir\build.make CMakeFiles/cmTC_d2457.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_d2457.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\Qt\Tools\mingw492_32\bin\g++.exe     -o CMakeFiles\cmTC_d2457.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTC_d2457.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d2457.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d2457.dir/objects.a]
-  ignore line: [C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_d2457.dir/objects.a @CMakeFiles\cmTC_d2457.dir\objects1.rsp]
-  ignore line: [C:\Qt\Tools\mingw492_32\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_d2457.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d2457.exe -Wl,--out-implib,libcmTC_d2457.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Qt\Tools\mingw492_32\bin\g++.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe]
-  ignore line: [Target: i686-w64-mingw32]
-  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw492/prerequisites/i686-w64-mingw32-static --with-cloog=/c/mingw492/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-dwarf-rev1, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/include -I/c/mingw492/prerequisites/i686-zlib-static/include -I/c/mingw492/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/c/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32/opt/lib -L/c/mingw492/prerequisites/i686-zlib-static/lib -L/c/mingw492/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_af821/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_af821.dir/build.make CMakeFiles/cmTC_af821.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -o CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.3.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_af821]
+  ignore line: [/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af821.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_af821   ]
+  ignore line: [Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)]
+  ignore line: [Target: x86_64-apple-darwin14.5.0]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.9.2 (i686-posix-dwarf-rev1, Built by MinGW-W64 project) ]
-  ignore line: [COMPILER_PATH=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/]
-  ignore line: [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2457.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  link line: [ C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\killan\AppData\Local\Temp\ccMCORgc.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_d2457.exe C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_d2457.dir/objects.a --no-whole-archive --out-implib libcmTC_d2457.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
-    arg [C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=C:/Qt/Tools/mingw492_32/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\killan\AppData\Local\Temp\ccMCORgc.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-liconv] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--sysroot=C:/mingw492/i686-492-posix-dwarf-rt_v3-rev1/mingw32] ==> ignore
-    arg [-m] ==> ignore
-    arg [i386pe] ==> ignore
-    arg [-Bdynamic] ==> ignore
-    arg [-u] ==> ignore
-    arg [___register_frame_info] ==> ignore
-    arg [-u] ==> ignore
-    arg [___deregister_frame_info] ==> ignore
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_af821 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d2457.exe] ==> ignore
-    arg [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> ignore
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib]
-    arg [-LC:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_d2457.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
-    arg [--out-implib] ==> ignore
-    arg [libcmTC_d2457.dll.a] ==> ignore
-    arg [--major-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [--minor-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-lpthread] ==> lib [pthread]
-    arg [-ladvapi32] ==> lib [advapi32]
-    arg [-lshell32] ==> lib [shell32]
-    arg [-luser32] ==> lib [user32]
-    arg [-lkernel32] ==> lib [kernel32]
-    arg [-liconv] ==> lib [iconv]
-    arg [-lmingw32] ==> lib [mingw32]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o] ==> ignore
-  remove lib [gcc_s]
-  remove lib [gcc]
-  remove lib [gcc_s]
-  remove lib [gcc]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> [C:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc] ==> [C:/Qt/Tools/mingw492_32/lib/gcc]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> [C:/Qt/Tools/mingw492_32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> [C:/Qt/Tools/mingw492_32/lib]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> [C:/Qt/Tools/mingw492_32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> [C:/Qt/Tools/mingw492_32/lib]
-  implicit libs: [stdc++;mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;moldname;mingwex;msvcrt]
-  implicit dirs: [C:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2;C:/Qt/Tools/mingw492_32/lib/gcc;C:/Qt/Tools/mingw492_32/i686-w64-mingw32/lib;C:/Qt/Tools/mingw492_32/lib]
-  implicit fwks: []
+    arg [cmTC_af821] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_af821.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
 
 
 
-Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_b8d82/fast"
-C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_b8d82.dir\build.make CMakeFiles/cmTC_b8d82.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b8d82.dir/feature_tests.cxx.obj
-C:\Qt\Tools\mingw492_32\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_b8d82.dir\feature_tests.cxx.obj -c C:\Users\killan\Documents\GitHub\Kuro_ACM\Test_kuro\tengu_AX12\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_b8d82.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b8d82.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b8d82.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_b8d82.dir/objects.a @CMakeFiles\cmTC_b8d82.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_b8d82.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b8d82.exe -Wl,--out-implib,libcmTC_b8d82.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b8d82.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_932a9/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_932a9.dir/build.make CMakeFiles/cmTC_932a9.dir/build
+Building CXX object CMakeFiles/cmTC_932a9.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_932a9.dir/feature_tests.cxx.o -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_932a9
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_932a9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_932a9.dir/feature_tests.cxx.o  -o cmTC_932a9  
 
 
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
     Feature record: CXX_FEATURE:1cxx_alias_templates
     Feature record: CXX_FEATURE:1cxx_alignas
     Feature record: CXX_FEATURE:1cxx_alignof
@@ -398,7 +292,7 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_AC
     Feature record: CXX_FEATURE:1cxx_range_for
     Feature record: CXX_FEATURE:1cxx_raw_string_literals
     Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
     Feature record: CXX_FEATURE:1cxx_return_type_deduction
     Feature record: CXX_FEATURE:1cxx_right_angle_brackets
     Feature record: CXX_FEATURE:1cxx_rvalue_references
@@ -406,31 +300,27 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_AC
     Feature record: CXX_FEATURE:1cxx_static_assert
     Feature record: CXX_FEATURE:1cxx_strong_enums
     Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_thread_local
     Feature record: CXX_FEATURE:1cxx_trailing_return_types
     Feature record: CXX_FEATURE:1cxx_unicode_literals
     Feature record: CXX_FEATURE:1cxx_uniform_initialization
     Feature record: CXX_FEATURE:1cxx_unrestricted_unions
     Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variable_templates
     Feature record: CXX_FEATURE:1cxx_variadic_macros
     Feature record: CXX_FEATURE:1cxx_variadic_templates
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_13995/fast"
-C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_13995.dir\build.make CMakeFiles/cmTC_13995.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_13995.dir/feature_tests.cxx.obj
-C:\Qt\Tools\mingw492_32\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_13995.dir\feature_tests.cxx.obj -c C:\Users\killan\Documents\GitHub\Kuro_ACM\Test_kuro\tengu_AX12\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_13995.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_13995.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_13995.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_13995.dir/objects.a @CMakeFiles\cmTC_13995.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_13995.dir/objects.a -Wl,--no-whole-archive  -o cmTC_13995.exe -Wl,--out-implib,libcmTC_13995.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_13995.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a638e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a638e.dir/build.make CMakeFiles/cmTC_a638e.dir/build
+Building CXX object CMakeFiles/cmTC_a638e.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_a638e.dir/feature_tests.cxx.o -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a638e
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a638e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a638e.dir/feature_tests.cxx.o  -o cmTC_a638e  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -481,7 +371,7 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_AC
     Feature record: CXX_FEATURE:1cxx_static_assert
     Feature record: CXX_FEATURE:1cxx_strong_enums
     Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_thread_local
     Feature record: CXX_FEATURE:1cxx_trailing_return_types
     Feature record: CXX_FEATURE:1cxx_unicode_literals
     Feature record: CXX_FEATURE:1cxx_uniform_initialization
@@ -493,19 +383,15 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_AC
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe" "cmTC_93a75/fast"
-C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f CMakeFiles\cmTC_93a75.dir\build.make CMakeFiles/cmTC_93a75.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_93a75.dir/feature_tests.cxx.obj
-C:\Qt\Tools\mingw492_32\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_93a75.dir\feature_tests.cxx.obj -c C:\Users\killan\Documents\GitHub\Kuro_ACM\Test_kuro\tengu_AX12\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_93a75.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_93a75.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_93a75.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\cmTC_93a75.dir/objects.a @CMakeFiles\cmTC_93a75.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_93a75.dir/objects.a -Wl,--no-whole-archive  -o cmTC_93a75.exe -Wl,--out-implib,libcmTC_93a75.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_93a75.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_5228b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5228b.dir/build.make CMakeFiles/cmTC_5228b.dir/build
+Building CXX object CMakeFiles/cmTC_5228b.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_5228b.dir/feature_tests.cxx.o -c /Users/crhistian/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5228b
+/usr/local/Cellar/cmake/3.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5228b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5228b.dir/feature_tests.cxx.o  -o cmTC_5228b  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
