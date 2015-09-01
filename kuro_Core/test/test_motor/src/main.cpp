@@ -84,7 +84,12 @@ int main()
         }while(Moving == 1);*/
     }
     // Close device
-    ptrMI->stopMotor();
+    ptrMI1->stopMotor();
+    ptrMI2->stopMotor();
+    ptrMI3->stopMotor();
+    ptrMI4->stopMotor();
+    ptrMI5->stopMotor();
+    ptrMI6->stopMotor();
     printf( "Press Enter key to terminate...\n" );
     getchar();
     return 0;
