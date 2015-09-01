@@ -8,6 +8,7 @@ set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 
 set(LIBS_DIR ${CMAKE_SOURCE_DIR}/librerias)
 set(MOTOR_DIR ${CMAKE_SOURCE_DIR}/motores)
+set(PRIF_DIR ${CMAKE_SOURCE_DIR}/perifericos)
 
 include_directories("${PROJECT_INCLUDE_DIR}")
 include_directories("${PROJECT_SOURCE_DIR}")
@@ -18,7 +19,7 @@ include_directories("${PROJECT_SOURCE_DIR}")
 
 #add_subdirectory(sensores)
 add_subdirectory(motores)
-#add_subdirectory(perifericos)
+add_subdirectory(perifericos)
 
 #add_subdirectory(cinematica)
 

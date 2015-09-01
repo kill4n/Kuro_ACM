@@ -3,12 +3,11 @@
 
 #include <linux/joystick.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <fcntl.h>
 
-#include "muramasa.h"
-
-using namespace neko;
+#define JOY_DEV "/dev/input/js0"
 
 class joystick_helper
 {
@@ -16,12 +15,10 @@ public:
     joystick_helper();
     int openJoy();
     int closeJoy();
-    int startJoy();
+    int readJoy();
 private:
-    int joy_fd, *axis=NULL,
-        num_of_axis, num_of_buttons, x;
-    char *button=NULL,
-        name_of_joystick[80];
+    int joy_fd, *axis=NULL,num_of_axis, num_of_buttons, x;
+    char *button=NULL, name_of_joystick[80];
     struct js_event js;
 };
 

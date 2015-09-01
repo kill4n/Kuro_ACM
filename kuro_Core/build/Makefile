@@ -128,6 +128,19 @@ MOTORINT/fast:
 .PHONY : MOTORINT/fast
 
 #=============================================================================
+# Target rules for targets named JOYSTICK
+
+# Build rule for target.
+JOYSTICK: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 JOYSTICK
+.PHONY : JOYSTICK
+
+# fast build rule for target.
+JOYSTICK/fast:
+	$(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/build
+.PHONY : JOYSTICK/fast
+
+#=============================================================================
 # Target rules for targets named DYAMIXEL_AUX
 
 # Build rule for target.
@@ -153,6 +166,19 @@ test_motor/fast:
 	$(MAKE) -f test/test_motor/CMakeFiles/test_motor.dir/build.make test/test_motor/CMakeFiles/test_motor.dir/build
 .PHONY : test_motor/fast
 
+#=============================================================================
+# Target rules for targets named test_joystick
+
+# Build rule for target.
+test_joystick: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_joystick
+.PHONY : test_joystick
+
+# fast build rule for target.
+test_joystick/fast:
+	$(MAKE) -f test/test_joystick/CMakeFiles/test_joystick.dir/build.make test/test_joystick/CMakeFiles/test_joystick.dir/build
+.PHONY : test_joystick/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,8 +189,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... AX_12"
 	@echo "... MOTORINT"
+	@echo "... JOYSTICK"
 	@echo "... DYAMIXEL_AUX"
 	@echo "... test_motor"
+	@echo "... test_joystick"
 .PHONY : help
 
 

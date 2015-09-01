@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../perifericos/joystick/include/joystick_helper.h
+linux/joystick.h
+-
+stdlib.h
+-
+unistd.h
+-
+stdio.h
+-
+fcntl.h
+-
+
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick/src/joystick_helper.cpp
+joystick_helper.h
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick/src/joystick_helper.h
+

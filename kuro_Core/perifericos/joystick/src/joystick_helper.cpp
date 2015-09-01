@@ -32,5 +32,38 @@ int joystick_helper::openJoy()
 
 int joystick_helper::closeJoy()
 {
-    close( joy_fd );	/* Cerrar el Joystick */
+    close(joy_fd);	/* Cerrar el Joystick */
 }
+
+int joystick_helper::readJoy()
+{
+    /* read the joystick state */
+    read(joy_fd, &js, sizeof(struct js_event));
+
+    /* see what to do with the event */
+    switch (js.type & ~JS_EVENT_INIT)
+    {
+    case JS_EVENT_AXIS:
+        axis   [ js.number ] = js.value;
+        break;
+    case JS_EVENT_BUTTON:
+        button [ js.number ] = js.value;
+        break;
+    }
+
+    /* print the results */
+    printf( "X: %6d  Y: %6d  ", axis[0], axis[1] );
+
+    if( num_of_axis > 2 )
+        printf("Z: %6d  ", axis[2] );
+
+    if( num_of_axis > 3 )
+        printf("R: %6d  ", axis[3] );
+
+    for( x=0 ; x<num_of_buttons ; ++x )
+        printf("B%d: %d  ", x, button[x] );
+
+    printf("  \r");
+    fflush(stdout);
+}
+

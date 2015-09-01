@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 
-#include "joystick_helper.h"
+#include "perifericos/joystick/include/joystick_helper.h"
 
 
 int main()
@@ -14,6 +14,9 @@ int main()
     joystick_helper JoyH;
 
     JoyH.openJoy();
-
+    while (1) {
+        JoyH.readJoy();
+    }
+    JoyH.closeJoy();
     return 0;
 }

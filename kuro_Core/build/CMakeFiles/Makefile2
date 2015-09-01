@@ -174,6 +174,71 @@ clean: motores/motorinterface/CMakeFiles/MOTORINT.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory perifericos
+
+# Convenience name for "all" pass in the directory.
+perifericos/all: perifericos/joystick/all
+.PHONY : perifericos/all
+
+# Convenience name for "clean" pass in the directory.
+perifericos/clean: perifericos/joystick/clean
+.PHONY : perifericos/clean
+
+# Convenience name for "preinstall" pass in the directory.
+perifericos/preinstall: perifericos/joystick/preinstall
+.PHONY : perifericos/preinstall
+
+#=============================================================================
+# Directory level rules for directory perifericos/joystick
+
+# Convenience name for "all" pass in the directory.
+perifericos/joystick/all: perifericos/joystick/CMakeFiles/JOYSTICK.dir/all
+.PHONY : perifericos/joystick/all
+
+# Convenience name for "clean" pass in the directory.
+perifericos/joystick/clean: perifericos/joystick/CMakeFiles/JOYSTICK.dir/clean
+.PHONY : perifericos/joystick/clean
+
+# Convenience name for "preinstall" pass in the directory.
+perifericos/joystick/preinstall:
+.PHONY : perifericos/joystick/preinstall
+
+#=============================================================================
+# Target rules for target perifericos/joystick/CMakeFiles/JOYSTICK.dir
+
+# All Build rule for target.
+perifericos/joystick/CMakeFiles/JOYSTICK.dir/all:
+	$(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/depend
+	$(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  4
+	@echo "Built target JOYSTICK"
+.PHONY : perifericos/joystick/CMakeFiles/JOYSTICK.dir/all
+
+# Include target in all.
+all: perifericos/joystick/CMakeFiles/JOYSTICK.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+perifericos/joystick/CMakeFiles/JOYSTICK.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 perifericos/joystick/CMakeFiles/JOYSTICK.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 0
+.PHONY : perifericos/joystick/CMakeFiles/JOYSTICK.dir/rule
+
+# Convenience name for target.
+JOYSTICK: perifericos/joystick/CMakeFiles/JOYSTICK.dir/rule
+.PHONY : JOYSTICK
+
+# clean rule for target.
+perifericos/joystick/CMakeFiles/JOYSTICK.dir/clean:
+	$(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/clean
+.PHONY : perifericos/joystick/CMakeFiles/JOYSTICK.dir/clean
+
+# clean rule for target.
+clean: perifericos/joystick/CMakeFiles/JOYSTICK.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory librerias
 
 # Convenience name for "all" pass in the directory.
@@ -243,14 +308,17 @@ clean: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/clean
 
 # Convenience name for "all" pass in the directory.
 test/all: test/test_motor/all
+test/all: test/test_joystick/all
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
 test/clean: test/test_motor/clean
+test/clean: test/test_joystick/clean
 .PHONY : test/clean
 
 # Convenience name for "preinstall" pass in the directory.
 test/preinstall: test/test_motor/preinstall
+test/preinstall: test/test_joystick/preinstall
 .PHONY : test/preinstall
 
 #=============================================================================
@@ -276,7 +344,7 @@ test/test_motor/CMakeFiles/test_motor.dir/all: librerias/dynamixel_aux/CMakeFile
 test/test_motor/CMakeFiles/test_motor.dir/all: motores/AX_12/CMakeFiles/AX_12.dir/all
 	$(MAKE) -f test/test_motor/CMakeFiles/test_motor.dir/build.make test/test_motor/CMakeFiles/test_motor.dir/depend
 	$(MAKE) -f test/test_motor/CMakeFiles/test_motor.dir/build.make test/test_motor/CMakeFiles/test_motor.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  6
 	@echo "Built target test_motor"
 .PHONY : test/test_motor/CMakeFiles/test_motor.dir/all
 
@@ -302,6 +370,56 @@ test/test_motor/CMakeFiles/test_motor.dir/clean:
 
 # clean rule for target.
 clean: test/test_motor/CMakeFiles/test_motor.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test/test_joystick
+
+# Convenience name for "all" pass in the directory.
+test/test_joystick/all: test/test_joystick/CMakeFiles/test_joystick.dir/all
+.PHONY : test/test_joystick/all
+
+# Convenience name for "clean" pass in the directory.
+test/test_joystick/clean: test/test_joystick/CMakeFiles/test_joystick.dir/clean
+.PHONY : test/test_joystick/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test/test_joystick/preinstall:
+.PHONY : test/test_joystick/preinstall
+
+#=============================================================================
+# Target rules for target test/test_joystick/CMakeFiles/test_joystick.dir
+
+# All Build rule for target.
+test/test_joystick/CMakeFiles/test_joystick.dir/all: perifericos/joystick/CMakeFiles/JOYSTICK.dir/all
+	$(MAKE) -f test/test_joystick/CMakeFiles/test_joystick.dir/build.make test/test_joystick/CMakeFiles/test_joystick.dir/depend
+	$(MAKE) -f test/test_joystick/CMakeFiles/test_joystick.dir/build.make test/test_joystick/CMakeFiles/test_joystick.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  5
+	@echo "Built target test_joystick"
+.PHONY : test/test_joystick/CMakeFiles/test_joystick.dir/all
+
+# Include target in all.
+all: test/test_joystick/CMakeFiles/test_joystick.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/test_joystick/CMakeFiles/test_joystick.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/test_joystick/CMakeFiles/test_joystick.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 0
+.PHONY : test/test_joystick/CMakeFiles/test_joystick.dir/rule
+
+# Convenience name for target.
+test_joystick: test/test_joystick/CMakeFiles/test_joystick.dir/rule
+.PHONY : test_joystick
+
+# clean rule for target.
+test/test_joystick/CMakeFiles/test_joystick.dir/clean:
+	$(MAKE) -f test/test_joystick/CMakeFiles/test_joystick.dir/build.make test/test_joystick/CMakeFiles/test_joystick.dir/clean
+.PHONY : test/test_joystick/CMakeFiles/test_joystick.dir/clean
+
+# clean rule for target.
+clean: test/test_joystick/CMakeFiles/test_joystick.dir/clean
 .PHONY : clean
 
 #=============================================================================

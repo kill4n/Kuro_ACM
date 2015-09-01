@@ -189,6 +189,21 @@ DYAMIXEL_AUX_LIB_DEPENDS:STATIC=
 DYAMIXEL_AUX_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux
 
 //Value Computed by CMake
+JOYSTICK_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick
+
+//Dependencies for target
+JOYSTICK_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+JOYSTICK_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick
+
+//Value Computed by CMake
+KURO_JOY_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick
+
+//Value Computed by CMake
+KURO_JOY_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick
+
+//Value Computed by CMake
 LIBRERIAS_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias
 
 //Value Computed by CMake
@@ -216,10 +231,25 @@ kuroproject_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build
 kuroproject_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core
 
 //Value Computed by CMake
+nombre_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos
+
+//Dependencies for target
+nombre_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+nombre_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos
+
+//Value Computed by CMake
 test_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test
 
 //Value Computed by CMake
 test_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test
+
+//Value Computed by CMake
+test_joystick_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick
+
+//Value Computed by CMake
+test_joystick_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick
 
 //Value Computed by CMake
 test_motor_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor
@@ -320,7 +350,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=8
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

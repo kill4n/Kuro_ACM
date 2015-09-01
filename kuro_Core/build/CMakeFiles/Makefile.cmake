@@ -16,7 +16,10 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "../motores/AX_12/CMakeLists.txt"
   "../motores/CMakeLists.txt"
   "../motores/motorinterface/CMakeLists.txt"
+  "../perifericos/CMakeLists.txt"
+  "../perifericos/joystick/CMakeLists.txt"
   "../test/CMakeLists.txt"
+  "../test/test_joystick/CMakeLists.txt"
   "../test/test_motor/CMakeLists.txt"
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
@@ -45,16 +48,21 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "motores/CMakeFiles/CMakeDirectoryInformation.cmake"
   "motores/AX_12/CMakeFiles/CMakeDirectoryInformation.cmake"
   "motores/motorinterface/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "perifericos/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "perifericos/joystick/CMakeFiles/CMakeDirectoryInformation.cmake"
   "librerias/CMakeFiles/CMakeDirectoryInformation.cmake"
   "librerias/dynamixel_aux/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/test_motor/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/test_joystick/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "motores/AX_12/CMakeFiles/AX_12.dir/DependInfo.cmake"
   "motores/motorinterface/CMakeFiles/MOTORINT.dir/DependInfo.cmake"
+  "perifericos/joystick/CMakeFiles/JOYSTICK.dir/DependInfo.cmake"
   "librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/DependInfo.cmake"
   "test/test_motor/CMakeFiles/test_motor.dir/DependInfo.cmake"
+  "test/test_joystick/CMakeFiles/test_joystick.dir/DependInfo.cmake"
   )
