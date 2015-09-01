@@ -14,7 +14,7 @@ int main()
 
     ptrMI = ax12;
     int goal = 0;
-
+    printf("test\r\n");
     for (int i = 0; i < NunMotor; ++i) {
         (ptrMI+i)->setID(i+7);
         (ptrMI+i)->startMotor();
