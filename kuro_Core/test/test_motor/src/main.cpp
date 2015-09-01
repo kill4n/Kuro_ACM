@@ -21,7 +21,7 @@ int main()
         if(getchar() == 0x1b)
             break;
         //set wheel mode
-        ptrMI->setType(JOINT);
+        ptrMI->setType(WHEEL);
         printf( "Succeed to set wheel mode\n" );
         // Write goal position
         //dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
