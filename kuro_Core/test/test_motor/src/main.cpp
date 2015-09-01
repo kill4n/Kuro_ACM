@@ -5,21 +5,26 @@
 #include "motores/AX_12/include/ax_12_motor.h"
 using namespace AX_12;
 using namespace std;
-
-#define NunMotor 6
 int main()
 {
-    MotorInterface *ptrMI;
-    AX_12_Motor ax12[NunMotor];
+    MotorInterface *ptrMI1,*ptrMI2,*ptrMI3,*ptrMI4,*ptrMI5,*ptrMI6;
+    AX_12_Motor ax12_1,ax12_2,ax12_3,ax12_4,ax12_5,ax12_6;
+    ptrMI1 = &ax12_1;
+    ptrMI2 = &ax12_2;
+    ptrMI3 = &ax12_3;
+    ptrMI4 = &ax12_4;
+    ptrMI5 = &ax12_5;
+    ptrMI6 = &ax12_6;
 
-    ptrMI = ax12;
     int goal = 0;
-    printf("test\r\n");
-    for (int i = 0; i < NunMotor; ++i) {
-        (ptrMI+i)->setID(i+7);
-        (ptrMI+i)->startMotor();
-        (ptrMI+i)->setType(WHEEL);
-    }
+    ptrMI1->setID(8);ptrMI1->startMotor();ptrMI1->setType(WHEEL);
+    ptrMI2->setID(8);ptrMI2->startMotor();ptrMI2->setType(WHEEL);
+    ptrMI3->setID(8);ptrMI3->startMotor();ptrMI3->setType(WHEEL);
+    ptrMI4->setID(8);ptrMI4->startMotor();ptrMI4->setType(WHEEL);
+    ptrMI5->setID(8);ptrMI5->startMotor();ptrMI5->setType(WHEEL);
+    ptrMI6->setID(8);ptrMI6->startMotor();ptrMI6->setType(WHEEL);
+
+
     while(1)
     {
         printf("Definir velocidad -1023,1023 \r\n");
@@ -28,17 +33,17 @@ int main()
         if(getchar() == 0x1b)
             break;
         //set wheel mode
-        //ptrMI->setType(WHEEL);
+
         printf( "Succeed to set wheel mode\n" );
         // Write goal position
         //dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
-
-
-        for (int i = 0; i < NunMotor; ++i) {
-            (ptrMI+i)->moveMotor(goal);
-        }
-        //ptrMI->moveMotor(goal);
-        /* do
+        ptrMI1->moveMotor(goal);
+        ptrMI2->moveMotor(goal);
+        ptrMI3->moveMotor(goal);
+        ptrMI4->moveMotor(goal);
+        ptrMI5->moveMotor(goal);
+        ptrMI6->moveMotor(goal);
+       /* do
         {
             // Read present position
             PresentPos = dxl_read_word( DEFAULT_ID, P_PRESENT_POSITION_L );
