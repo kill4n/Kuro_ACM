@@ -17,12 +17,12 @@ int main()
     ptrMI6 = &ax12_6;
 
     int goal = 0;
-    ptrMI1->setID(8);ptrMI1->startMotor();ptrMI1->setType(WHEEL);
+    ptrMI1->setID(7);ptrMI1->startMotor();ptrMI1->setType(WHEEL);
     ptrMI2->setID(8);ptrMI2->startMotor();ptrMI2->setType(WHEEL);
-    ptrMI3->setID(8);ptrMI3->startMotor();ptrMI3->setType(WHEEL);
-    ptrMI4->setID(8);ptrMI4->startMotor();ptrMI4->setType(WHEEL);
-    ptrMI5->setID(8);ptrMI5->startMotor();ptrMI5->setType(WHEEL);
-    ptrMI6->setID(8);ptrMI6->startMotor();ptrMI6->setType(WHEEL);
+    ptrMI3->setID(9);ptrMI3->startMotor();ptrMI3->setType(WHEEL);
+    ptrMI4->setID(10);ptrMI4->startMotor();ptrMI4->setType(WHEEL);
+    ptrMI5->setID(11);ptrMI5->startMotor();ptrMI5->setType(WHEEL);
+    ptrMI6->setID(12);ptrMI6->startMotor();ptrMI6->setType(WHEEL);
 
 
     while(1)
