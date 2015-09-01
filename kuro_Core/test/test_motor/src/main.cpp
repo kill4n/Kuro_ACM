@@ -5,14 +5,21 @@
 #include "motores/AX_12/include/ax_12_motor.h"
 using namespace AX_12;
 using namespace std;
+
+#define NunMotor 6
 int main()
 {
     MotorInterface *ptrMI;
-    AX_12_Motor ax12;
+    AX_12_Motor ax12[NunMotor];
+
     ptrMI = &ax12;
     int goal = 0;
-    ptrMI->setID(8);
-    ptrMI->startMotor();
+
+    for (int i = 0; i < NunMotor; ++i) {
+        (ptrMI+i)->setID(i+7);
+        (ptrMI+i)->startMotor();
+        (ptrMI+i)->setType(WHEEL);
+    }
     while(1)
     {
         printf("Definir velocidad -1023,1023 \r\n");
@@ -21,12 +28,17 @@ int main()
         if(getchar() == 0x1b)
             break;
         //set wheel mode
-        ptrMI->setType(WHEEL);
+        //ptrMI->setType(WHEEL);
         printf( "Succeed to set wheel mode\n" );
         // Write goal position
         //dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
-        ptrMI->moveMotor(goal);
-       /* do
+
+
+        for (int i = 0; i < NunMotor; ++i) {
+            (ptrMI+i)->moveMotor(goal);
+        }
+        //ptrMI->moveMotor(goal);
+        /* do
         {
             // Read present position
             PresentPos = dxl_read_word( DEFAULT_ID, P_PRESENT_POSITION_L );
