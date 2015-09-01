@@ -38,10 +38,10 @@ int main()
         // Write goal position
         //dxl_write_word( DEFAULT_ID, P_GOAL_POSITION_L, GoalPos[index] );
         ptrMI1->moveMotor(goal);
-        ptrMI2->moveMotor(goal);
+        ptrMI2->moveMotor(-goal);
         ptrMI3->moveMotor(goal);
         ptrMI4->moveMotor(-goal);
-        ptrMI5->moveMotor(-goal);
+        ptrMI5->moveMotor(goal);
         ptrMI6->moveMotor(-goal);
        /* do
         {
