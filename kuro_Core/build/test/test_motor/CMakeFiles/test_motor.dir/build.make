@@ -90,6 +90,8 @@ test_motor_EXTERNAL_OBJECTS =
 
 ../build_Windows/test_motor.exe: test/test_motor/CMakeFiles/test_motor.dir/src/main.cpp.obj
 ../build_Windows/test_motor.exe: test/test_motor/CMakeFiles/test_motor.dir/build.make
+../build_Windows/test_motor.exe: ../build_Windows/libAX_12.dll.a
+../build_Windows/test_motor.exe: ../build_Windows/libDYAMIXEL_AUX.dll.a
 ../build_Windows/test_motor.exe: test/test_motor/CMakeFiles/test_motor.dir/linklibs.rsp
 ../build_Windows/test_motor.exe: test/test_motor/CMakeFiles/test_motor.dir/objects1.rsp
 ../build_Windows/test_motor.exe: test/test_motor/CMakeFiles/test_motor.dir/link.txt

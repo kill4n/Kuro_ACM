@@ -32,6 +32,7 @@
             <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/include" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/src" />
          </Compiler>
@@ -57,6 +58,7 @@
             <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/include" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/src" />
          </Compiler>

@@ -14,8 +14,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../"
   "../test/test_motor/include"
   "../test/test_motor/src"
+  "../librerias"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/CMakeFiles/AX_12.dir/DependInfo.cmake"
+  "C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/DependInfo.cmake"
   )

@@ -37,7 +37,6 @@ enum BAUD_RATE{
     BAUD_9600 = 207
 };
 
-
 class AX_12_Motor : public MotorInterface
 {
 public:

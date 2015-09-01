@@ -264,6 +264,9 @@ test_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test
 //Value Computed by CMake
 test_motor_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/test/test_motor
 
+//Dependencies for the target
+test_motor_LIB_DEPENDS:STATIC=general;AX_12;general;DYAMIXEL_AUX;
+
 //Value Computed by CMake
 test_motor_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor
 

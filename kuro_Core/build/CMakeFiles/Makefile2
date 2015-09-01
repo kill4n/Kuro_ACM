@@ -302,7 +302,8 @@ test/test_motor/preinstall:
 # Target rules for target test/test_motor/CMakeFiles/test_motor.dir
 
 # All Build rule for target.
-test/test_motor/CMakeFiles/test_motor.dir/all:
+test/test_motor/CMakeFiles/test_motor.dir/all: motores/AX_12/CMakeFiles/AX_12.dir/all
+test/test_motor/CMakeFiles/test_motor.dir/all: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all
 	$(MAKE) -f test\test_motor\CMakeFiles\test_motor.dir\build.make test/test_motor/CMakeFiles/test_motor.dir/depend
 	$(MAKE) -f test\test_motor\CMakeFiles\test_motor.dir\build.make test/test_motor/CMakeFiles/test_motor.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles --progress-num=7,8 "Built target test_motor"
@@ -315,7 +316,7 @@ all: test/test_motor/CMakeFiles/test_motor.dir/all
 
 # Build rule for subdir invocation for target.
 test/test_motor/CMakeFiles/test_motor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 7
 	$(MAKE) -f CMakeFiles\Makefile2 test/test_motor/CMakeFiles/test_motor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 0
 .PHONY : test/test_motor/CMakeFiles/test_motor.dir/rule
