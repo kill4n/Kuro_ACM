@@ -1,7 +1,7 @@
 #ifndef AX_12_MOTOR_H
 #define AX_12_MOTOR_H
 
-#include "./motores/motorinterface/include/motorinterface.h"
+#include "motores/motorinterface/include/motorinterface.h"
 #include "librerias/dynamixel_aux/include/dynamixel.h"
 
 #include <stdio.h>

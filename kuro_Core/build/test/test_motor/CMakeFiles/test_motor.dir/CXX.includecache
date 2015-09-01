@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-.././motores/motorinterface/include/motorinterface.h
-
 ../librerias/dynamixel_aux/include/dynamixel.h
 
 ../motores/AX_12/include/ax_12_motor.h
-./motores/motorinterface/include/motorinterface.h
-../motores/AX_12/include/./motores/motorinterface/include/motorinterface.h
+motores/motorinterface/include/motorinterface.h
+../motores/AX_12/include/motores/motorinterface/include/motorinterface.h
 librerias/dynamixel_aux/include/dynamixel.h
 ../motores/AX_12/include/librerias/dynamixel_aux/include/dynamixel.h
 stdio.h

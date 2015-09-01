@@ -272,8 +272,8 @@ test/test_motor/preinstall:
 # Target rules for target test/test_motor/CMakeFiles/test_motor.dir
 
 # All Build rule for target.
-test/test_motor/CMakeFiles/test_motor.dir/all: motores/AX_12/CMakeFiles/AX_12.dir/all
 test/test_motor/CMakeFiles/test_motor.dir/all: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all
+test/test_motor/CMakeFiles/test_motor.dir/all: motores/AX_12/CMakeFiles/AX_12.dir/all
 	$(MAKE) -f test/test_motor/CMakeFiles/test_motor.dir/build.make test/test_motor/CMakeFiles/test_motor.dir/depend
 	$(MAKE) -f test/test_motor/CMakeFiles/test_motor.dir/build.make test/test_motor/CMakeFiles/test_motor.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  4

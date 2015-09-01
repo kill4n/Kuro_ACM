@@ -31,6 +31,10 @@ void AX_12_Motor::moveMotor(double goal)
     goal= (goal < -1023) ? -1023 : goal;
     switch (_motor) {
     case JOINT:
+        //290 - 512 - 734
+        goal+=512;
+        goal= (goal > 734) ? 734 : goal;
+        goal= (goal < 290) ? 290 : goal;
         dxl_write_word( _ID_motor, GOAL_POSITION_L_RW, goal );
         break;
     case WHEEL:
@@ -64,9 +68,9 @@ void AX_12_Motor::setType(MOTOR_TYPE type)
     switch (_motor) {
     case JOINT:
         //set angle mode
-        dxl_write_word( _ID_motor, CW_ANGLE_LIMIT_L_RW, 1023 );
+        dxl_write_word( _ID_motor, CW_ANGLE_LIMIT_L_RW, 290 );
         dxl_write_word( _ID_motor, CW_ANGLE_LIMIT_H_RW, 0 );
-        dxl_write_word( _ID_motor, CCW_ANGLE_LIMIT_H_RW, 0 );
+        dxl_write_word( _ID_motor, CCW_ANGLE_LIMIT_L_RW, 734 );
         dxl_write_word( _ID_motor, CCW_ANGLE_LIMIT_H_RW, 0 );
         break;
     case WHEEL:
