@@ -1,3 +1,1 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\MOTORINT.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\MOTORINT.dir/objects.a @CMakeFiles\MOTORINT.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe     -shared -o ..\..\..\build_Windows\libMOTORINT.dll -Wl,--out-implib,..\..\..\build_Windows\libMOTORINT.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\MOTORINT.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\MOTORINT.dir\linklibs.rsp
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libMOTORINT.so -o ../../../build_Linux/libMOTORINT.so  

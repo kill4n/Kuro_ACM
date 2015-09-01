@@ -1,22 +1,25 @@
 # The set of languages for which implicit dependencies are needed:
-set(CMAKE_DEPENDS_LANGUAGES
+SET(CMAKE_DEPENDS_LANGUAGES
   "C"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/src/dxl_hal.c" "C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dxl_hal.c.obj"
-  "C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/src/dynamixel.c" "C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dynamixel.c.obj"
+SET(CMAKE_DEPENDS_CHECK_C
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/src/dxl_hal.c" "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dxl_hal.c.o"
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/src/dynamixel.c" "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dynamixel.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+SET(CMAKE_C_COMPILER_ID "GNU")
+
+# Targets to which this target links.
+SET(CMAKE_TARGET_LINKED_INFO_FILES
+  )
 
 # The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
-  "../"
+  ".."
   "../librerias/dynamixel_aux/include"
   "../librerias/dynamixel_aux/src"
   )
-
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

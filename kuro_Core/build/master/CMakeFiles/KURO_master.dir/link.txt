@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\KURO_master.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\KURO_master.dir/objects.a @CMakeFiles\KURO_master.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe     -Wl,--whole-archive CMakeFiles\KURO_master.dir/objects.a -Wl,--no-whole-archive  -o ..\..\build_Windows\KURO_master.exe -Wl,--out-implib,..\..\build_Windows\libKURO_master.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\KURO_master.dir\linklibs.rsp

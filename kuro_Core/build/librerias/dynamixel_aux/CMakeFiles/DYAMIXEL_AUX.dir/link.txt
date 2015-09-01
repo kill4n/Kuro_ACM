@@ -1,3 +1,1 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\DYAMIXEL_AUX.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\DYAMIXEL_AUX.dir/objects.a @CMakeFiles\DYAMIXEL_AUX.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\gcc.exe     -shared -o ..\..\..\build_Windows\libDYAMIXEL_AUX.dll -Wl,--out-implib,..\..\..\build_Windows\libDYAMIXEL_AUX.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\DYAMIXEL_AUX.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\DYAMIXEL_AUX.dir\linklibs.rsp
+/usr/bin/cc  -fPIC    -shared -Wl,-soname,libDYAMIXEL_AUX.so -o ../../../build_Linux/libDYAMIXEL_AUX.so CMakeFiles/DYAMIXEL_AUX.dir/src/dxl_hal.c.o CMakeFiles/DYAMIXEL_AUX.dir/src/dynamixel.c.o 

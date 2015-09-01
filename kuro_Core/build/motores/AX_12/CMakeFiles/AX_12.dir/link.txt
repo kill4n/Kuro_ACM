@@ -1,3 +1,1 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\AX_12.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\AX_12.dir/objects.a @CMakeFiles\AX_12.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe     -shared -o ..\..\..\build_Windows\libAX_12.dll -Wl,--out-implib,..\..\..\build_Windows\libAX_12.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\AX_12.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\AX_12.dir\linklibs.rsp
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libAX_12.so -o ../../../build_Linux/libAX_12.so CMakeFiles/AX_12.dir/src/ax_12_motor.cpp.o ../../../build_Linux/libDYAMIXEL_AUX.so -Wl,-rpath,/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux 

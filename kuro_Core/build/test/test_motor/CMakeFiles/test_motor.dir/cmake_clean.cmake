@@ -1,12 +1,10 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/test_motor.dir/src/main.cpp.obj"
-  "../../../build_Windows/test_motor.pdb"
-  "../../../build_Windows/test_motor.exe"
-  "../../../build_Windows/test_motor.exe.manifest"
-  "../../../build_Windows/libtest_motor.dll.a"
+FILE(REMOVE_RECURSE
+  "CMakeFiles/test_motor.dir/src/main.cpp.o"
+  "../../../build_Linux/test_motor.pdb"
+  "../../../build_Linux/test_motor"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
-  include(CMakeFiles/test_motor.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/test_motor.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)
