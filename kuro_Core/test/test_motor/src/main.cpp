@@ -12,7 +12,7 @@ int main()
     MotorInterface *ptrMI;
     AX_12_Motor ax12[NunMotor];
 
-    ptrMI = &ax12;
+    ptrMI = ax12;
     int goal = 0;
 
     for (int i = 0; i < NunMotor; ++i) {
