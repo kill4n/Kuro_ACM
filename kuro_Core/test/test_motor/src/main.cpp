@@ -40,9 +40,9 @@ int main()
         ptrMI1->moveMotor(goal);
         ptrMI2->moveMotor(goal);
         ptrMI3->moveMotor(goal);
-        ptrMI4->moveMotor(goal);
-        ptrMI5->moveMotor(goal);
-        ptrMI6->moveMotor(goal);
+        ptrMI4->moveMotor(-goal);
+        ptrMI5->moveMotor(-goal);
+        ptrMI6->moveMotor(-goal);
        /* do
         {
             // Read present position
