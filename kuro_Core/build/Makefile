@@ -109,6 +109,58 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named AX_12
+
+# Build rule for target.
+AX_12: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 AX_12
+.PHONY : AX_12
+
+# fast build rule for target.
+AX_12/fast:
+	$(MAKE) -f motores\AX_12\CMakeFiles\AX_12.dir\build.make motores/AX_12/CMakeFiles/AX_12.dir/build
+.PHONY : AX_12/fast
+
+#=============================================================================
+# Target rules for targets named MOTORINT
+
+# Build rule for target.
+MOTORINT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MOTORINT
+.PHONY : MOTORINT
+
+# fast build rule for target.
+MOTORINT/fast:
+	$(MAKE) -f motores\motorinterface\CMakeFiles\MOTORINT.dir\build.make motores/motorinterface/CMakeFiles/MOTORINT.dir/build
+.PHONY : MOTORINT/fast
+
+#=============================================================================
+# Target rules for targets named DYAMIXEL_AUX
+
+# Build rule for target.
+DYAMIXEL_AUX: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 DYAMIXEL_AUX
+.PHONY : DYAMIXEL_AUX
+
+# fast build rule for target.
+DYAMIXEL_AUX/fast:
+	$(MAKE) -f librerias\dynamixel_aux\CMakeFiles\DYAMIXEL_AUX.dir\build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build
+.PHONY : DYAMIXEL_AUX/fast
+
+#=============================================================================
+# Target rules for targets named test_motor
+
+# Build rule for target.
+test_motor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test_motor
+.PHONY : test_motor
+
+# fast build rule for target.
+test_motor/fast:
+	$(MAKE) -f test\test_motor\CMakeFiles\test_motor.dir\build.make test/test_motor/CMakeFiles/test_motor.dir/build
+.PHONY : test_motor/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -117,6 +169,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AX_12
+	@echo ... MOTORINT
+	@echo ... DYAMIXEL_AUX
+	@echo ... test_motor
 .PHONY : help
 
 

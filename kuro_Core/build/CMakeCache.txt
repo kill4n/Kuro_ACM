@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+AX_12_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12
+
+//Dependencies for the target
+AX_12_LIB_DEPENDS:STATIC=general;DYAMIXEL_AUX;
+
+//Value Computed by CMake
+AX_12_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12
+
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Qt/Tools/mingw492_32/bin/ar.exe
 
@@ -187,16 +196,76 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+DYAMIXEL_AUX_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux
+
+//Dependencies for target
+DYAMIXEL_AUX_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+DYAMIXEL_AUX_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/dynamixel_aux
+
+//Value Computed by CMake
 KURO_master_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/master
 
 //Value Computed by CMake
 KURO_master_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/master
 
 //Value Computed by CMake
+LIBRERIAS_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/librerias
+
+//Value Computed by CMake
+LIBRERIAS_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias
+
+//Value Computed by CMake
+MOTORES_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores
+
+//Dependencies for target
+MOTORES_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+MOTORES_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores
+
+//Value Computed by CMake
+MOTORINT_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface
+
+//Dependencies for target
+MOTORINT_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+MOTORINT_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface
+
+//Value Computed by CMake
+TENGU_AX12_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/test/test_motor
+
+//Value Computed by CMake
+TENGU_AX12_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor
+
+//Value Computed by CMake
 kuroproject_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build
 
 //Value Computed by CMake
 kuroproject_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core
+
+//Value Computed by CMake
+nombre_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/test
+
+//Dependencies for target
+nombre_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+nombre_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test
+
+//Value Computed by CMake
+test_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/test
+
+//Value Computed by CMake
+test_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test
+
+//Value Computed by CMake
+test_motor_BINARY_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/test/test_motor
+
+//Value Computed by CMake
+test_motor_SOURCE_DIR:STATIC=C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor
 
 
 ########################
@@ -297,7 +366,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=1
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

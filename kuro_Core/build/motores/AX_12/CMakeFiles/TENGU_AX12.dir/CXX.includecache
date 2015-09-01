@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../motores/AX_12/include/ax_12_motor.h
+motorinterface.h
+../motores/AX_12/include/motorinterface.h
+dynamixel.h
+../motores/AX_12/include/dynamixel.h
+stdio.h
+-
+
+C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/src/ax_12_motor.cpp
+ax_12_motor.h
+C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/src/ax_12_motor.h
+

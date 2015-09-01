@@ -59,6 +59,283 @@ CMAKE_SOURCE_DIR = C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core
 CMAKE_BINARY_DIR = C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build
 
 #=============================================================================
+# Directory level rules for directory motores
+
+# Convenience name for "all" pass in the directory.
+motores/all: motores/AX_12/all
+motores/all: motores/motorinterface/all
+
+.PHONY : motores/all
+
+# Convenience name for "clean" pass in the directory.
+motores/clean: motores/AX_12/clean
+motores/clean: motores/motorinterface/clean
+
+.PHONY : motores/clean
+
+# Convenience name for "preinstall" pass in the directory.
+motores/preinstall: motores/AX_12/preinstall
+motores/preinstall: motores/motorinterface/preinstall
+
+.PHONY : motores/preinstall
+
+#=============================================================================
+# Directory level rules for directory motores/AX_12
+
+# Convenience name for "all" pass in the directory.
+motores/AX_12/all: motores/AX_12/CMakeFiles/AX_12.dir/all
+
+.PHONY : motores/AX_12/all
+
+# Convenience name for "clean" pass in the directory.
+motores/AX_12/clean: motores/AX_12/CMakeFiles/AX_12.dir/clean
+
+.PHONY : motores/AX_12/clean
+
+# Convenience name for "preinstall" pass in the directory.
+motores/AX_12/preinstall:
+
+.PHONY : motores/AX_12/preinstall
+
+#=============================================================================
+# Target rules for target motores/AX_12/CMakeFiles/AX_12.dir
+
+# All Build rule for target.
+motores/AX_12/CMakeFiles/AX_12.dir/all: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all
+	$(MAKE) -f motores\AX_12\CMakeFiles\AX_12.dir\build.make motores/AX_12/CMakeFiles/AX_12.dir/depend
+	$(MAKE) -f motores\AX_12\CMakeFiles\AX_12.dir\build.make motores/AX_12/CMakeFiles/AX_12.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles --progress-num=1,2 "Built target AX_12"
+.PHONY : motores/AX_12/CMakeFiles/AX_12.dir/all
+
+# Include target in all.
+all: motores/AX_12/CMakeFiles/AX_12.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+motores/AX_12/CMakeFiles/AX_12.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 5
+	$(MAKE) -f CMakeFiles\Makefile2 motores/AX_12/CMakeFiles/AX_12.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 0
+.PHONY : motores/AX_12/CMakeFiles/AX_12.dir/rule
+
+# Convenience name for target.
+AX_12: motores/AX_12/CMakeFiles/AX_12.dir/rule
+
+.PHONY : AX_12
+
+# clean rule for target.
+motores/AX_12/CMakeFiles/AX_12.dir/clean:
+	$(MAKE) -f motores\AX_12\CMakeFiles\AX_12.dir\build.make motores/AX_12/CMakeFiles/AX_12.dir/clean
+.PHONY : motores/AX_12/CMakeFiles/AX_12.dir/clean
+
+# clean rule for target.
+clean: motores/AX_12/CMakeFiles/AX_12.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory motores/motorinterface
+
+# Convenience name for "all" pass in the directory.
+motores/motorinterface/all: motores/motorinterface/CMakeFiles/MOTORINT.dir/all
+
+.PHONY : motores/motorinterface/all
+
+# Convenience name for "clean" pass in the directory.
+motores/motorinterface/clean: motores/motorinterface/CMakeFiles/MOTORINT.dir/clean
+
+.PHONY : motores/motorinterface/clean
+
+# Convenience name for "preinstall" pass in the directory.
+motores/motorinterface/preinstall:
+
+.PHONY : motores/motorinterface/preinstall
+
+#=============================================================================
+# Target rules for target motores/motorinterface/CMakeFiles/MOTORINT.dir
+
+# All Build rule for target.
+motores/motorinterface/CMakeFiles/MOTORINT.dir/all:
+	$(MAKE) -f motores\motorinterface\CMakeFiles\MOTORINT.dir\build.make motores/motorinterface/CMakeFiles/MOTORINT.dir/depend
+	$(MAKE) -f motores\motorinterface\CMakeFiles\MOTORINT.dir\build.make motores/motorinterface/CMakeFiles/MOTORINT.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles --progress-num=6 "Built target MOTORINT"
+.PHONY : motores/motorinterface/CMakeFiles/MOTORINT.dir/all
+
+# Include target in all.
+all: motores/motorinterface/CMakeFiles/MOTORINT.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+motores/motorinterface/CMakeFiles/MOTORINT.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 1
+	$(MAKE) -f CMakeFiles\Makefile2 motores/motorinterface/CMakeFiles/MOTORINT.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 0
+.PHONY : motores/motorinterface/CMakeFiles/MOTORINT.dir/rule
+
+# Convenience name for target.
+MOTORINT: motores/motorinterface/CMakeFiles/MOTORINT.dir/rule
+
+.PHONY : MOTORINT
+
+# clean rule for target.
+motores/motorinterface/CMakeFiles/MOTORINT.dir/clean:
+	$(MAKE) -f motores\motorinterface\CMakeFiles\MOTORINT.dir\build.make motores/motorinterface/CMakeFiles/MOTORINT.dir/clean
+.PHONY : motores/motorinterface/CMakeFiles/MOTORINT.dir/clean
+
+# clean rule for target.
+clean: motores/motorinterface/CMakeFiles/MOTORINT.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory librerias
+
+# Convenience name for "all" pass in the directory.
+librerias/all: librerias/dynamixel_aux/all
+
+.PHONY : librerias/all
+
+# Convenience name for "clean" pass in the directory.
+librerias/clean: librerias/dynamixel_aux/clean
+
+.PHONY : librerias/clean
+
+# Convenience name for "preinstall" pass in the directory.
+librerias/preinstall: librerias/dynamixel_aux/preinstall
+
+.PHONY : librerias/preinstall
+
+#=============================================================================
+# Directory level rules for directory librerias/dynamixel_aux
+
+# Convenience name for "all" pass in the directory.
+librerias/dynamixel_aux/all: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all
+
+.PHONY : librerias/dynamixel_aux/all
+
+# Convenience name for "clean" pass in the directory.
+librerias/dynamixel_aux/clean: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/clean
+
+.PHONY : librerias/dynamixel_aux/clean
+
+# Convenience name for "preinstall" pass in the directory.
+librerias/dynamixel_aux/preinstall:
+
+.PHONY : librerias/dynamixel_aux/preinstall
+
+#=============================================================================
+# Target rules for target librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir
+
+# All Build rule for target.
+librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all:
+	$(MAKE) -f librerias\dynamixel_aux\CMakeFiles\DYAMIXEL_AUX.dir\build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/depend
+	$(MAKE) -f librerias\dynamixel_aux\CMakeFiles\DYAMIXEL_AUX.dir\build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles --progress-num=3,4,5 "Built target DYAMIXEL_AUX"
+.PHONY : librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all
+
+# Include target in all.
+all: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 0
+.PHONY : librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/rule
+
+# Convenience name for target.
+DYAMIXEL_AUX: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/rule
+
+.PHONY : DYAMIXEL_AUX
+
+# clean rule for target.
+librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/clean:
+	$(MAKE) -f librerias\dynamixel_aux\CMakeFiles\DYAMIXEL_AUX.dir\build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/clean
+.PHONY : librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/clean
+
+# clean rule for target.
+clean: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Convenience name for "all" pass in the directory.
+test/all: test/test_motor/all
+
+.PHONY : test/all
+
+# Convenience name for "clean" pass in the directory.
+test/clean: test/test_motor/clean
+
+.PHONY : test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test/preinstall: test/test_motor/preinstall
+
+.PHONY : test/preinstall
+
+#=============================================================================
+# Directory level rules for directory test/test_motor
+
+# Convenience name for "all" pass in the directory.
+test/test_motor/all: test/test_motor/CMakeFiles/test_motor.dir/all
+
+.PHONY : test/test_motor/all
+
+# Convenience name for "clean" pass in the directory.
+test/test_motor/clean: test/test_motor/CMakeFiles/test_motor.dir/clean
+
+.PHONY : test/test_motor/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test/test_motor/preinstall:
+
+.PHONY : test/test_motor/preinstall
+
+#=============================================================================
+# Target rules for target test/test_motor/CMakeFiles/test_motor.dir
+
+# All Build rule for target.
+test/test_motor/CMakeFiles/test_motor.dir/all:
+	$(MAKE) -f test\test_motor\CMakeFiles\test_motor.dir\build.make test/test_motor/CMakeFiles/test_motor.dir/depend
+	$(MAKE) -f test\test_motor\CMakeFiles\test_motor.dir\build.make test/test_motor/CMakeFiles/test_motor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles --progress-num=7,8 "Built target test_motor"
+.PHONY : test/test_motor/CMakeFiles/test_motor.dir/all
+
+# Include target in all.
+all: test/test_motor/CMakeFiles/test_motor.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/test_motor/CMakeFiles/test_motor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 test/test_motor/CMakeFiles/test_motor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\killan\Documents\GitHub\Kuro_ACM\kuro_Core\build\CMakeFiles 0
+.PHONY : test/test_motor/CMakeFiles/test_motor.dir/rule
+
+# Convenience name for target.
+test_motor: test/test_motor/CMakeFiles/test_motor.dir/rule
+
+.PHONY : test_motor
+
+# clean rule for target.
+test/test_motor/CMakeFiles/test_motor.dir/clean:
+	$(MAKE) -f test\test_motor\CMakeFiles\test_motor.dir\build.make test/test_motor/CMakeFiles/test_motor.dir/clean
+.PHONY : test/test_motor/CMakeFiles/test_motor.dir/clean
+
+# clean rule for target.
+clean: test/test_motor/CMakeFiles/test_motor.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

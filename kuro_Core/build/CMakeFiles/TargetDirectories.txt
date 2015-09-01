@@ -1,0 +1,4 @@
+C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir
+C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/test/test_motor/CMakeFiles/test_motor.dir
+C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/CMakeFiles/AX_12.dir
+C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/CMakeFiles/MOTORINT.dir

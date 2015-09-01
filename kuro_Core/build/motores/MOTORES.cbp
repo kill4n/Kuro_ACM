@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="MOTORES" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\motores\;CMake Files\motores\AX_12\;CMake Files\motores\motorinterface\;CMake Files\librerias\;CMake Files\librerias\dynamixel_aux\;CMake Files\test\;CMake Files\test\test_motor\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="AX_12">
+         <Option output="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build_Windows/libAX_12.dll" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 AX_12" />
+            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="AX_12/fast">
+         <Option output="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build_Windows/libAX_12.dll" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 AX_12/fast" />
+            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/AX_12/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="MOTORINT">
+         <Option output="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build_Windows/libMOTORINT.dll" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 MOTORINT" />
+            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="MOTORINT/fast">
+         <Option output="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build_Windows/libMOTORINT.dll" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include" />
+            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
+            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/include" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 MOTORINT/fast" />
+            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/motorinterface/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/include/ax_12_motor.h">
+         <Option target="AX_12"/>
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/src/ax_12_motor.cpp">
+         <Option target="AX_12"/>
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/include/motorinterface.h">
+         <Option target="MOTORINT"/>
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\AX_12\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\AX_12\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/AX_12/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\AX_12\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\motorinterface\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\motorinterface\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores/motorinterface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\motorinterface\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor\" />
+      </Unit>
+      <Unit filename="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

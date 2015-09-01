@@ -27,6 +27,14 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/motores/cmake_install.cmake")
+  include("C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/librerias/cmake_install.cmake")
+  include("C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/build/test/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
