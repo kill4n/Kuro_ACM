@@ -15,6 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../test/test_motor/include"
   "../test/test_motor/src"
   "../librerias"
+  "../motores"
   )
 
 # Targets to which this target links.

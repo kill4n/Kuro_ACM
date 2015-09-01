@@ -17,6 +17,7 @@ file(GLOB ${PROJECT_NAME}_HEADS "${PROJECT_INCLUDE_DIR}/*.h")
 #set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 include_directories(${LIBS_DIR})
+include_directories(${MOTOR_DIR})
 
 add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SRCS} ${${PROJECT_NAME}_HEADS})
 

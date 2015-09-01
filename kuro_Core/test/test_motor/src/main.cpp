@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <iomanip>
-#include "motorinterface.h"
-#include "ax_12_motor.h"
+#include "motores/motorinterface/include/motorinterface.h"
+#include "motores/AX_12/include/ax_12_motor.h"
 using namespace AX_12;
 using namespace std;
 int main()

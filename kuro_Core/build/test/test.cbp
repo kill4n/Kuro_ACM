@@ -33,6 +33,7 @@
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/include" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/src" />
          </Compiler>
@@ -59,6 +60,7 @@
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/include" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/motores" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/include" />
             <Add directory="C:/Users/killan/Documents/GitHub/Kuro_ACM/kuro_Core/test/test_motor/src" />
          </Compiler>
