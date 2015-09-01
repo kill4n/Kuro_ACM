@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/dxl_hal.h
+
+../include/dynamixel.h
+
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.c
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+fcntl.h
+-
+termios.h
+-
+linux/serial.h
+-
+sys/ioctl.h
+-
+sys/time.h
+-
+dxl_hal.h
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.h
+
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.c
+dxl_hal.h
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dxl_hal.h
+dynamixel.h
+C:/Users/killan/Documents/GitHub/Kuro_ACM/Test_kuro/tengu_AX12/src/dynamixel.h
+
