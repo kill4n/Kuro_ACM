@@ -30,8 +30,8 @@ public:
     virtual void InternalThreadEntry();
 private:
     bool isRunning;
-    int joy_fd, *axis=NULL,num_of_axis, num_of_buttons, x;
-    char *button=NULL, name_of_joystick[80];
+    int joy_fd, *axis, num_of_axis, num_of_buttons, x;
+    char *button, name_of_joystick[80];
     struct js_event js;
 
     struct JOY_STR joyAx;

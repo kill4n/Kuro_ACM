@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/KURO_JOY.dir/src/joystick_helper.cpp.o CMakeFiles/KURO_JOY.dir/src/main.cpp.o  -o ../../../build_Linux/KURO_JOY -rdynamic -lneko 

@@ -32,3 +32,33 @@ make[2]: Leaving directory `/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux
 make[1]: Leaving directory `/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp'
 
 
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2749888746/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2749888746.dir/build.make CMakeFiles/cmTryCompileExec2749888746.dir/build
+make[1]: Entering directory `/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2749888746.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2749888746.dir/CheckIncludeFiles.c.o   -c /home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2749888746
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2749888746.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2749888746.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2749888746 -rdynamic 
+make[1]: Leaving directory `/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2970189280/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2970189280.dir/build.make CMakeFiles/cmTryCompileExec2970189280.dir/build
+make[1]: Entering directory `/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2970189280.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2970189280.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2970189280
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2970189280.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2970189280.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2970189280 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/CMakeFiles/CMakeTmp'
+
+

@@ -14,15 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-AX_12_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12
-
-//Dependencies for the target
-AX_12_LIB_DEPENDS:STATIC=general;dynamixel_aux;
-
-//Value Computed by CMake
-AX_12_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12
-
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -180,30 +171,6 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-DYAMIXEL_AUX_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux
-
-//Dependencies for target
-DYAMIXEL_AUX_LIB_DEPENDS:STATIC=
-
-//Value Computed by CMake
-DYAMIXEL_AUX_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux
-
-//Value Computed by CMake
-JOYSTICK_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick
-
-//Dependencies for target
-JOYSTICK_LIB_DEPENDS:STATIC=
-
-//Value Computed by CMake
-JOYSTICK_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick
-
-//Value Computed by CMake
-KURO_JOY_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick
-
-//Value Computed by CMake
-KURO_JOY_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick
-
-//Value Computed by CMake
 LIBRERIAS_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias
 
 //Value Computed by CMake
@@ -256,15 +223,6 @@ kuroproject_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build
 
 //Value Computed by CMake
 kuroproject_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core
-
-//Value Computed by CMake
-nombre_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor
-
-//Dependencies for target
-nombre_LIB_DEPENDS:STATIC=
-
-//Value Computed by CMake
-nombre_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor
 
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test
