@@ -3,7 +3,7 @@ project(test)
 
 add_subdirectory(test_motor)
 add_subdirectory(test_joystick)
-
+add_subdirectory(test_joy_motor)
 #set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build_${CMAKE_SYSTEM_NAME})
 #set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 #set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)

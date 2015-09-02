@@ -104,7 +104,8 @@ int main()
 
             // Check moving done
             Moving = dxl_read_byte( DEFAULT_ID, P_MOVING );
-            CommStatus = dxl_get_result();
+            Comm
+Status = dxl_get_result();
             if( CommStatus == COMM_RXSUCCESS )
             {
                 if( Moving == 0 )

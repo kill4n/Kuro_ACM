@@ -84,7 +84,7 @@ AX_12_EXTERNAL_OBJECTS =
 
 ../build_Linux/libAX_12.so: motores/AX_12/CMakeFiles/AX_12.dir/src/ax_12_motor.cpp.o
 ../build_Linux/libAX_12.so: motores/AX_12/CMakeFiles/AX_12.dir/build.make
-../build_Linux/libAX_12.so: ../build_Linux/libDYAMIXEL_AUX.so
+../build_Linux/libAX_12.so: ../build_Linux/libdynamixel_aux.so
 ../build_Linux/libAX_12.so: motores/AX_12/CMakeFiles/AX_12.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../build_Linux/libAX_12.so"
 	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AX_12.dir/link.txt --verbose=$(VERBOSE)

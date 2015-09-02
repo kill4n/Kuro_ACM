@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libax_12.so -o ../../../build_Linux/libax_12.so CMakeFiles/ax_12.dir/src/ax_12_motor.cpp.o ../../../build_Linux/libdynamixel_aux.so -Wl,-rpath,/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux 

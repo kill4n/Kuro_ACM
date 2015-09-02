@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(DYAMIXEL_AUX)
+project(dynamixel_aux)
 
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build_${CMAKE_SYSTEM_NAME})
 set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)

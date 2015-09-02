@@ -102,25 +102,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-motores/AX_12/CMakeFiles/AX_12.dir/rule:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f CMakeFiles/Makefile2 motores/AX_12/CMakeFiles/AX_12.dir/rule
-.PHONY : motores/AX_12/CMakeFiles/AX_12.dir/rule
+motores/AX_12/CMakeFiles/ax_12.dir/rule:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f CMakeFiles/Makefile2 motores/AX_12/CMakeFiles/ax_12.dir/rule
+.PHONY : motores/AX_12/CMakeFiles/ax_12.dir/rule
 
 # Convenience name for target.
-AX_12: motores/AX_12/CMakeFiles/AX_12.dir/rule
-.PHONY : AX_12
+ax_12: motores/AX_12/CMakeFiles/ax_12.dir/rule
+.PHONY : ax_12
 
 # fast build rule for target.
-AX_12/fast:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/AX_12.dir/build.make motores/AX_12/CMakeFiles/AX_12.dir/build
-.PHONY : AX_12/fast
+ax_12/fast:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/ax_12.dir/build.make motores/AX_12/CMakeFiles/ax_12.dir/build
+.PHONY : ax_12/fast
 
 src/ax_12_motor.o: src/ax_12_motor.cpp.o
 .PHONY : src/ax_12_motor.o
 
 # target to build an object file
 src/ax_12_motor.cpp.o:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/AX_12.dir/build.make motores/AX_12/CMakeFiles/AX_12.dir/src/ax_12_motor.cpp.o
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/ax_12.dir/build.make motores/AX_12/CMakeFiles/ax_12.dir/src/ax_12_motor.cpp.o
 .PHONY : src/ax_12_motor.cpp.o
 
 src/ax_12_motor.i: src/ax_12_motor.cpp.i
@@ -128,7 +128,7 @@ src/ax_12_motor.i: src/ax_12_motor.cpp.i
 
 # target to preprocess a source file
 src/ax_12_motor.cpp.i:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/AX_12.dir/build.make motores/AX_12/CMakeFiles/AX_12.dir/src/ax_12_motor.cpp.i
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/ax_12.dir/build.make motores/AX_12/CMakeFiles/ax_12.dir/src/ax_12_motor.cpp.i
 .PHONY : src/ax_12_motor.cpp.i
 
 src/ax_12_motor.s: src/ax_12_motor.cpp.s
@@ -136,7 +136,7 @@ src/ax_12_motor.s: src/ax_12_motor.cpp.s
 
 # target to generate assembly for a file
 src/ax_12_motor.cpp.s:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/AX_12.dir/build.make motores/AX_12/CMakeFiles/AX_12.dir/src/ax_12_motor.cpp.s
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f motores/AX_12/CMakeFiles/ax_12.dir/build.make motores/AX_12/CMakeFiles/ax_12.dir/src/ax_12_motor.cpp.s
 .PHONY : src/ax_12_motor.cpp.s
 
 # Help Target
@@ -145,7 +145,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... AX_12"
+	@echo "... ax_12"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src/ax_12_motor.o"

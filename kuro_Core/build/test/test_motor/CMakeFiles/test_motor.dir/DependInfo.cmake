@@ -10,8 +10,8 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12/CMakeFiles/AX_12.dir/DependInfo.cmake"
-  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/DependInfo.cmake"
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12/CMakeFiles/ax_12.dir/DependInfo.cmake"
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

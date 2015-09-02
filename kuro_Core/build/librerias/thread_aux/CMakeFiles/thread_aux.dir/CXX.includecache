@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../librerias/thread_aux/include/mythread.h
+pthread.h
+-
+
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/src/mythread.cpp
+mythread.h
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/src/mythread.h
+

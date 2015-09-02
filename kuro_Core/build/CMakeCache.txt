@@ -18,7 +18,7 @@
 AX_12_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12
 
 //Dependencies for the target
-AX_12_LIB_DEPENDS:STATIC=general;DYAMIXEL_AUX;
+AX_12_LIB_DEPENDS:STATIC=general;dynamixel_aux;
 
 //Value Computed by CMake
 AX_12_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12
@@ -225,25 +225,58 @@ MOTORINT_LIB_DEPENDS:STATIC=
 MOTORINT_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/motorinterface
 
 //Value Computed by CMake
+ax_12_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12
+
+//Dependencies for the target
+ax_12_LIB_DEPENDS:STATIC=general;dynamixel_aux;
+
+//Value Computed by CMake
+ax_12_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12
+
+//Value Computed by CMake
+dynamixel_aux_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux
+
+//Dependencies for target
+dynamixel_aux_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+dynamixel_aux_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux
+
+//Value Computed by CMake
+joystick_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick
+
+//Dependencies for the target
+joystick_LIB_DEPENDS:STATIC=general;thread_aux;
+
+//Value Computed by CMake
+joystick_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick
+
+//Value Computed by CMake
 kuroproject_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build
 
 //Value Computed by CMake
 kuroproject_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core
 
 //Value Computed by CMake
-nombre_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos
+nombre_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor
 
 //Dependencies for target
 nombre_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-nombre_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos
+nombre_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor
 
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test
 
 //Value Computed by CMake
 test_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test
+
+//Value Computed by CMake
+test_joy_motor_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor
+
+//Value Computed by CMake
+test_joy_motor_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor
 
 //Value Computed by CMake
 test_joystick_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick
@@ -256,6 +289,15 @@ test_motor_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test
 
 //Value Computed by CMake
 test_motor_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor
+
+//Value Computed by CMake
+thread_aux_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/thread_aux
+
+//Dependencies for the target
+thread_aux_LIB_DEPENDS:STATIC=general;-lpthread;
+
+//Value Computed by CMake
+thread_aux_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux
 
 
 ########################
@@ -328,6 +370,14 @@ CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 CMAKE_GENERATOR:INTERNAL=Unix Makefiles
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Have symbol pthread_create
+CMAKE_HAVE_LIBC_CREATE:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Start directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/killan/kuro_min/Kuro_ACM/kuro_Core
@@ -350,7 +400,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -391,4 +441,6 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 

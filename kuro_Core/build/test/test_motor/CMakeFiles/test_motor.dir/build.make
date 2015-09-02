@@ -84,8 +84,8 @@ test_motor_EXTERNAL_OBJECTS =
 
 ../build_Linux/test_motor: test/test_motor/CMakeFiles/test_motor.dir/src/main.cpp.o
 ../build_Linux/test_motor: test/test_motor/CMakeFiles/test_motor.dir/build.make
-../build_Linux/test_motor: ../build_Linux/libAX_12.so
-../build_Linux/test_motor: ../build_Linux/libDYAMIXEL_AUX.so
+../build_Linux/test_motor: ../build_Linux/libax_12.so
+../build_Linux/test_motor: ../build_Linux/libdynamixel_aux.so
 ../build_Linux/test_motor: test/test_motor/CMakeFiles/test_motor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../build_Linux/test_motor"
 	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_motor.dir/link.txt --verbose=$(VERBOSE)

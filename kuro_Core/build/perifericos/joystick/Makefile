@@ -102,25 +102,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-perifericos/joystick/CMakeFiles/JOYSTICK.dir/rule:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f CMakeFiles/Makefile2 perifericos/joystick/CMakeFiles/JOYSTICK.dir/rule
-.PHONY : perifericos/joystick/CMakeFiles/JOYSTICK.dir/rule
+perifericos/joystick/CMakeFiles/joystick.dir/rule:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f CMakeFiles/Makefile2 perifericos/joystick/CMakeFiles/joystick.dir/rule
+.PHONY : perifericos/joystick/CMakeFiles/joystick.dir/rule
 
 # Convenience name for target.
-JOYSTICK: perifericos/joystick/CMakeFiles/JOYSTICK.dir/rule
-.PHONY : JOYSTICK
+joystick: perifericos/joystick/CMakeFiles/joystick.dir/rule
+.PHONY : joystick
 
 # fast build rule for target.
-JOYSTICK/fast:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/build
-.PHONY : JOYSTICK/fast
+joystick/fast:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/joystick.dir/build.make perifericos/joystick/CMakeFiles/joystick.dir/build
+.PHONY : joystick/fast
 
 src/joystick_helper.o: src/joystick_helper.cpp.o
 .PHONY : src/joystick_helper.o
 
 # target to build an object file
 src/joystick_helper.cpp.o:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/src/joystick_helper.cpp.o
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/joystick.dir/build.make perifericos/joystick/CMakeFiles/joystick.dir/src/joystick_helper.cpp.o
 .PHONY : src/joystick_helper.cpp.o
 
 src/joystick_helper.i: src/joystick_helper.cpp.i
@@ -128,7 +128,7 @@ src/joystick_helper.i: src/joystick_helper.cpp.i
 
 # target to preprocess a source file
 src/joystick_helper.cpp.i:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/src/joystick_helper.cpp.i
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/joystick.dir/build.make perifericos/joystick/CMakeFiles/joystick.dir/src/joystick_helper.cpp.i
 .PHONY : src/joystick_helper.cpp.i
 
 src/joystick_helper.s: src/joystick_helper.cpp.s
@@ -136,7 +136,7 @@ src/joystick_helper.s: src/joystick_helper.cpp.s
 
 # target to generate assembly for a file
 src/joystick_helper.cpp.s:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/src/joystick_helper.cpp.s
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f perifericos/joystick/CMakeFiles/joystick.dir/build.make perifericos/joystick/CMakeFiles/joystick.dir/src/joystick_helper.cpp.s
 .PHONY : src/joystick_helper.cpp.s
 
 # Help Target
@@ -145,8 +145,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... JOYSTICK"
 	@echo "... edit_cache"
+	@echo "... joystick"
 	@echo "... rebuild_cache"
 	@echo "... src/joystick_helper.o"
 	@echo "... src/joystick_helper.i"

@@ -6,19 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../librerias/dynamixel_aux/include/dynamixel.h
-
-../motores/AX_12/include/ax_12_motor.h
-motores/motorinterface/include/motorinterface.h
-../motores/AX_12/include/motores/motorinterface/include/motorinterface.h
-librerias/dynamixel_aux/include/dynamixel.h
-../motores/AX_12/include/librerias/dynamixel_aux/include/dynamixel.h
-stdio.h
--
-
-../motores/motorinterface/include/motorinterface.h
-
-/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12/src/ax_12_motor.cpp
-ax_12_motor.h
-/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12/src/ax_12_motor.h
-

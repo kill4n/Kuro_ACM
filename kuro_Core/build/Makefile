@@ -102,17 +102,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AX_12
+# Target rules for targets named ax_12
 
 # Build rule for target.
-AX_12: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 AX_12
-.PHONY : AX_12
+ax_12: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ax_12
+.PHONY : ax_12
 
 # fast build rule for target.
-AX_12/fast:
-	$(MAKE) -f motores/AX_12/CMakeFiles/AX_12.dir/build.make motores/AX_12/CMakeFiles/AX_12.dir/build
-.PHONY : AX_12/fast
+ax_12/fast:
+	$(MAKE) -f motores/AX_12/CMakeFiles/ax_12.dir/build.make motores/AX_12/CMakeFiles/ax_12.dir/build
+.PHONY : ax_12/fast
 
 #=============================================================================
 # Target rules for targets named MOTORINT
@@ -128,30 +128,43 @@ MOTORINT/fast:
 .PHONY : MOTORINT/fast
 
 #=============================================================================
-# Target rules for targets named JOYSTICK
+# Target rules for targets named joystick
 
 # Build rule for target.
-JOYSTICK: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 JOYSTICK
-.PHONY : JOYSTICK
+joystick: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 joystick
+.PHONY : joystick
 
 # fast build rule for target.
-JOYSTICK/fast:
-	$(MAKE) -f perifericos/joystick/CMakeFiles/JOYSTICK.dir/build.make perifericos/joystick/CMakeFiles/JOYSTICK.dir/build
-.PHONY : JOYSTICK/fast
+joystick/fast:
+	$(MAKE) -f perifericos/joystick/CMakeFiles/joystick.dir/build.make perifericos/joystick/CMakeFiles/joystick.dir/build
+.PHONY : joystick/fast
 
 #=============================================================================
-# Target rules for targets named DYAMIXEL_AUX
+# Target rules for targets named dynamixel_aux
 
 # Build rule for target.
-DYAMIXEL_AUX: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DYAMIXEL_AUX
-.PHONY : DYAMIXEL_AUX
+dynamixel_aux: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_aux
+.PHONY : dynamixel_aux
 
 # fast build rule for target.
-DYAMIXEL_AUX/fast:
-	$(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build
-.PHONY : DYAMIXEL_AUX/fast
+dynamixel_aux/fast:
+	$(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build
+.PHONY : dynamixel_aux/fast
+
+#=============================================================================
+# Target rules for targets named thread_aux
+
+# Build rule for target.
+thread_aux: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread_aux
+.PHONY : thread_aux
+
+# fast build rule for target.
+thread_aux/fast:
+	$(MAKE) -f librerias/thread_aux/CMakeFiles/thread_aux.dir/build.make librerias/thread_aux/CMakeFiles/thread_aux.dir/build
+.PHONY : thread_aux/fast
 
 #=============================================================================
 # Target rules for targets named test_motor
@@ -179,6 +192,19 @@ test_joystick/fast:
 	$(MAKE) -f test/test_joystick/CMakeFiles/test_joystick.dir/build.make test/test_joystick/CMakeFiles/test_joystick.dir/build
 .PHONY : test_joystick/fast
 
+#=============================================================================
+# Target rules for targets named test_joy_motor
+
+# Build rule for target.
+test_joy_motor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_joy_motor
+.PHONY : test_joy_motor
+
+# fast build rule for target.
+test_joy_motor/fast:
+	$(MAKE) -f test/test_joy_motor/CMakeFiles/test_joy_motor.dir/build.make test/test_joy_motor/CMakeFiles/test_joy_motor.dir/build
+.PHONY : test_joy_motor/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -187,12 +213,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... AX_12"
+	@echo "... ax_12"
 	@echo "... MOTORINT"
-	@echo "... JOYSTICK"
-	@echo "... DYAMIXEL_AUX"
+	@echo "... joystick"
+	@echo "... dynamixel_aux"
+	@echo "... thread_aux"
 	@echo "... test_motor"
 	@echo "... test_joystick"
+	@echo "... test_joy_motor"
 .PHONY : help
 
 

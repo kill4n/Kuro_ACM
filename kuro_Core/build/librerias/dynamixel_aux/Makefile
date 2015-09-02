@@ -102,25 +102,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/rule:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f CMakeFiles/Makefile2 librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/rule
-.PHONY : librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/rule
+librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/rule:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f CMakeFiles/Makefile2 librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/rule
+.PHONY : librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/rule
 
 # Convenience name for target.
-DYAMIXEL_AUX: librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/rule
-.PHONY : DYAMIXEL_AUX
+dynamixel_aux: librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/rule
+.PHONY : dynamixel_aux
 
 # fast build rule for target.
-DYAMIXEL_AUX/fast:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build
-.PHONY : DYAMIXEL_AUX/fast
+dynamixel_aux/fast:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build
+.PHONY : dynamixel_aux/fast
 
 src/dxl_hal.o: src/dxl_hal.c.o
 .PHONY : src/dxl_hal.o
 
 # target to build an object file
 src/dxl_hal.c.o:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dxl_hal.c.o
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/src/dxl_hal.c.o
 .PHONY : src/dxl_hal.c.o
 
 src/dxl_hal.i: src/dxl_hal.c.i
@@ -128,7 +128,7 @@ src/dxl_hal.i: src/dxl_hal.c.i
 
 # target to preprocess a source file
 src/dxl_hal.c.i:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dxl_hal.c.i
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/src/dxl_hal.c.i
 .PHONY : src/dxl_hal.c.i
 
 src/dxl_hal.s: src/dxl_hal.c.s
@@ -136,7 +136,7 @@ src/dxl_hal.s: src/dxl_hal.c.s
 
 # target to generate assembly for a file
 src/dxl_hal.c.s:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dxl_hal.c.s
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/src/dxl_hal.c.s
 .PHONY : src/dxl_hal.c.s
 
 src/dynamixel.o: src/dynamixel.c.o
@@ -144,7 +144,7 @@ src/dynamixel.o: src/dynamixel.c.o
 
 # target to build an object file
 src/dynamixel.c.o:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dynamixel.c.o
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/src/dynamixel.c.o
 .PHONY : src/dynamixel.c.o
 
 src/dynamixel.i: src/dynamixel.c.i
@@ -152,7 +152,7 @@ src/dynamixel.i: src/dynamixel.c.i
 
 # target to preprocess a source file
 src/dynamixel.c.i:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dynamixel.c.i
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/src/dynamixel.c.i
 .PHONY : src/dynamixel.c.i
 
 src/dynamixel.s: src/dynamixel.c.s
@@ -160,7 +160,7 @@ src/dynamixel.s: src/dynamixel.c.s
 
 # target to generate assembly for a file
 src/dynamixel.c.s:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/build.make librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir/src/dynamixel.c.s
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/src/dynamixel.c.s
 .PHONY : src/dynamixel.c.s
 
 # Help Target
@@ -169,7 +169,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... DYAMIXEL_AUX"
+	@echo "... dynamixel_aux"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src/dxl_hal.o"

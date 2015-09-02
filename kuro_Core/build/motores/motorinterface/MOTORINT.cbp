@@ -5,7 +5,7 @@
       <Option title="MOTORINT" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\motores\;CMake Files\motores\AX_12\;CMake Files\motores\motorinterface\;CMake Files\librerias\;CMake Files\librerias\dynamixel_aux\;CMake Files\perifericos\;CMake Files\perifericos\joystick\;CMake Files\test\;CMake Files\test\test_motor\;CMake Files\test\test_joystick\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\librerias\;CMake Files\librerias\dynamixel_aux\;CMake Files\librerias\thread_aux\;CMake Files\motores\;CMake Files\motores\AX_12\;CMake Files\motores\motorinterface\;CMake Files\perifericos\;CMake Files\perifericos\joystick\;CMake Files\test\;CMake Files\test\test_motor\;CMake Files\test\test_joystick\;CMake Files\test\test_joy_motor\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/motorinterface" />
@@ -61,6 +61,30 @@
       <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
       </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\thread_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\thread_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\thread_aux\" />
+      </Unit>
       <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/CMakeLists.txt">
           <Option virtualFolder="CMake Files\motores\" />
       </Unit>
@@ -84,21 +108,6 @@
       </Unit>
       <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/motorinterface/CMakeLists.txt">
           <Option virtualFolder="CMake Files\motores\motorinterface\" />
-      </Unit>
-      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\librerias\" />
-      </Unit>
-      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\librerias\" />
-      </Unit>
-      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
-      </Unit>
-      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
-      </Unit>
-      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
       </Unit>
       <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/CMakeLists.txt">
           <Option virtualFolder="CMake Files\perifericos\" />
@@ -132,6 +141,15 @@
       </Unit>
       <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/CMakeLists.txt">
           <Option virtualFolder="CMake Files\test\test_joystick\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joy_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joy_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joy_motor\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

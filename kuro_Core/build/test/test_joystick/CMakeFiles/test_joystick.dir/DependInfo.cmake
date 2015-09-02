@@ -10,7 +10,8 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick/CMakeFiles/JOYSTICK.dir/DependInfo.cmake"
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick/CMakeFiles/joystick.dir/DependInfo.cmake"
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/thread_aux/CMakeFiles/thread_aux.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

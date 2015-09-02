@@ -1,1 +1,1 @@
-/usr/bin/c++       CMakeFiles/test_motor.dir/src/main.cpp.o  -o ../../../build_Linux/test_motor -rdynamic ../../../build_Linux/libAX_12.so ../../../build_Linux/libDYAMIXEL_AUX.so -Wl,-rpath,/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux 
+/usr/bin/c++       CMakeFiles/test_motor.dir/src/main.cpp.o  -o ../../../build_Linux/test_motor -rdynamic ../../../build_Linux/libax_12.so ../../../build_Linux/libdynamixel_aux.so -Wl,-rpath,/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux 

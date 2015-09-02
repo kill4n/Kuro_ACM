@@ -1,6 +1,8 @@
-/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12/CMakeFiles/AX_12.dir
-/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/DYAMIXEL_AUX.dir
-/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick/CMakeFiles/JOYSTICK.dir
 /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/motorinterface/CMakeFiles/MOTORINT.dir
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/AX_12/CMakeFiles/ax_12.dir
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick/CMakeFiles/joystick.dir
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/CMakeFiles/test_joy_motor.dir
 /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/CMakeFiles/test_joystick.dir
 /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/CMakeFiles/test_motor.dir
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/thread_aux/CMakeFiles/thread_aux.dir
