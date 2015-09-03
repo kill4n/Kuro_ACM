@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="test" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\librerias\;CMake Files\librerias\dynamixel_aux\;CMake Files\librerias\dynamixel_pro_aux\;CMake Files\librerias\thread_aux\;CMake Files\motores\;CMake Files\motores\AX_12\;CMake Files\motores\M54_PRO\;CMake Files\motores\motorinterface\;CMake Files\perifericos\;CMake Files\perifericos\joystick\;CMake Files\test\;CMake Files\test\test_motor\;CMake Files\test\test_joystick\;CMake Files\test\test_joy_motor\;CMake Files\test\test_motor_pro\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_motor">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_motor" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 test_motor" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_motor/fast">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_motor" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 test_motor/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_joystick">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_joystick" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 test_joystick" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_joystick/fast">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_joystick" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 test_joystick/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_joy_motor">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_joy_motor" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 test_joy_motor" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_joy_motor/fast">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_joy_motor" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 test_joy_motor/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_motor_pro">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_motor_pro" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 test_motor_pro" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_motor_pro/fast">
+         <Option output="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux/test_motor_pro" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/include" />
+            <Add directory="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 test_motor_pro/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_pro_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_pro_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_pro_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_pro_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_pro_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\dynamixel_pro_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\thread_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\thread_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/thread_aux/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\librerias\thread_aux\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\AX_12\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\AX_12\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/AX_12/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\AX_12\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\M54_PRO\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\M54_PRO\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\M54_PRO\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/motorinterface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\motorinterface\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/motorinterface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\motorinterface\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/motorinterface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\motores\motorinterface\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\perifericos\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\perifericos\joystick\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/perifericos/joystick/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\perifericos\joystick\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joystick\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joystick\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joystick/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joystick\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joy_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joy_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_joy_motor/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_joy_motor\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor_pro\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor_pro\" />
+      </Unit>
+      <Unit filename="/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\test\test_motor_pro\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

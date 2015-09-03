@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libM54_PRO.so -o ../../../build_Linux/libM54_PRO.so CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o 

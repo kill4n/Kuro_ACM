@@ -3,7 +3,7 @@
 using namespace AX_12;
 
 AX_12_Motor::AX_12_Motor(int id, MOTOR_TYPE type)
-    :_ID_motor(id), _motor(type),_deviceIndex(0), _baud_speed(BAUD_1Mbps)
+    :_ID_motor(id), _motor(type),_deviceIndex(0), _baud_speed(BAUD_115200)
 {
 }
 
@@ -25,6 +25,7 @@ void AX_12_Motor::startMotor()
     else
         printf( "Succeed to open USB2Dynamixel!\n" );
 }
+
 void AX_12_Motor::moveMotor(double goal)
 {
     goal= (goal > 1023) ? 1023 : goal;
@@ -84,6 +85,7 @@ void AX_12_Motor::setType(MOTOR_TYPE type)
         break;
     }
 }
+
 MOTOR_TYPE AX_12_Motor::getType()
 {
     return _motor;

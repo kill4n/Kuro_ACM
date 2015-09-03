@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/test_motor_pro.dir/src/main.cpp.o  -o ../../../build_Linux/test_motor_pro -rdynamic ../../../build_Linux/libdynamixel_pro_aux.so -Wl,-rpath,/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux 

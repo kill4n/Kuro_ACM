@@ -37,6 +37,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor/cmake_install.cmake")
   INCLUDE("/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joystick/cmake_install.cmake")
   INCLUDE("/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_joy_motor/cmake_install.cmake")
+  INCLUDE("/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

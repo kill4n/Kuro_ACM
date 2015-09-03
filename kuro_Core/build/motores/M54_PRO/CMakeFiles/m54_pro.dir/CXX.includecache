@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../librerias/dynamixel_pro_aux/include/dynamixel.h
+vector
+-
+serialport.h
+../librerias/dynamixel_pro_aux/include/serialport.h
+
+../librerias/dynamixel_pro_aux/include/serialport.h
+
+../motores/M54_PRO/include/m54_pro_motor.h
+stdio.h
+-
+motores/motorinterface/include/motorinterface.h
+../motores/M54_PRO/include/motores/motorinterface/include/motorinterface.h
+librerias/dynamixel_pro_aux/include/dynamixel.h
+../motores/M54_PRO/include/librerias/dynamixel_pro_aux/include/dynamixel.h
+
+../motores/motorinterface/include/motorinterface.h
+
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro_motor.cpp
+m54_pro_motor.h
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro_motor.h
+

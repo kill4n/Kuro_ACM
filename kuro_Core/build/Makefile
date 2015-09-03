@@ -115,6 +115,19 @@ ax_12/fast:
 .PHONY : ax_12/fast
 
 #=============================================================================
+# Target rules for targets named m54_pro
+
+# Build rule for target.
+m54_pro: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 m54_pro
+.PHONY : m54_pro
+
+# fast build rule for target.
+m54_pro/fast:
+	$(MAKE) -f motores/M54_PRO/CMakeFiles/m54_pro.dir/build.make motores/M54_PRO/CMakeFiles/m54_pro.dir/build
+.PHONY : m54_pro/fast
+
+#=============================================================================
 # Target rules for targets named MOTORINT
 
 # Build rule for target.
@@ -152,6 +165,19 @@ dynamixel_aux: cmake_check_build_system
 dynamixel_aux/fast:
 	$(MAKE) -f librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build.make librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/build
 .PHONY : dynamixel_aux/fast
+
+#=============================================================================
+# Target rules for targets named dynamixel_pro_aux
+
+# Build rule for target.
+dynamixel_pro_aux: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamixel_pro_aux
+.PHONY : dynamixel_pro_aux
+
+# fast build rule for target.
+dynamixel_pro_aux/fast:
+	$(MAKE) -f librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/build.make librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/build
+.PHONY : dynamixel_pro_aux/fast
 
 #=============================================================================
 # Target rules for targets named thread_aux
@@ -205,6 +231,19 @@ test_joy_motor/fast:
 	$(MAKE) -f test/test_joy_motor/CMakeFiles/test_joy_motor.dir/build.make test/test_joy_motor/CMakeFiles/test_joy_motor.dir/build
 .PHONY : test_joy_motor/fast
 
+#=============================================================================
+# Target rules for targets named test_motor_pro
+
+# Build rule for target.
+test_motor_pro: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_motor_pro
+.PHONY : test_motor_pro
+
+# fast build rule for target.
+test_motor_pro/fast:
+	$(MAKE) -f test/test_motor_pro/CMakeFiles/test_motor_pro.dir/build.make test/test_motor_pro/CMakeFiles/test_motor_pro.dir/build
+.PHONY : test_motor_pro/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -214,13 +253,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ax_12"
+	@echo "... m54_pro"
 	@echo "... MOTORINT"
 	@echo "... joystick"
 	@echo "... dynamixel_aux"
+	@echo "... dynamixel_pro_aux"
 	@echo "... thread_aux"
 	@echo "... test_motor"
 	@echo "... test_joystick"
 	@echo "... test_joy_motor"
+	@echo "... test_motor_pro"
 .PHONY : help
 
 

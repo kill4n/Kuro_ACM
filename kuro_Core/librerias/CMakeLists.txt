@@ -6,4 +6,5 @@ set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 add_subdirectory(dynamixel_aux)
+add_subdirectory(dynamixel_pro_aux)
 add_subdirectory(thread_aux)

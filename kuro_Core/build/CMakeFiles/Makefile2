@@ -60,16 +60,19 @@ CMAKE_BINARY_DIR = /home/killan/kuro_min/Kuro_ACM/kuro_Core/build
 
 # Convenience name for "all" pass in the directory.
 motores/all: motores/AX_12/all
+motores/all: motores/M54_PRO/all
 motores/all: motores/motorinterface/all
 .PHONY : motores/all
 
 # Convenience name for "clean" pass in the directory.
 motores/clean: motores/AX_12/clean
+motores/clean: motores/M54_PRO/clean
 motores/clean: motores/motorinterface/clean
 .PHONY : motores/clean
 
 # Convenience name for "preinstall" pass in the directory.
 motores/preinstall: motores/AX_12/preinstall
+motores/preinstall: motores/M54_PRO/preinstall
 motores/preinstall: motores/motorinterface/preinstall
 .PHONY : motores/preinstall
 
@@ -121,6 +124,56 @@ motores/AX_12/CMakeFiles/ax_12.dir/clean:
 
 # clean rule for target.
 clean: motores/AX_12/CMakeFiles/ax_12.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory motores/M54_PRO
+
+# Convenience name for "all" pass in the directory.
+motores/M54_PRO/all: motores/M54_PRO/CMakeFiles/m54_pro.dir/all
+.PHONY : motores/M54_PRO/all
+
+# Convenience name for "clean" pass in the directory.
+motores/M54_PRO/clean: motores/M54_PRO/CMakeFiles/m54_pro.dir/clean
+.PHONY : motores/M54_PRO/clean
+
+# Convenience name for "preinstall" pass in the directory.
+motores/M54_PRO/preinstall:
+.PHONY : motores/M54_PRO/preinstall
+
+#=============================================================================
+# Target rules for target motores/M54_PRO/CMakeFiles/m54_pro.dir
+
+# All Build rule for target.
+motores/M54_PRO/CMakeFiles/m54_pro.dir/all: librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/all
+	$(MAKE) -f motores/M54_PRO/CMakeFiles/m54_pro.dir/build.make motores/M54_PRO/CMakeFiles/m54_pro.dir/depend
+	$(MAKE) -f motores/M54_PRO/CMakeFiles/m54_pro.dir/build.make motores/M54_PRO/CMakeFiles/m54_pro.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  7
+	@echo "Built target m54_pro"
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/all
+
+# Include target in all.
+all: motores/M54_PRO/CMakeFiles/m54_pro.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+motores/M54_PRO/CMakeFiles/m54_pro.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 motores/M54_PRO/CMakeFiles/m54_pro.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 0
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/rule
+
+# Convenience name for target.
+m54_pro: motores/M54_PRO/CMakeFiles/m54_pro.dir/rule
+.PHONY : m54_pro
+
+# clean rule for target.
+motores/M54_PRO/CMakeFiles/m54_pro.dir/clean:
+	$(MAKE) -f motores/M54_PRO/CMakeFiles/m54_pro.dir/build.make motores/M54_PRO/CMakeFiles/m54_pro.dir/clean
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/clean
+
+# clean rule for target.
+clean: motores/M54_PRO/CMakeFiles/m54_pro.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -210,7 +263,7 @@ perifericos/joystick/preinstall:
 perifericos/joystick/CMakeFiles/joystick.dir/all: librerias/thread_aux/CMakeFiles/thread_aux.dir/all
 	$(MAKE) -f perifericos/joystick/CMakeFiles/joystick.dir/build.make perifericos/joystick/CMakeFiles/joystick.dir/depend
 	$(MAKE) -f perifericos/joystick/CMakeFiles/joystick.dir/build.make perifericos/joystick/CMakeFiles/joystick.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  6
 	@echo "Built target joystick"
 .PHONY : perifericos/joystick/CMakeFiles/joystick.dir/all
 
@@ -243,16 +296,19 @@ clean: perifericos/joystick/CMakeFiles/joystick.dir/clean
 
 # Convenience name for "all" pass in the directory.
 librerias/all: librerias/dynamixel_aux/all
+librerias/all: librerias/dynamixel_pro_aux/all
 librerias/all: librerias/thread_aux/all
 .PHONY : librerias/all
 
 # Convenience name for "clean" pass in the directory.
 librerias/clean: librerias/dynamixel_aux/clean
+librerias/clean: librerias/dynamixel_pro_aux/clean
 librerias/clean: librerias/thread_aux/clean
 .PHONY : librerias/clean
 
 # Convenience name for "preinstall" pass in the directory.
 librerias/preinstall: librerias/dynamixel_aux/preinstall
+librerias/preinstall: librerias/dynamixel_pro_aux/preinstall
 librerias/preinstall: librerias/thread_aux/preinstall
 .PHONY : librerias/preinstall
 
@@ -307,6 +363,56 @@ clean: librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory librerias/dynamixel_pro_aux
+
+# Convenience name for "all" pass in the directory.
+librerias/dynamixel_pro_aux/all: librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/all
+.PHONY : librerias/dynamixel_pro_aux/all
+
+# Convenience name for "clean" pass in the directory.
+librerias/dynamixel_pro_aux/clean: librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/clean
+.PHONY : librerias/dynamixel_pro_aux/clean
+
+# Convenience name for "preinstall" pass in the directory.
+librerias/dynamixel_pro_aux/preinstall:
+.PHONY : librerias/dynamixel_pro_aux/preinstall
+
+#=============================================================================
+# Target rules for target librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir
+
+# All Build rule for target.
+librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/all:
+	$(MAKE) -f librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/build.make librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/depend
+	$(MAKE) -f librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/build.make librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  4 5
+	@echo "Built target dynamixel_pro_aux"
+.PHONY : librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/all
+
+# Include target in all.
+all: librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 0
+.PHONY : librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/rule
+
+# Convenience name for target.
+dynamixel_pro_aux: librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/rule
+.PHONY : dynamixel_pro_aux
+
+# clean rule for target.
+librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/clean:
+	$(MAKE) -f librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/build.make librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/clean
+.PHONY : librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/clean
+
+# clean rule for target.
+clean: librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory librerias/thread_aux
 
 # Convenience name for "all" pass in the directory.
@@ -328,7 +434,7 @@ librerias/thread_aux/preinstall:
 librerias/thread_aux/CMakeFiles/thread_aux.dir/all:
 	$(MAKE) -f librerias/thread_aux/CMakeFiles/thread_aux.dir/build.make librerias/thread_aux/CMakeFiles/thread_aux.dir/depend
 	$(MAKE) -f librerias/thread_aux/CMakeFiles/thread_aux.dir/build.make librerias/thread_aux/CMakeFiles/thread_aux.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  12
 	@echo "Built target thread_aux"
 .PHONY : librerias/thread_aux/CMakeFiles/thread_aux.dir/all
 
@@ -363,18 +469,21 @@ clean: librerias/thread_aux/CMakeFiles/thread_aux.dir/clean
 test/all: test/test_motor/all
 test/all: test/test_joystick/all
 test/all: test/test_joy_motor/all
+test/all: test/test_motor_pro/all
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
 test/clean: test/test_motor/clean
 test/clean: test/test_joystick/clean
 test/clean: test/test_joy_motor/clean
+test/clean: test/test_motor_pro/clean
 .PHONY : test/clean
 
 # Convenience name for "preinstall" pass in the directory.
 test/preinstall: test/test_motor/preinstall
 test/preinstall: test/test_joystick/preinstall
 test/preinstall: test/test_joy_motor/preinstall
+test/preinstall: test/test_motor_pro/preinstall
 .PHONY : test/preinstall
 
 #=============================================================================
@@ -396,11 +505,11 @@ test/test_motor/preinstall:
 # Target rules for target test/test_motor/CMakeFiles/test_motor.dir
 
 # All Build rule for target.
-test/test_motor/CMakeFiles/test_motor.dir/all: librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/all
 test/test_motor/CMakeFiles/test_motor.dir/all: motores/AX_12/CMakeFiles/ax_12.dir/all
+test/test_motor/CMakeFiles/test_motor.dir/all: librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/all
 	$(MAKE) -f test/test_motor/CMakeFiles/test_motor.dir/build.make test/test_motor/CMakeFiles/test_motor.dir/depend
 	$(MAKE) -f test/test_motor/CMakeFiles/test_motor.dir/build.make test/test_motor/CMakeFiles/test_motor.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  10
 	@echo "Built target test_motor"
 .PHONY : test/test_motor/CMakeFiles/test_motor.dir/all
 
@@ -451,7 +560,7 @@ test/test_joystick/CMakeFiles/test_joystick.dir/all: perifericos/joystick/CMakeF
 test/test_joystick/CMakeFiles/test_joystick.dir/all: librerias/thread_aux/CMakeFiles/thread_aux.dir/all
 	$(MAKE) -f test/test_joystick/CMakeFiles/test_joystick.dir/build.make test/test_joystick/CMakeFiles/test_joystick.dir/depend
 	$(MAKE) -f test/test_joystick/CMakeFiles/test_joystick.dir/build.make test/test_joystick/CMakeFiles/test_joystick.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  9
 	@echo "Built target test_joystick"
 .PHONY : test/test_joystick/CMakeFiles/test_joystick.dir/all
 
@@ -498,13 +607,13 @@ test/test_joy_motor/preinstall:
 # Target rules for target test/test_joy_motor/CMakeFiles/test_joy_motor.dir
 
 # All Build rule for target.
+test/test_joy_motor/CMakeFiles/test_joy_motor.dir/all: motores/AX_12/CMakeFiles/ax_12.dir/all
 test/test_joy_motor/CMakeFiles/test_joy_motor.dir/all: perifericos/joystick/CMakeFiles/joystick.dir/all
 test/test_joy_motor/CMakeFiles/test_joy_motor.dir/all: librerias/dynamixel_aux/CMakeFiles/dynamixel_aux.dir/all
-test/test_joy_motor/CMakeFiles/test_joy_motor.dir/all: motores/AX_12/CMakeFiles/ax_12.dir/all
 test/test_joy_motor/CMakeFiles/test_joy_motor.dir/all: librerias/thread_aux/CMakeFiles/thread_aux.dir/all
 	$(MAKE) -f test/test_joy_motor/CMakeFiles/test_joy_motor.dir/build.make test/test_joy_motor/CMakeFiles/test_joy_motor.dir/depend
 	$(MAKE) -f test/test_joy_motor/CMakeFiles/test_joy_motor.dir/build.make test/test_joy_motor/CMakeFiles/test_joy_motor.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  8
 	@echo "Built target test_joy_motor"
 .PHONY : test/test_joy_motor/CMakeFiles/test_joy_motor.dir/all
 
@@ -530,6 +639,56 @@ test/test_joy_motor/CMakeFiles/test_joy_motor.dir/clean:
 
 # clean rule for target.
 clean: test/test_joy_motor/CMakeFiles/test_joy_motor.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test/test_motor_pro
+
+# Convenience name for "all" pass in the directory.
+test/test_motor_pro/all: test/test_motor_pro/CMakeFiles/test_motor_pro.dir/all
+.PHONY : test/test_motor_pro/all
+
+# Convenience name for "clean" pass in the directory.
+test/test_motor_pro/clean: test/test_motor_pro/CMakeFiles/test_motor_pro.dir/clean
+.PHONY : test/test_motor_pro/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test/test_motor_pro/preinstall:
+.PHONY : test/test_motor_pro/preinstall
+
+#=============================================================================
+# Target rules for target test/test_motor_pro/CMakeFiles/test_motor_pro.dir
+
+# All Build rule for target.
+test/test_motor_pro/CMakeFiles/test_motor_pro.dir/all: librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/all
+	$(MAKE) -f test/test_motor_pro/CMakeFiles/test_motor_pro.dir/build.make test/test_motor_pro/CMakeFiles/test_motor_pro.dir/depend
+	$(MAKE) -f test/test_motor_pro/CMakeFiles/test_motor_pro.dir/build.make test/test_motor_pro/CMakeFiles/test_motor_pro.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles  11
+	@echo "Built target test_motor_pro"
+.PHONY : test/test_motor_pro/CMakeFiles/test_motor_pro.dir/all
+
+# Include target in all.
+all: test/test_motor_pro/CMakeFiles/test_motor_pro.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/test_motor_pro/CMakeFiles/test_motor_pro.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 test/test_motor_pro/CMakeFiles/test_motor_pro.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles 0
+.PHONY : test/test_motor_pro/CMakeFiles/test_motor_pro.dir/rule
+
+# Convenience name for target.
+test_motor_pro: test/test_motor_pro/CMakeFiles/test_motor_pro.dir/rule
+.PHONY : test_motor_pro
+
+# clean rule for target.
+test/test_motor_pro/CMakeFiles/test_motor_pro.dir/clean:
+	$(MAKE) -f test/test_motor_pro/CMakeFiles/test_motor_pro.dir/build.make test/test_motor_pro/CMakeFiles/test_motor_pro.dir/clean
+.PHONY : test/test_motor_pro/CMakeFiles/test_motor_pro.dir/clean
+
+# clean rule for target.
+clean: test/test_motor_pro/CMakeFiles/test_motor_pro.dir/clean
 .PHONY : clean
 
 #=============================================================================

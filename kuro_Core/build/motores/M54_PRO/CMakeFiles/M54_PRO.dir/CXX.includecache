@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../motores/M54_PRO/include/m54_pro.h
+
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro.cpp
+m54_pro.h
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro.h
+

@@ -177,6 +177,15 @@ LIBRERIAS_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/libre
 LIBRERIAS_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias
 
 //Value Computed by CMake
+M54_PRO_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO
+
+//Dependencies for target
+M54_PRO_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+M54_PRO_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO
+
+//Value Computed by CMake
 MOTORES_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores
 
 //Value Computed by CMake
@@ -210,6 +219,15 @@ dynamixel_aux_LIB_DEPENDS:STATIC=
 dynamixel_aux_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_aux
 
 //Value Computed by CMake
+dynamixel_pro_aux_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_pro_aux
+
+//Dependencies for target
+dynamixel_pro_aux_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+dynamixel_pro_aux_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/librerias/dynamixel_pro_aux
+
+//Value Computed by CMake
 joystick_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/perifericos/joystick
 
 //Dependencies for the target
@@ -223,6 +241,21 @@ kuroproject_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build
 
 //Value Computed by CMake
 kuroproject_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core
+
+//Value Computed by CMake
+m54_pro_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO
+
+//Dependencies for the target
+m54_pro_LIB_DEPENDS:STATIC=general;dynamixel_pro_aux;
+
+//Value Computed by CMake
+m54_pro_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO
+
+//Value Computed by CMake
+nombre_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO
+
+//Value Computed by CMake
+nombre_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO
 
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test
@@ -247,6 +280,12 @@ test_motor_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test
 
 //Value Computed by CMake
 test_motor_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor
+
+//Value Computed by CMake
+test_motor_pro_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/test/test_motor_pro
+
+//Value Computed by CMake
+test_motor_pro_SOURCE_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/test/test_motor_pro
 
 //Value Computed by CMake
 thread_aux_BINARY_DIR:STATIC=/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/thread_aux
@@ -358,7 +397,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
