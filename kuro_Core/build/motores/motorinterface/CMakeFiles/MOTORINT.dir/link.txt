@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC    -shared -Wl,-soname,libMOTORINT.so -o ../../../build_Linux/libMOTORINT.so  

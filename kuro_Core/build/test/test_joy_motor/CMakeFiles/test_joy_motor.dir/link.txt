@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/test_joy_motor.dir/src/main.cpp.o  -o ../../../build_Linux/test_joy_motor -rdynamic ../../../build_Linux/libjoystick.so ../../../build_Linux/libax_12.so ../../../build_Linux/libdynamixel_aux.so ../../../build_Linux/libthread_aux.so -lpthread -Wl,-rpath,/home/killan/kuro_min/Kuro_ACM/kuro_Core/build_Linux 
