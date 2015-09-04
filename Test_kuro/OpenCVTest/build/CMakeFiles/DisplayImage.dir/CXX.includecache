@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/killan/kuro_min/Kuro_ACM/Test_kuro/OpenCVTest/DisplayImage.cpp
+iostream
+-
+opencv2/opencv.hpp
+/home/killan/kuro_min/Kuro_ACM/Test_kuro/OpenCVTest/opencv2/opencv.hpp
+

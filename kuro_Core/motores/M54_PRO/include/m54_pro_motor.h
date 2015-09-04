@@ -69,7 +69,6 @@ public:
 private:
     int _ID_motor;
     MOTOR_TYPE _motor;
-    int _deviceIndex;
     BAUD_RATE _baud_speed;
 
     Dynamixel *DXL;

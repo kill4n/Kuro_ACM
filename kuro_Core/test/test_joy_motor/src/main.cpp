@@ -12,7 +12,7 @@ JOY_STR joyGlob;
 
 void JoystickUpdate(JOY_STR joyS)
 {
-    joyGlob= joyS;
+    joyGlob = joyS;
 }
 
 #define numRuedas 6

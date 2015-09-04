@@ -3,7 +3,7 @@
 using namespace M54_PRO;
 
 M54_PRO_Motor::M54_PRO_Motor(int id, MOTOR_TYPE type)
-    :_ID_motor(id), _motor(type),_deviceIndex(0), _baud_speed(BAUD_1Mbps)
+    :_ID_motor(id), _motor(type), _baud_speed(BAUD_1Mbps)
 {
     DXL = new Dynamixel(PORT);
 }

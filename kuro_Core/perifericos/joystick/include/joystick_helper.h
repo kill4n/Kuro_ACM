@@ -1,21 +1,17 @@
 #ifndef JOYSTICK_HELPER_H
 #define JOYSTICK_HELPER_H
-
 #include <linux/joystick.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <fcntl.h>
-
 #include "librerias/thread_aux/include/mythread.h"
-
 #define JOY_DEV "/dev/input/js0"
 
 struct JOY_STR{
     int AxisVel;
     int AxisDir;
 };
-
 
 class joystick_helper : public MyThread
 {

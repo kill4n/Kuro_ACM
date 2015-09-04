@@ -1,0 +1,1 @@
+/home/killan/kuro_min/Kuro_ACM/Test_kuro/OpenCVTest/build/CMakeFiles/DisplayImage.dir

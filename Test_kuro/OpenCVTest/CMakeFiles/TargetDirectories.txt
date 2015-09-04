@@ -1,1 +1,0 @@
-/home/crhistian/Desktop/OpenCVTest/CMakeFiles/DisplayImage.dir
