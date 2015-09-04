@@ -4,5 +4,5 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -fPIC -I/home/killan/kuro_min/Kuro_ACM/kuro_Core/include -I/home/killan/kuro_min/Kuro_ACM/kuro_Core -I/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/include -I/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src   
 
-CXX_DEFINES = -Dm54_pro_EXPORTS
+CXX_DEFINES = -DM54_PRO_EXPORTS
 
