@@ -44,62 +44,63 @@ CMAKE_SOURCE_DIR = /home/killan/kuro_min/Kuro_ACM/kuro_Core
 CMAKE_BINARY_DIR = /home/killan/kuro_min/Kuro_ACM/kuro_Core/build
 
 # Include any dependencies generated for this target.
-include motores/M54_PRO/CMakeFiles/M54_PRO.dir/depend.make
+include motores/M54_PRO/CMakeFiles/m54_pro.dir/depend.make
 
 # Include the progress variables for this target.
-include motores/M54_PRO/CMakeFiles/M54_PRO.dir/progress.make
+include motores/M54_PRO/CMakeFiles/m54_pro.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include motores/M54_PRO/CMakeFiles/M54_PRO.dir/flags.make
+include motores/M54_PRO/CMakeFiles/m54_pro.dir/flags.make
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o: motores/M54_PRO/CMakeFiles/M54_PRO.dir/flags.make
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o: ../motores/M54_PRO/src/m54_pro.cpp
+motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o: motores/M54_PRO/CMakeFiles/m54_pro.dir/flags.make
+motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o: ../motores/M54_PRO/src/m54_pro_motor.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o"
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o -c /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o"
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o -c /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro_motor.cpp
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.i"
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro.cpp > CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.i
+motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.i"
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro_motor.cpp > CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.i
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.s"
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro.cpp -o CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.s
+motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.s"
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro_motor.cpp -o CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.s
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.requires:
-.PHONY : motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.requires
+motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.requires:
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.requires
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.provides: motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.requires
-	$(MAKE) -f motores/M54_PRO/CMakeFiles/M54_PRO.dir/build.make motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.provides.build
-.PHONY : motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.provides
+motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.provides: motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.requires
+	$(MAKE) -f motores/M54_PRO/CMakeFiles/m54_pro.dir/build.make motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.provides.build
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.provides
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.provides.build: motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o
+motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.provides.build: motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o
 
-# Object files for target M54_PRO
-M54_PRO_OBJECTS = \
-"CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o"
+# Object files for target m54_pro
+m54_pro_OBJECTS = \
+"CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o"
 
-# External object files for target M54_PRO
-M54_PRO_EXTERNAL_OBJECTS =
+# External object files for target m54_pro
+m54_pro_EXTERNAL_OBJECTS =
 
-../build_Linux/libM54_PRO.so: motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o
-../build_Linux/libM54_PRO.so: motores/M54_PRO/CMakeFiles/M54_PRO.dir/build.make
-../build_Linux/libM54_PRO.so: motores/M54_PRO/CMakeFiles/M54_PRO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../build_Linux/libM54_PRO.so"
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/M54_PRO.dir/link.txt --verbose=$(VERBOSE)
+../build_Linux/libm54_pro.so: motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o
+../build_Linux/libm54_pro.so: motores/M54_PRO/CMakeFiles/m54_pro.dir/build.make
+../build_Linux/libm54_pro.so: ../build_Linux/libdynamixel_pro_aux.so
+../build_Linux/libm54_pro.so: motores/M54_PRO/CMakeFiles/m54_pro.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../build_Linux/libm54_pro.so"
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/m54_pro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/build: ../build_Linux/libM54_PRO.so
-.PHONY : motores/M54_PRO/CMakeFiles/M54_PRO.dir/build
+motores/M54_PRO/CMakeFiles/m54_pro.dir/build: ../build_Linux/libm54_pro.so
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/build
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/requires: motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o.requires
-.PHONY : motores/M54_PRO/CMakeFiles/M54_PRO.dir/requires
+motores/M54_PRO/CMakeFiles/m54_pro.dir/requires: motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o.requires
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/requires
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/clean:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && $(CMAKE_COMMAND) -P CMakeFiles/M54_PRO.dir/cmake_clean.cmake
-.PHONY : motores/M54_PRO/CMakeFiles/M54_PRO.dir/clean
+motores/M54_PRO/CMakeFiles/m54_pro.dir/clean:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO && $(CMAKE_COMMAND) -P CMakeFiles/m54_pro.dir/cmake_clean.cmake
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/clean
 
-motores/M54_PRO/CMakeFiles/M54_PRO.dir/depend:
-	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/killan/kuro_min/Kuro_ACM/kuro_Core /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO /home/killan/kuro_min/Kuro_ACM/kuro_Core/build /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO/CMakeFiles/M54_PRO.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : motores/M54_PRO/CMakeFiles/M54_PRO.dir/depend
+motores/M54_PRO/CMakeFiles/m54_pro.dir/depend:
+	cd /home/killan/kuro_min/Kuro_ACM/kuro_Core/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/killan/kuro_min/Kuro_ACM/kuro_Core /home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO /home/killan/kuro_min/Kuro_ACM/kuro_Core/build /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO /home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO/CMakeFiles/m54_pro.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : motores/M54_PRO/CMakeFiles/m54_pro.dir/depend
 

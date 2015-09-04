@@ -4,12 +4,13 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro.cpp" "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO/CMakeFiles/M54_PRO.dir/src/m54_pro.cpp.o"
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/motores/M54_PRO/src/m54_pro_motor.cpp" "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/motores/M54_PRO/CMakeFiles/m54_pro.dir/src/m54_pro_motor.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/killan/kuro_min/Kuro_ACM/kuro_Core/build/librerias/dynamixel_pro_aux/CMakeFiles/dynamixel_pro_aux.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
