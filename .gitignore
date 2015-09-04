@@ -9,3 +9,6 @@ Test_kuro/CMakeLists.txt.user
 QT_kuro\Socket_1\Socket_1.pro*
 QT_kuro\Socket_2\Socket_2.pro*
 QT_kuro\Sick_test\Sick_test.pro*
+
+kuro_Core/build/
+kuro_Core/build_*
