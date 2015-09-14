@@ -1,0 +1,7 @@
+Paginas
+http://www.look4tech.com/pic32mx220-usb-project-demo-code/
+http://www.look4tech.com/tag/usb/
+http://hades.mech.northwestern.edu/index.php/Microchip_PICs
+http://umassamherstm5.org/tech-tutorials/pic32-tutorials/pic32mx220-tutorials/configuration
+
+https://www.raspberrypi.org/forums/viewtopic.php?f=33&t=43725
