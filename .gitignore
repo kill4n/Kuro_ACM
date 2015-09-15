@@ -12,3 +12,6 @@ QT_kuro\Sick_test\Sick_test.pro*
 
 kuro_Core/build/
 kuro_Core/build_*
+/shiro_Core/shiro_test.X/nbproject/private/
+/shiro_Core/shiro_test.X/dist/default/
+/shiro_Core/shiro_test.X/build/default/
