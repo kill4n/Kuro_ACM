@@ -4,39 +4,43 @@
  *
  * Created on September 14, 2015, 5:52 PM
  */
-
 #include "HardwareProfile.h"
-
-//Rename and Tris
+//Rename Pins
 #define SG1 LATAbits.LATA0
 #define SG2 LATAbits.LATA1
 #define SG3 LATBbits.LATB3
-
 #define FR1 LATBbits.LATB15
 #define FR2 LATBbits.LATB14
 #define FR3 LATBbits.LATB13
-
+//PWM Frecuencia
 #define PWM_FREQ    16000
-void PWM_1(int Duty_Cycle) {
+//Métodos
+
+void PWM_Config() {
+    //Definir los PWMs
     OC1CON = 0x0006;
-    PR2 = (PBCLK / PWM_FREQ) - 1;
-    OC1RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
-    T2CONbits.ON = 1; // Enable Timer2, prescaler 1:1
-    OC1CONbits.ON = 1; // Enable Output Compare Module 1
-}
-void PWM_2(int Duty_Cycle) {
     OC2CON = 0x0006;
-    PR2 = (PBCLK / PWM_FREQ) - 1;
-    OC2RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
-    T2CONbits.ON = 1; // Enable Timer2, prescaler 1:1
-    OC2CONbits.ON = 1; // Enable Output Compare Module 2
-}
-void PWM_3(int Duty_Cycle) {
     OC3CON = 0x0006;
+    //Definir Frecuencia
     PR2 = (PBCLK / PWM_FREQ) - 1;
-    OC3RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
-    T2CONbits.ON = 1; // Enable Timer2, prescaler 1:1
+    //Habilitar PWMs
+    OC1CONbits.ON = 1; // Enable Output Compare Module 1
+    OC2CONbits.ON = 1; // Enable Output Compare Module 2
     OC3CONbits.ON = 1; // Enable Output Compare Module 3
+    //Habilitar Timer2
+    T2CONbits.ON = 1; // Enable Timer2, prescaler 1:1
+}
+
+void PWM_1(int Duty_Cycle) {
+    OC1RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
+}
+
+void PWM_2(int Duty_Cycle) {
+    OC2RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
+}
+
+void PWM_3(int Duty_Cycle) {
+    OC3RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
 }
 
 void defineTRIS() {
@@ -55,34 +59,33 @@ void mapPins() {
     RPB10R = 0b0101; // OC3
 }
 
-const int pwm_duty_cycles[] = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-#define ARRAY_SIZE               (sizeof(pwm_duty_cycles))
-
-void main(void) {
+void initConf() {
     ANSELA = 0; //Port A Digital
     ANSELB = 0; //Port B Digital
 
     defineTRIS();
     mapPins();
+}
+const int pwm_duty_cycles[] = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+#define ARRAY_SIZE               (sizeof(pwm_duty_cycles))
+//variables
+#define SLAVE_ADDRESS 0x40
 
-    int i = 0, j = 0;
-    SG1 = 0;
-    int tim = 50000;
+void InitI2c() {
+    I2C1CON = 0;
+    //I2C1CONbits.SCLREL = 1;
+    I2C1CONbits.STREN = 1; //Estira la trama
+    I2C1CONbits.ON = 1; //Start I2C
+    I2C1CONbits.A10M = 0; //Address 7bits
+    I2C1BRG = 0xC2; //40MHz -> 100k
+    I2C1AADD = SLAVE_ADDRESS; //Cargar Direccion del Slave
+    I2C1MSK = 0;
+}
+
+void main(void) {
+    initConf();
+    InitI2c();
     while (1) {
-        FR1 = 1;
-        FR2 = 0;
-        FR3 = 1;
-        PWM_1(pwm_duty_cycles[j]);
-        PWM_2(100-pwm_duty_cycles[j]);
-        PWM_3(pwm_duty_cycles[(int)(j/2)]);
-        j++;
-        for (i = 0; i < tim; i++);
-        FR1 = 0;
-        FR2 = 1;
-        FR3 = 0;
-        for (i = 0; i < tim; i++);
 
-        if (j >= 11)
-            j = 0;
     }
 }
