@@ -5,33 +5,6 @@
  * Created on September 14, 2015, 5:52 PM
  */
 
-/******************************************************************************
- * Software License Agreement
- *
- * Copyright � 2011 Microchip Technology Inc.  All rights reserved.
- * Microchip licenses to you the right to use, modify, copy and distribute
- * Software only when embedded on a Microchip microcontroller or digital
- * signal controller, which is integrated into your product or third party
- * product (pursuant to the sublicense terms in the accompanying license
- * agreement).
- *
- * You should refer to the license agreement accompanying this Software
- * for additional information regarding your rights and obligations.
- *
- * SOFTWARE AND DOCUMENTATION ARE PROVIDED ìAS ISî WITHOUT WARRANTY OF ANY
- * KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY WARRANTY
- * OF MERCHANTABILITY, TITLE, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR
- * PURPOSE. IN NO EVENT SHALL MICROCHIP OR ITS LICENSORS BE LIABLE OR
- * OBLIGATED UNDER CONTRACT, NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION,
- * BREACH OF WARRANTY, OR OTHER LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT
- * DAMAGES OR EXPENSES INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL,
- * INDIRECT, PUNITIVE OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA,
- * COST OF PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY
- * CLAIMS BY THIRD PARTIES (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF),
- * OR OTHER SIMILAR COSTS.
- *
- *****************************************************************************/
-
 #include "HardwareProfile.h"
 
 //Rename and Tris
@@ -44,22 +17,26 @@
 #define FR3 LATBbits.LATB13
 
 #define PWM_FREQ    16000
-#define DUTY_CYCLE  10
-
-void PWM_1_6(){
-    // Configure standard PWM mode for output compare module 1
-    OC1CON = 0x0006; 
-    // A write to PRy configures the PWM frequency
-    // PR = [FPB / (PWM Frequency * TMR Prescale Value)] ? 1
-    // : note the TMR Prescaler is 1 and is thus ignored
-    PR2 = (SYSCLK / PWM_FREQ) - 1;
- 
-    // A write to OCxRS configures the duty cycle
-    // : OCxRS / PRy = duty cycle
-    OC1RS = (PR2 + 1) * ((float)DUTY_CYCLE / 100);
- 
-    T2CONSET = 0x8000;      // Enable Timer2, prescaler 1:1
-    OC1CONSET = 0x8000;     // Enable Output Compare Module 1
+void PWM_1(int Duty_Cycle) {
+    OC1CON = 0x0006;
+    PR2 = (PBCLK / PWM_FREQ) - 1;
+    OC1RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
+    T2CONbits.ON = 1; // Enable Timer2, prescaler 1:1
+    OC1CONbits.ON = 1; // Enable Output Compare Module 1
+}
+void PWM_2(int Duty_Cycle) {
+    OC2CON = 0x0006;
+    PR2 = (PBCLK / PWM_FREQ) - 1;
+    OC2RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
+    T2CONbits.ON = 1; // Enable Timer2, prescaler 1:1
+    OC2CONbits.ON = 1; // Enable Output Compare Module 2
+}
+void PWM_3(int Duty_Cycle) {
+    OC3CON = 0x0006;
+    PR2 = (PBCLK / PWM_FREQ) - 1;
+    OC3RS = (PR2 + 1) * ((float) Duty_Cycle / 100);
+    T2CONbits.ON = 1; // Enable Timer2, prescaler 1:1
+    OC3CONbits.ON = 1; // Enable Output Compare Module 3
 }
 
 void defineTRIS() {
@@ -78,12 +55,34 @@ void mapPins() {
     RPB10R = 0b0101; // OC3
 }
 
+const int pwm_duty_cycles[] = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+#define ARRAY_SIZE               (sizeof(pwm_duty_cycles))
+
 void main(void) {
-    ANSELA = 0; //Port A Analog
-    ANSELB = 0; //Port B Analog
+    ANSELA = 0; //Port A Digital
+    ANSELB = 0; //Port B Digital
 
     defineTRIS();
+    mapPins();
 
+    int i = 0, j = 0;
     SG1 = 0;
-    while (1);
+    int tim = 50000;
+    while (1) {
+        FR1 = 1;
+        FR2 = 0;
+        FR3 = 1;
+        PWM_1(pwm_duty_cycles[j]);
+        PWM_2(100-pwm_duty_cycles[j]);
+        PWM_3(pwm_duty_cycles[(int)(j/2)]);
+        j++;
+        for (i = 0; i < tim; i++);
+        FR1 = 0;
+        FR2 = 1;
+        FR3 = 0;
+        for (i = 0; i < tim; i++);
+
+        if (j >= 11)
+            j = 0;
+    }
 }
