@@ -5,3 +5,7 @@ http://hades.mech.northwestern.edu/index.php/Microchip_PICs
 http://umassamherstm5.org/tech-tutorials/pic32-tutorials/pic32mx220-tutorials/configuration
 
 https://www.raspberrypi.org/forums/viewtopic.php?f=33&t=43725
+
+http://microchip.wikidot.com/harmony:example-ports-wf32-steps
+http://microchip.wikidot.com/harmony:start
+http://microchip.wikidot.com/harmony:downloadable-harmony-training
