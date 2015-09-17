@@ -3,10 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/crhistian/microchip/harmony/v1_06/apps/Lab1a_test/firmware/src/app.h</file>
-            <file>file:/Users/crhistian/microchip/harmony/v1_06/apps/Lab1a_test/firmware/src/app.c</file>
-            <file>file:/Users/crhistian/microchip/harmony/v1_06/apps/Lab1a_test/firmware/src/system_config/Lab1a_test_config/framework/driver/tmr/drv_tmr_static.h</file>
-            <file>file:/Users/crhistian/microchip/harmony/v1_06/apps/Lab1a_test/firmware/src/system_config/Lab1a_test_config/system_interrupt.c</file>
+            <file>file:/C:/Users/killan/Documents/GitHub/Kuro_ACM/Harmony_test/Lab1a_test/firmware/src/system_config/Lab1a_test_config/system_definitions.h</file>
         </group>
     </open-files>
 </project-private>
