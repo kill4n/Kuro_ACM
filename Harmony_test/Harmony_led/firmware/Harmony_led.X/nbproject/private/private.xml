@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/killan/Documents/GitHub/Kuro_ACM/Harmony_test/Harmony_led/firmware/src/app.h</file>
-            <file>file:/C:/Users/killan/Documents/GitHub/Kuro_ACM/Harmony_test/Harmony_led/firmware/Harmony_led.X/nbproject/Makefile-Harmony_led_conf.mk</file>
-            <file>file:/C:/Users/killan/Documents/GitHub/Kuro_ACM/Harmony_test/Harmony_led/firmware/src/system_config/Harmony_led_conf/system_interrupt.c</file>
-            <file>file:/C:/Users/killan/Documents/GitHub/Kuro_ACM/Harmony_test/Harmony_led/firmware/src/app.c</file>
-            <file>file:/C:/microchip/harmony/v1_06/framework/driver/usart/src/dynamic/drv_usart_read_write.c</file>
-            <file>file:/C:/Users/killan/Documents/GitHub/Kuro_ACM/Harmony_test/Harmony_led/firmware/src/system_config/Harmony_led_conf/system_definitions.h</file>
-            <file>file:/C:/microchip/harmony/v1_06/framework/driver/usart/drv_usart.h</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

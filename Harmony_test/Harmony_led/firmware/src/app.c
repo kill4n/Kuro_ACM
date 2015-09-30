@@ -129,6 +129,7 @@ void APP_Initialize(void) {
  */
 DRV_HANDLE myUSARTHandle;
 char da[1];
+#define MY_BUFFER_SIZE 2
 
 void APP_Tasks(void) {
     /* Check the application's current state. */
@@ -142,9 +143,12 @@ void APP_Tasks(void) {
             DRV_OC1_Start();
             DRV_OC2_Start();
             myUSARTHandle = DRV_USART_Open(DRV_USART_INDEX_0, DRV_IO_INTENT_READWRITE);
-            char const c[] = "Hola PIC \r\n";
+            char c[] = "Hola PIC \r\n";
             DRV_USART_Write(myUSARTHandle, c, strlen(c));
             appData.state = APP_STATE_IDLE;
+            OC1RS = 25000;
+            OC2RS = 10;
+            OC3RS = 25000;
             break;
         }
 
@@ -152,22 +156,43 @@ void APP_Tasks(void) {
         case APP_STATE_EVENT:
         {
             PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_0);
-            char const c[] = "\r\n--Esperando--\r\n";
+            char c[] = "\r\n--Esperando--\r\n";
             DRV_USART_Write(myUSARTHandle, c, strlen(c));
             appData.state = APP_STATE_IDLE;
             break;
         }
-
+            char myBuffer[MY_BUFFER_SIZE];
+            unsigned int count;
+            unsigned int total;
         case APP_STATE_SERIAL_EVENT:
         {
-           /* if (!DRV_USART_ReceiverBufferIsEmpty(myUSARTHandle)) {
-                DRV_USART_Read(myUSARTHandle, da, 1);
-                appData.msg.cmd = da[0];
-                if (!DRV_USART_ReceiverBufferIsEmpty(myUSARTHandle)) {
+            char c[] = "\r\n--Evento Serial--\r\n";
+            DRV_USART_Write(myUSARTHandle, c, strlen(c));
+            /*do {
+                count = DRV_USART_Read(myUSARTHandle, &myBuffer[total], MY_BUFFER_SIZE - total);
+                if (count == DRV_USART_READ_ERROR) {
+                    // There was an error. The DRV_USART_ErrorGet() function 
+                    // can be called to find the exact error. 
+                }
+                total += count;
+
+                // Do something else...
+                char c[] = "\r\n--leyendo--\r\n";
+                DRV_USART_Write(myUSARTHandle, c, strlen(c));
+
+            } while (total < MY_BUFFER_SIZE);
+
+            appData.msg.cmd = myBuffer[0];
+            appData.msg.data = myBuffer[1];
+            //if (!DRV_USART_ReceiverBufferIsEmpty(myUSARTHandle)) 
+            {
+                //DRV_USART_Read(myUSARTHandle, da, 1);
+                //appData.msg.cmd = da[0];
+                /*if (!DRV_USART_ReceiverBufferIsEmpty(myUSARTHandle)) {
                     DRV_USART_Read(myUSARTHandle, da, 1);
                     appData.msg.data = da[0];
-                }
-            }*/
+                }*
+            }
             char Sa[2];
             switch (appData.msg.cmd) {
                 case 0xA1:
@@ -194,9 +219,11 @@ void APP_Tasks(void) {
                 }
                 default:
                 {
+                    char c[] = "\r\n--No comand--\r\n";
+                    DRV_USART_Write(myUSARTHandle, c, strlen(c));
                     break;
                 }
-            }
+            }*/
 
             appData.state = APP_STATE_IDLE;
             break;

@@ -100,7 +100,7 @@
       <Template>
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/Harmony_led_conf</Path>
-        <Checksum>C97006B848B072D0EEA772C61ACF6E39</Checksum>
+        <Checksum>9455681AD4B342E8E99B5B2711356D1A</Checksum>
       </Template>
       <Template>
         <Name>app.c</Name>
@@ -119,22 +119,22 @@
       <Template>
         <Name>drv_oc_static.c</Name>
         <Path>Source Files/app/system_config/Harmony_led_conf/framework/driver/oc/src</Path>
-        <Checksum>831A5CE4F8DA3EA8B1FC2A800F966CCC</Checksum>
-      </Template>
-      <Template>
-        <Name>system_exceptions.c</Name>
-        <Path>Source Files/app/system_config/Harmony_led_conf</Path>
-        <Checksum>C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
-      </Template>
-      <Template>
-        <Name>drv_tmr_static.c</Name>
-        <Path>Source Files/app/system_config/Harmony_led_conf/framework/driver/tmr/src</Path>
-        <Checksum>596A35C929291A77BD0611BB1DFA0D10</Checksum>
+        <Checksum>C1686FEFED94E5E9C8FDAC1F46181617</Checksum>
       </Template>
       <Template>
         <Name>drv_tmr_static.h</Name>
         <Path>Header Files/app/system_config/Harmony_led_conf/framework/driver/tmr</Path>
         <Checksum>177FC65128845C63C95944989D7BF4D8</Checksum>
+      </Template>
+      <Template>
+        <Name>drv_tmr_static.c</Name>
+        <Path>Source Files/app/system_config/Harmony_led_conf/framework/driver/tmr/src</Path>
+        <Checksum>79F7F536B51982B8580C2FFE8B7A6C7B</Checksum>
+      </Template>
+      <Template>
+        <Name>system_exceptions.c</Name>
+        <Path>Source Files/app/system_config/Harmony_led_conf</Path>
+        <Checksum>C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
       </Template>
       <Template>
         <Name>system_config.h</Name>

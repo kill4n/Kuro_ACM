@@ -113,8 +113,8 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
-    <Elem>../..</Elem>
     <Elem>../src/system_config/Lab1a_test_config</Elem>
+    <Elem>../../../../../../../microchip/harmony/v1_06</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

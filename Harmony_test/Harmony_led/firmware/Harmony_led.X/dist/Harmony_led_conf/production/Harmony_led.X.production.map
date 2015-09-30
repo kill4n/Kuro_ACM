@@ -122,56 +122,56 @@ section                    address  length [bytes]      (dec)  Description
 .text._DRV_USART_Hardwa 0x9d000780          0x404        1028   
 .text.DRV_USART_Write   0x9d000b84          0x2e4         740   
 .text.DRV_USART_Initial 0x9d000e68          0x204         516   
-.text.APP_Tasks         0x9d00106c          0x1f8         504   
-.text._DRV_USART_Buffer 0x9d001264          0x1a0         416   
-.text._DRV_USART_Buffer 0x9d001404          0x184         388   
-.text                   0x9d001588          0x168         360  App's exec code 
-.text._IntHandlerDrvUsa 0x9d0016f0          0x15c         348   
-.text.DRV_USART_Open    0x9d00184c          0x12c         300   
-.text.DRV_USART_TasksEr 0x9d001978          0x104         260   
-.text.SYS_PORTS_Initial 0x9d001a7c          0x100         256   
-.rodata                 0x9d001b7c           0xdc         220  Read-only const 
-.text.general_exception 0x9d001c58           0xdc         220   
-.text.SYS_Initialize    0x9d001d34           0xd8         216   
-.text.DRV_USART_TasksTr 0x9d001e0c           0xb4         180   
-.text.DRV_USART_TasksRe 0x9d001ec0           0xb4         180   
-.text._IntHandlerDrvTmr 0x9d001f74           0x94         148   
-.dinit                  0x9d002008           0x90         144   
-.text.DRV_TMR1_Initiali 0x9d002098           0x88         136   
-.text._IntHandlerDrvTmr 0x9d002120           0x88         136   
-.text.SYS_CLK_Initializ 0x9d0021a8           0x70         112   
-.text.DRV_TMR0_Initiali 0x9d002218           0x68         104   
-.text.SYS_DEVCON_Perfor 0x9d002280           0x60          96   
-.text.DRV_OC0_Initializ 0x9d0022e0           0x60          96   
-.text.DRV_OC1_Initializ 0x9d002340           0x60          96   
-.text.DRV_OC2_Initializ 0x9d0023a0           0x60          96   
-.text.SYS_DEVCON_System 0x9d002400           0x58          88   
-.text.SYS_INT_SourceDis 0x9d002458           0x58          88   
-.text.main_entry        0x9d0024b0           0x54          84   
-.rodata                 0x9d002504           0x4c          76  Read-only const 
-.text.SYS_DEVCON_System 0x9d002550           0x48          72   
-.text._bootstrap_except 0x9d002598           0x48          72   
-.vector_default         0x9d0025e0           0x48          72   
-.text                   0x9d002628           0x44          68  App's exec code 
-.text._general_exceptio 0x9d00266c           0x40          64   
-.text._DRV_USART_Driver 0x9d0026ac           0x28          40   
-.text.SYS_Tasks         0x9d0026d4           0x28          40   
-.rodata                 0x9d0026fc           0x20          32  Read-only const 
-.text.main              0x9d00271c           0x20          32   
-.text.SYS_INT_Initializ 0x9d00273c           0x18          24   
-.text.DRV_OC0_Start     0x9d002754           0x18          24   
-.text.DRV_OC1_Start     0x9d00276c           0x18          24   
-.text.DRV_OC2_Start     0x9d002784           0x18          24   
-.text.DRV_TMR0_Start    0x9d00279c           0x18          24   
-.text.DRV_TMR1_Start    0x9d0027b4           0x18          24   
-.text                   0x9d0027cc           0x18          24  App's exec code 
-.text.SYS_DEVCON_Initia 0x9d0027e4           0x14          20   
-.text.APP_Initialize    0x9d0027f8            0xc          12   
-.text.SYS_CLK_SystemFre 0x9d002804            0xc          12   
-.text.SYS_DEVCON_Tasks  0x9d002810            0x8           8   
-.text._on_reset         0x9d002818            0x8           8   
-.text._on_bootstrap     0x9d002820            0x8           8   
-      Total kseg0_program_mem used  :      0x20a8        8360  27.1% of 0x7880
+.text.APP_Tasks         0x9d00106c          0x1a8         424   
+.text._DRV_USART_Buffer 0x9d001214          0x1a0         416   
+.text._DRV_USART_Buffer 0x9d0013b4          0x184         388   
+.text                   0x9d001538          0x168         360  App's exec code 
+.text._IntHandlerDrvUsa 0x9d0016a0          0x15c         348   
+.text.DRV_USART_Open    0x9d0017fc          0x12c         300   
+.text.DRV_USART_TasksEr 0x9d001928          0x104         260   
+.text.SYS_PORTS_Initial 0x9d001a2c          0x100         256   
+.rodata                 0x9d001b2c           0xdc         220  Read-only const 
+.text.general_exception 0x9d001c08           0xdc         220   
+.text.SYS_Initialize    0x9d001ce4           0xd8         216   
+.text.DRV_USART_TasksTr 0x9d001dbc           0xb4         180   
+.text.DRV_USART_TasksRe 0x9d001e70           0xb4         180   
+.text._IntHandlerDrvTmr 0x9d001f24           0x94         148   
+.dinit                  0x9d001fb8           0x90         144   
+.text.DRV_TMR1_Initiali 0x9d002048           0x88         136   
+.text._IntHandlerDrvTmr 0x9d0020d0           0x88         136   
+.text.SYS_CLK_Initializ 0x9d002158           0x70         112   
+.text.DRV_TMR0_Initiali 0x9d0021c8           0x68         104   
+.text.DRV_OC0_Initializ 0x9d002230           0x64         100   
+.text.DRV_OC1_Initializ 0x9d002294           0x64         100   
+.text.DRV_OC2_Initializ 0x9d0022f8           0x64         100   
+.text.SYS_DEVCON_Perfor 0x9d00235c           0x60          96   
+.text.SYS_DEVCON_System 0x9d0023bc           0x58          88   
+.text.SYS_INT_SourceDis 0x9d002414           0x58          88   
+.text.main_entry        0x9d00246c           0x54          84   
+.rodata                 0x9d0024c0           0x4c          76  Read-only const 
+.text.SYS_DEVCON_System 0x9d00250c           0x48          72   
+.text._bootstrap_except 0x9d002554           0x48          72   
+.vector_default         0x9d00259c           0x48          72   
+.text                   0x9d0025e4           0x44          68  App's exec code 
+.text._general_exceptio 0x9d002628           0x40          64   
+.rodata                 0x9d002668           0x38          56  Read-only const 
+.text._DRV_USART_Driver 0x9d0026a0           0x28          40   
+.text.SYS_Tasks         0x9d0026c8           0x28          40   
+.text.main              0x9d0026f0           0x20          32   
+.text.SYS_INT_Initializ 0x9d002710           0x18          24   
+.text.DRV_OC0_Start     0x9d002728           0x18          24   
+.text.DRV_OC1_Start     0x9d002740           0x18          24   
+.text.DRV_OC2_Start     0x9d002758           0x18          24   
+.text.DRV_TMR0_Start    0x9d002770           0x18          24   
+.text.DRV_TMR1_Start    0x9d002788           0x18          24   
+.text                   0x9d0027a0           0x18          24  App's exec code 
+.text.SYS_DEVCON_Initia 0x9d0027b8           0x14          20   
+.text.APP_Initialize    0x9d0027cc            0xc          12   
+.text.SYS_CLK_SystemFre 0x9d0027d8            0xc          12   
+.text.SYS_DEVCON_Tasks  0x9d0027e4            0x8           8   
+.text._on_reset         0x9d0027ec            0x8           8   
+.text._on_bootstrap     0x9d0027f4            0x8           8   
+      Total kseg0_program_mem used  :      0x207c        8316  27.0% of 0x7880
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -235,7 +235,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x1e0         480  41.1% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x23f8        9208  27.1% of 0x8490
+         Total Program Memory used  :      0x23cc        9164  27.0% of 0x8490
         --------------------------------------------------------------------------
 
 
@@ -1459,74 +1459,74 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x1b780
+.debug_info     0x00000000    0x1b603
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x14a8 build/Harmony_led_conf/production/_ext/1360937237/app.o
- .debug_info    0x000014a8      0x1bf build/Harmony_led_conf/production/_ext/1360937237/main.o
- .debug_info    0x00001667     0x51fd build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
- .debug_info    0x00006864     0x25e6 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
- .debug_info    0x00008e4a      0xff0 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
- .debug_info    0x00009e3a      0x78d build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
- .debug_info    0x0000a5c7     0x12d1 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
- .debug_info    0x0000b898     0x39bf build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
- .debug_info    0x0000f257     0x15f0 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
- .debug_info    0x00010847     0x27bd build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
- .debug_info    0x00013004     0x155b build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
- .debug_info    0x0001455f     0x1eba build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
- .debug_info    0x00016419     0x25fb build/Harmony_led_conf/production/_ext/1727537816/system_init.o
- .debug_info    0x00018a14     0x1440 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
- .debug_info    0x00019e54      0xbaf build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
- .debug_info    0x0001aa03      0xa41 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
- .debug_info    0x0001b444       0xe3 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_info    0x0001b527       0xbd c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_info    0x0001b5e4       0xc5 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x0001b6a9       0xd7 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x00000000     0x132b build/Harmony_led_conf/production/_ext/1360937237/app.o
+ .debug_info    0x0000132b      0x1bf build/Harmony_led_conf/production/_ext/1360937237/main.o
+ .debug_info    0x000014ea     0x51fd build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+ .debug_info    0x000066e7     0x25e6 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
+ .debug_info    0x00008ccd      0xff0 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+ .debug_info    0x00009cbd      0x78d build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
+ .debug_info    0x0000a44a     0x12d1 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+ .debug_info    0x0000b71b     0x39bf build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
+ .debug_info    0x0000f0da     0x15f0 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+ .debug_info    0x000106ca     0x27bd build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+ .debug_info    0x00012e87     0x155b build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+ .debug_info    0x000143e2     0x1eba build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
+ .debug_info    0x0001629c     0x25fb build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+ .debug_info    0x00018897     0x1440 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+ .debug_info    0x00019cd7      0xbaf build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
+ .debug_info    0x0001a886      0xa41 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
+ .debug_info    0x0001b2c7       0xe3 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x0001b3aa       0xbd c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x0001b467       0xc5 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x0001b52c       0xd7 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_abbrev   0x00000000     0x1f25
+.debug_abbrev   0x00000000     0x1f2e
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x21f build/Harmony_led_conf/production/_ext/1360937237/app.o
- .debug_abbrev  0x0000021f       0x93 build/Harmony_led_conf/production/_ext/1360937237/main.o
- .debug_abbrev  0x000002b2      0x428 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
- .debug_abbrev  0x000006da      0x36c build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
- .debug_abbrev  0x00000a46      0x285 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
- .debug_abbrev  0x00000ccb      0x162 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
- .debug_abbrev  0x00000e2d      0x1d0 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
- .debug_abbrev  0x00000ffd      0x238 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
- .debug_abbrev  0x00001235      0x157 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
- .debug_abbrev  0x0000138c      0x241 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
- .debug_abbrev  0x000015cd      0x209 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
- .debug_abbrev  0x000017d6      0x12f build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
- .debug_abbrev  0x00001905      0x2bd build/Harmony_led_conf/production/_ext/1727537816/system_init.o
- .debug_abbrev  0x00001bc2      0x15e build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
- .debug_abbrev  0x00001d20       0xa2 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
- .debug_abbrev  0x00001dc2       0xc3 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
- .debug_abbrev  0x00001e85       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_abbrev  0x00001ead       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_abbrev  0x00001ed5       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_abbrev  0x00001efd       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_abbrev  0x00000000      0x228 build/Harmony_led_conf/production/_ext/1360937237/app.o
+ .debug_abbrev  0x00000228       0x93 build/Harmony_led_conf/production/_ext/1360937237/main.o
+ .debug_abbrev  0x000002bb      0x428 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+ .debug_abbrev  0x000006e3      0x36c build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
+ .debug_abbrev  0x00000a4f      0x285 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+ .debug_abbrev  0x00000cd4      0x162 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
+ .debug_abbrev  0x00000e36      0x1d0 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+ .debug_abbrev  0x00001006      0x238 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
+ .debug_abbrev  0x0000123e      0x157 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+ .debug_abbrev  0x00001395      0x241 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+ .debug_abbrev  0x000015d6      0x209 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+ .debug_abbrev  0x000017df      0x12f build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
+ .debug_abbrev  0x0000190e      0x2bd build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+ .debug_abbrev  0x00001bcb      0x15e build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+ .debug_abbrev  0x00001d29       0xa2 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
+ .debug_abbrev  0x00001dcb       0xc3 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
+ .debug_abbrev  0x00001e8e       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_abbrev  0x00001eb6       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_abbrev  0x00001ede       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_abbrev  0x00001f06       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_line     0x00000000     0x53ea
+.debug_line     0x00000000     0x53d4
  *(.debug_line)
- .debug_line    0x00000000      0x539 build/Harmony_led_conf/production/_ext/1360937237/app.o
- .debug_line    0x00000539       0xcc build/Harmony_led_conf/production/_ext/1360937237/main.o
- .debug_line    0x00000605      0xd7b build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
- .debug_line    0x00001380      0x765 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
- .debug_line    0x00001ae5      0x5bf build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
- .debug_line    0x000020a4      0x379 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
- .debug_line    0x0000241d      0x38c build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
- .debug_line    0x000027a9      0x821 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
- .debug_line    0x00002fca      0x4e8 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
- .debug_line    0x000034b2      0x634 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
- .debug_line    0x00003ae6      0x3e8 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
- .debug_line    0x00003ece      0x464 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
- .debug_line    0x00004332      0x6fc build/Harmony_led_conf/production/_ext/1727537816/system_init.o
- .debug_line    0x00004a2e      0x392 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
- .debug_line    0x00004dc0      0x1a2 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
- .debug_line    0x00004f62      0x24f build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
- .debug_line    0x000051b1       0x97 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x00005248       0x84 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x000052cc       0x88 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x00005354       0x96 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x00000000      0x523 build/Harmony_led_conf/production/_ext/1360937237/app.o
+ .debug_line    0x00000523       0xcc build/Harmony_led_conf/production/_ext/1360937237/main.o
+ .debug_line    0x000005ef      0xd7b build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+ .debug_line    0x0000136a      0x765 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
+ .debug_line    0x00001acf      0x5bf build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+ .debug_line    0x0000208e      0x379 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
+ .debug_line    0x00002407      0x38c build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+ .debug_line    0x00002793      0x821 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
+ .debug_line    0x00002fb4      0x4e8 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+ .debug_line    0x0000349c      0x634 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+ .debug_line    0x00003ad0      0x3e8 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+ .debug_line    0x00003eb8      0x464 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
+ .debug_line    0x0000431c      0x6fc build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+ .debug_line    0x00004a18      0x392 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+ .debug_line    0x00004daa      0x1a2 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
+ .debug_line    0x00004f4c      0x24f build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
+ .debug_line    0x0000519b       0x97 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x00005232       0x84 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x000052b6       0x88 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x0000533e       0x96 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_frame    0x00000000      0xa08
  *(.debug_frame)
@@ -1551,41 +1551,41 @@ END GROUP
  .debug_frame   0x000009c8       0x20 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
  .debug_frame   0x000009e8       0x20 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_str      0x00000000      0x439
+.debug_str      0x00000000      0x424
  *(.debug_str)
- .debug_str     0x00000000       0x15 build/Harmony_led_conf/production/_ext/1360937237/app.o
- .debug_str     0x00000015        0x0 build/Harmony_led_conf/production/_ext/1360937237/main.o
- .debug_str     0x00000015      0x187 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
- .debug_str     0x0000019c       0x65 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
- .debug_str     0x00000201       0x16 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
- .debug_str     0x00000217        0x6 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
- .debug_str     0x0000021d       0x2d build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
- .debug_str     0x0000024a       0x98 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
- .debug_str     0x000002e2       0x1a build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
- .debug_str     0x000002fc       0x6b build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
- .debug_str     0x00000367       0x46 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
- .debug_str     0x000003ad       0x56 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
- .debug_str     0x00000403       0x36 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
- .debug_str     0x00000439        0x0 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
- .debug_str     0x00000439        0x0 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
- .debug_str     0x00000439        0x0 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
- .debug_str     0x00000439        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_str     0x00000439        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_str     0x00000439        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_str     0x00000439        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_str     0x00000000        0x0 build/Harmony_led_conf/production/_ext/1360937237/app.o
+ .debug_str     0x00000000        0x0 build/Harmony_led_conf/production/_ext/1360937237/main.o
+ .debug_str     0x00000000      0x187 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+ .debug_str     0x00000187       0x65 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
+ .debug_str     0x000001ec       0x16 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+ .debug_str     0x00000202        0x6 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
+ .debug_str     0x00000208       0x2d build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+ .debug_str     0x00000235       0x98 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
+ .debug_str     0x000002cd       0x1a build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+ .debug_str     0x000002e7       0x6b build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+ .debug_str     0x00000352       0x46 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+ .debug_str     0x00000398       0x56 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
+ .debug_str     0x000003ee       0x36 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+ .debug_str     0x00000424        0x0 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+ .debug_str     0x00000424        0x0 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
+ .debug_str     0x00000424        0x0 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
+ .debug_str     0x00000424        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_str     0x00000424        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_str     0x00000424        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_str     0x00000424        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_loc      0x00000000     0x40bd
+.debug_loc      0x00000000     0x406d
  *(.debug_loc)
- .debug_loc     0x00000000       0x64 build/Harmony_led_conf/production/_ext/1360937237/app.o
- .debug_loc     0x00000064     0x2537 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
- .debug_loc     0x0000259b      0xa59 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
- .debug_loc     0x00002ff4       0xf0 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
- .debug_loc     0x000030e4       0x85 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
- .debug_loc     0x00003169       0x8d build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
- .debug_loc     0x000031f6      0xe64 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
- .debug_loc     0x0000405a       0x21 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
- .debug_loc     0x0000407b       0x21 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
- .debug_loc     0x0000409c       0x21 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+ .debug_loc     0x00000000       0x14 build/Harmony_led_conf/production/_ext/1360937237/app.o
+ .debug_loc     0x00000014     0x2537 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+ .debug_loc     0x0000254b      0xa59 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
+ .debug_loc     0x00002fa4       0xf0 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+ .debug_loc     0x00003094       0x85 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
+ .debug_loc     0x00003119       0x8d build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+ .debug_loc     0x000031a6      0xe64 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
+ .debug_loc     0x0000400a       0x21 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+ .debug_loc     0x0000402b       0x21 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+ .debug_loc     0x0000404c       0x21 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1605,28 +1605,28 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0xa78
+.debug_ranges   0x00000000      0xa80
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x30 build/Harmony_led_conf/production/_ext/1360937237/app.o
- .debug_ranges  0x00000030       0x10 build/Harmony_led_conf/production/_ext/1360937237/main.o
- .debug_ranges  0x00000040      0x500 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
- .debug_ranges  0x00000540      0x1c0 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
- .debug_ranges  0x00000700       0x68 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
- .debug_ranges  0x00000768       0x10 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
- .debug_ranges  0x00000778       0x50 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
- .debug_ranges  0x000007c8       0xe8 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
- .debug_ranges  0x000008b0       0x98 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
- .debug_ranges  0x00000948       0x68 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
- .debug_ranges  0x000009b0       0x28 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
- .debug_ranges  0x000009d8       0x10 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
- .debug_ranges  0x000009e8       0x10 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
- .debug_ranges  0x000009f8       0x20 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
- .debug_ranges  0x00000a18       0x10 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
- .debug_ranges  0x00000a28       0x10 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
- .debug_ranges  0x00000a38       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_ranges  0x00000a48       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_ranges  0x00000a58       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_ranges  0x00000a68       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_ranges  0x00000000       0x38 build/Harmony_led_conf/production/_ext/1360937237/app.o
+ .debug_ranges  0x00000038       0x10 build/Harmony_led_conf/production/_ext/1360937237/main.o
+ .debug_ranges  0x00000048      0x500 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+ .debug_ranges  0x00000548      0x1c0 build/Harmony_led_conf/production/_ext/307986160/drv_usart_read_write.o
+ .debug_ranges  0x00000708       0x68 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+ .debug_ranges  0x00000770       0x10 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
+ .debug_ranges  0x00000780       0x50 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+ .debug_ranges  0x000007d0       0xe8 build/Harmony_led_conf/production/_ext/71333484/sys_ports.o
+ .debug_ranges  0x000008b8       0x98 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+ .debug_ranges  0x00000950       0x68 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+ .debug_ranges  0x000009b8       0x28 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+ .debug_ranges  0x000009e0       0x10 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
+ .debug_ranges  0x000009f0       0x10 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+ .debug_ranges  0x00000a00       0x20 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+ .debug_ranges  0x00000a20       0x10 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
+ .debug_ranges  0x00000a30       0x10 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
+ .debug_ranges  0x00000a40       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_ranges  0x00000a50       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_ranges  0x00000a60       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_ranges  0x00000a70       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .gnu.attributes
                 0x00000000       0x10
@@ -1722,277 +1722,277 @@ LOAD data_init
                 0x9d000e68                DRV_USART_Initialize
 
 .text.APP_Tasks
-                0x9d00106c      0x1f8
+                0x9d00106c      0x1a8
  .text.APP_Tasks
-                0x9d00106c      0x1f8 build/Harmony_led_conf/production/_ext/1360937237/app.o
+                0x9d00106c      0x1a8 build/Harmony_led_conf/production/_ext/1360937237/app.o
                 0x9d00106c                APP_Tasks
 
 .text._DRV_USART_BufferQueueTxTasks
-                0x9d001264      0x1a0
+                0x9d001214      0x1a0
  .text._DRV_USART_BufferQueueTxTasks
-                0x9d001264      0x1a0 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
-                0x9d001264                _DRV_USART_BufferQueueTxTasks
+                0x9d001214      0x1a0 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+                0x9d001214                _DRV_USART_BufferQueueTxTasks
 
 .text._DRV_USART_BufferQueueRxTasks
-                0x9d001404      0x184
+                0x9d0013b4      0x184
  .text._DRV_USART_BufferQueueRxTasks
-                0x9d001404      0x184 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
-                0x9d001404                _DRV_USART_BufferQueueRxTasks
+                0x9d0013b4      0x184 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+                0x9d0013b4                _DRV_USART_BufferQueueRxTasks
 
-.text           0x9d001588      0x168
- .text          0x9d001588      0x168 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(strlen.o)
-                0x9d001588                strlen
+.text           0x9d001538      0x168
+ .text          0x9d001538      0x168 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(strlen.o)
+                0x9d001538                strlen
 
 .text._IntHandlerDrvUsartInstance0
-                0x9d0016f0      0x15c
+                0x9d0016a0      0x15c
  .text._IntHandlerDrvUsartInstance0
-                0x9d0016f0      0x15c build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
-                0x9d0016f0                _IntHandlerDrvUsartInstance0
+                0x9d0016a0      0x15c build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+                0x9d0016a0                _IntHandlerDrvUsartInstance0
 
 .text.DRV_USART_Open
-                0x9d00184c      0x12c
+                0x9d0017fc      0x12c
  .text.DRV_USART_Open
-                0x9d00184c      0x12c build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
-                0x9d00184c                DRV_USART_Open
+                0x9d0017fc      0x12c build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+                0x9d0017fc                DRV_USART_Open
 
 .text.DRV_USART_TasksError
-                0x9d001978      0x104
+                0x9d001928      0x104
  .text.DRV_USART_TasksError
-                0x9d001978      0x104 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
-                0x9d001978                DRV_USART_TasksError
+                0x9d001928      0x104 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+                0x9d001928                DRV_USART_TasksError
 
 .text.SYS_PORTS_Initialize
-                0x9d001a7c      0x100
+                0x9d001a2c      0x100
  .text.SYS_PORTS_Initialize
-                0x9d001a7c      0x100 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
-                0x9d001a7c                SYS_PORTS_Initialize
+                0x9d001a2c      0x100 build/Harmony_led_conf/production/_ext/1145643903/sys_ports_static.o
+                0x9d001a2c                SYS_PORTS_Initialize
 
-.rodata         0x9d001b7c       0xdc
- .rodata        0x9d001b7c       0xdc build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
+.rodata         0x9d001b2c       0xdc
+ .rodata        0x9d001b2c       0xdc build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
 
 .text.general_exception
-                0x9d001c58       0xdc
+                0x9d001c08       0xdc
  .text.general_exception
-                0x9d001c58       0xdc c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                0x9d001c58                _general_exception_context
+                0x9d001c08       0xdc c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x9d001c08                _general_exception_context
 
 .text.SYS_Initialize
-                0x9d001d34       0xd8
+                0x9d001ce4       0xd8
  .text.SYS_Initialize
-                0x9d001d34       0xd8 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
-                0x9d001d34                SYS_Initialize
+                0x9d001ce4       0xd8 build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+                0x9d001ce4                SYS_Initialize
 
 .text.DRV_USART_TasksTransmit
-                0x9d001e0c       0xb4
+                0x9d001dbc       0xb4
  .text.DRV_USART_TasksTransmit
-                0x9d001e0c       0xb4 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
-                0x9d001e0c                DRV_USART_TasksTransmit
+                0x9d001dbc       0xb4 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+                0x9d001dbc                DRV_USART_TasksTransmit
 
 .text.DRV_USART_TasksReceive
-                0x9d001ec0       0xb4
+                0x9d001e70       0xb4
  .text.DRV_USART_TasksReceive
-                0x9d001ec0       0xb4 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
-                0x9d001ec0                DRV_USART_TasksReceive
+                0x9d001e70       0xb4 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+                0x9d001e70                DRV_USART_TasksReceive
 
 .text._IntHandlerDrvTmrInstance0
-                0x9d001f74       0x94
+                0x9d001f24       0x94
  .text._IntHandlerDrvTmrInstance0
-                0x9d001f74       0x94 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
-                0x9d001f74                _IntHandlerDrvTmrInstance0
+                0x9d001f24       0x94 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+                0x9d001f24                _IntHandlerDrvTmrInstance0
 
-.dinit          0x9d002008       0x90
- .dinit         0x9d002008       0x90 data_init
+.dinit          0x9d001fb8       0x90
+ .dinit         0x9d001fb8       0x90 data_init
 
 .text.DRV_TMR1_Initialize
-                0x9d002098       0x88
+                0x9d002048       0x88
  .text.DRV_TMR1_Initialize
-                0x9d002098       0x88 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
-                0x9d002098                DRV_TMR1_Initialize
+                0x9d002048       0x88 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+                0x9d002048                DRV_TMR1_Initialize
 
 .text._IntHandlerDrvTmrInstance1
-                0x9d002120       0x88
+                0x9d0020d0       0x88
  .text._IntHandlerDrvTmrInstance1
-                0x9d002120       0x88 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
-                0x9d002120                _IntHandlerDrvTmrInstance1
+                0x9d0020d0       0x88 build/Harmony_led_conf/production/_ext/1727537816/system_interrupt.o
+                0x9d0020d0                _IntHandlerDrvTmrInstance1
 
 .text.SYS_CLK_Initialize
-                0x9d0021a8       0x70
+                0x9d002158       0x70
  .text.SYS_CLK_Initialize
-                0x9d0021a8       0x70 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
-                0x9d0021a8                SYS_CLK_Initialize
+                0x9d002158       0x70 build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+                0x9d002158                SYS_CLK_Initialize
 
 .text.DRV_TMR0_Initialize
-                0x9d002218       0x68
+                0x9d0021c8       0x68
  .text.DRV_TMR0_Initialize
-                0x9d002218       0x68 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
-                0x9d002218                DRV_TMR0_Initialize
-
-.text.SYS_DEVCON_PerformanceConfig
-                0x9d002280       0x60
- .text.SYS_DEVCON_PerformanceConfig
-                0x9d002280       0x60 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
-                0x9d002280                SYS_DEVCON_PerformanceConfig
+                0x9d0021c8       0x68 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+                0x9d0021c8                DRV_TMR0_Initialize
 
 .text.DRV_OC0_Initialize
-                0x9d0022e0       0x60
+                0x9d002230       0x64
  .text.DRV_OC0_Initialize
-                0x9d0022e0       0x60 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
-                0x9d0022e0                DRV_OC0_Initialize
+                0x9d002230       0x64 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+                0x9d002230                DRV_OC0_Initialize
 
 .text.DRV_OC1_Initialize
-                0x9d002340       0x60
+                0x9d002294       0x64
  .text.DRV_OC1_Initialize
-                0x9d002340       0x60 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
-                0x9d002340                DRV_OC1_Initialize
+                0x9d002294       0x64 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+                0x9d002294                DRV_OC1_Initialize
 
 .text.DRV_OC2_Initialize
-                0x9d0023a0       0x60
+                0x9d0022f8       0x64
  .text.DRV_OC2_Initialize
-                0x9d0023a0       0x60 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
-                0x9d0023a0                DRV_OC2_Initialize
+                0x9d0022f8       0x64 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+                0x9d0022f8                DRV_OC2_Initialize
+
+.text.SYS_DEVCON_PerformanceConfig
+                0x9d00235c       0x60
+ .text.SYS_DEVCON_PerformanceConfig
+                0x9d00235c       0x60 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon_pic32mx.o
+                0x9d00235c                SYS_DEVCON_PerformanceConfig
 
 .text.SYS_DEVCON_SystemUnlock
-                0x9d002400       0x58
+                0x9d0023bc       0x58
  .text.SYS_DEVCON_SystemUnlock
-                0x9d002400       0x58 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
-                0x9d002400                SYS_DEVCON_SystemUnlock
+                0x9d0023bc       0x58 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+                0x9d0023bc                SYS_DEVCON_SystemUnlock
 
 .text.SYS_INT_SourceDisable
-                0x9d002458       0x58
+                0x9d002414       0x58
  .text.SYS_INT_SourceDisable
-                0x9d002458       0x58 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
-                0x9d002458                SYS_INT_SourceDisable
+                0x9d002414       0x58 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+                0x9d002414                SYS_INT_SourceDisable
 
 .text.main_entry
-                0x9d0024b0       0x54
+                0x9d00246c       0x54
  .text.main_entry
-                0x9d0024b0       0x54 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX220F032B/crt0_mips32r2.o
-                0x9d0024e4                __crt0_exit
+                0x9d00246c       0x54 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX220F032B/crt0_mips32r2.o
+                0x9d0024a0                __crt0_exit
 
-.rodata         0x9d002504       0x4c
- .rodata        0x9d002504       0x4c build/Harmony_led_conf/production/_ext/1727537816/system_init.o
-                0x9d002504                drvUsart0InitData
-                0x9d00254c                sysDevconInit
+.rodata         0x9d0024c0       0x4c
+ .rodata        0x9d0024c0       0x4c build/Harmony_led_conf/production/_ext/1727537816/system_init.o
+                0x9d0024c0                drvUsart0InitData
+                0x9d002508                sysDevconInit
 
 .text.SYS_DEVCON_SystemLock
-                0x9d002550       0x48
+                0x9d00250c       0x48
  .text.SYS_DEVCON_SystemLock
-                0x9d002550       0x48 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
-                0x9d002550                SYS_DEVCON_SystemLock
+                0x9d00250c       0x48 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+                0x9d00250c                SYS_DEVCON_SystemLock
 
 .text._bootstrap_exception_handler
-                0x9d002598       0x48
+                0x9d002554       0x48
  .text._bootstrap_exception_handler
-                0x9d002598       0x48 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                0x9d002598                _bootstrap_exception_handler
+                0x9d002554       0x48 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d002554                _bootstrap_exception_handler
 
 .vector_default
-                0x9d0025e0       0x48
+                0x9d00259c       0x48
  .vector_default
-                0x9d0025e0       0x48 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
-                0x9d0025e0                _DefaultInterrupt
+                0x9d00259c       0x48 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x9d00259c                _DefaultInterrupt
 
-.text           0x9d002628       0x44
- .text          0x9d002628       0x44 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
-                0x9d002628                __pic32_software_reset
+.text           0x9d0025e4       0x44
+ .text          0x9d0025e4       0x44 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+                0x9d0025e4                __pic32_software_reset
 
 .text._general_exception_handler
-                0x9d00266c       0x40
+                0x9d002628       0x40
  .text._general_exception_handler
-                0x9d00266c       0x40 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
-                0x9d00266c                _general_exception_handler
+                0x9d002628       0x40 build/Harmony_led_conf/production/_ext/1727537816/system_exceptions.o
+                0x9d002628                _general_exception_handler
+
+.rodata         0x9d002668       0x38
+ .rodata        0x9d002668       0x38 build/Harmony_led_conf/production/_ext/1360937237/app.o
 
 .text._DRV_USART_DriverHandleValidate
-                0x9d0026ac       0x28
+                0x9d0026a0       0x28
  .text._DRV_USART_DriverHandleValidate
-                0x9d0026ac       0x28 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
-                0x9d0026ac                _DRV_USART_DriverHandleValidate
+                0x9d0026a0       0x28 build/Harmony_led_conf/production/_ext/307986160/drv_usart.o
+                0x9d0026a0                _DRV_USART_DriverHandleValidate
 
 .text.SYS_Tasks
-                0x9d0026d4       0x28
+                0x9d0026c8       0x28
  .text.SYS_Tasks
-                0x9d0026d4       0x28 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
-                0x9d0026d4                SYS_Tasks
+                0x9d0026c8       0x28 build/Harmony_led_conf/production/_ext/1727537816/system_tasks.o
+                0x9d0026c8                SYS_Tasks
 
-.rodata         0x9d0026fc       0x20
- .rodata        0x9d0026fc       0x20 build/Harmony_led_conf/production/_ext/1360937237/app.o
-
-.text.main      0x9d00271c       0x20
- .text.main     0x9d00271c       0x20 build/Harmony_led_conf/production/_ext/1360937237/main.o
-                0x9d00271c                main
+.text.main      0x9d0026f0       0x20
+ .text.main     0x9d0026f0       0x20 build/Harmony_led_conf/production/_ext/1360937237/main.o
+                0x9d0026f0                main
 
 .text.SYS_INT_Initialize
-                0x9d00273c       0x18
+                0x9d002710       0x18
  .text.SYS_INT_Initialize
-                0x9d00273c       0x18 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
-                0x9d00273c                SYS_INT_Initialize
+                0x9d002710       0x18 build/Harmony_led_conf/production/_ext/619095503/sys_int_pic32.o
+                0x9d002710                SYS_INT_Initialize
 
 .text.DRV_OC0_Start
-                0x9d002754       0x18
+                0x9d002728       0x18
  .text.DRV_OC0_Start
-                0x9d002754       0x18 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
-                0x9d002754                DRV_OC0_Start
+                0x9d002728       0x18 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+                0x9d002728                DRV_OC0_Start
 
 .text.DRV_OC1_Start
-                0x9d00276c       0x18
+                0x9d002740       0x18
  .text.DRV_OC1_Start
-                0x9d00276c       0x18 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
-                0x9d00276c                DRV_OC1_Start
+                0x9d002740       0x18 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+                0x9d002740                DRV_OC1_Start
 
 .text.DRV_OC2_Start
-                0x9d002784       0x18
+                0x9d002758       0x18
  .text.DRV_OC2_Start
-                0x9d002784       0x18 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
-                0x9d002784                DRV_OC2_Start
+                0x9d002758       0x18 build/Harmony_led_conf/production/_ext/1323733768/drv_oc_static.o
+                0x9d002758                DRV_OC2_Start
 
 .text.DRV_TMR0_Start
-                0x9d00279c       0x18
+                0x9d002770       0x18
  .text.DRV_TMR0_Start
-                0x9d00279c       0x18 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
-                0x9d00279c                DRV_TMR0_Start
+                0x9d002770       0x18 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+                0x9d002770                DRV_TMR0_Start
 
 .text.DRV_TMR1_Start
-                0x9d0027b4       0x18
+                0x9d002788       0x18
  .text.DRV_TMR1_Start
-                0x9d0027b4       0x18 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
-                0x9d0027b4                DRV_TMR1_Start
+                0x9d002788       0x18 build/Harmony_led_conf/production/_ext/1892346881/drv_tmr_static.o
+                0x9d002788                DRV_TMR1_Start
 
-.text           0x9d0027cc       0x18
- .text          0x9d0027cc       0x18 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                0x9d0027cc                _nmi_handler
+.text           0x9d0027a0       0x18
+ .text          0x9d0027a0       0x18 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x9d0027a0                _nmi_handler
 
 .text.SYS_DEVCON_Initialize
-                0x9d0027e4       0x14
+                0x9d0027b8       0x14
  .text.SYS_DEVCON_Initialize
-                0x9d0027e4       0x14 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
-                0x9d0027e4                SYS_DEVCON_Initialize
+                0x9d0027b8       0x14 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+                0x9d0027b8                SYS_DEVCON_Initialize
 
 .text.APP_Initialize
-                0x9d0027f8        0xc
+                0x9d0027cc        0xc
  .text.APP_Initialize
-                0x9d0027f8        0xc build/Harmony_led_conf/production/_ext/1360937237/app.o
-                0x9d0027f8                APP_Initialize
+                0x9d0027cc        0xc build/Harmony_led_conf/production/_ext/1360937237/app.o
+                0x9d0027cc                APP_Initialize
 
 .text.SYS_CLK_SystemFrequencyGet
-                0x9d002804        0xc
+                0x9d0027d8        0xc
  .text.SYS_CLK_SystemFrequencyGet
-                0x9d002804        0xc build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
-                0x9d002804                SYS_CLK_SystemFrequencyGet
+                0x9d0027d8        0xc build/Harmony_led_conf/production/_ext/154700431/sys_clk_static.o
+                0x9d0027d8                SYS_CLK_SystemFrequencyGet
 
 .text.SYS_DEVCON_Tasks
-                0x9d002810        0x8
+                0x9d0027e4        0x8
  .text.SYS_DEVCON_Tasks
-                0x9d002810        0x8 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
-                0x9d002810                SYS_DEVCON_Tasks
+                0x9d0027e4        0x8 build/Harmony_led_conf/production/_ext/1456753813/sys_devcon.o
+                0x9d0027e4                SYS_DEVCON_Tasks
 
 .text._on_reset
-                0x9d002818        0x8
+                0x9d0027ec        0x8
  .text._on_reset
-                0x9d002818        0x8 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                0x9d002818                _on_reset
+                0x9d0027ec        0x8 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x9d0027ec                _on_reset
 
 .text._on_bootstrap
-                0x9d002820        0x8
+                0x9d0027f4        0x8
  .text._on_bootstrap
-                0x9d002820        0x8 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                0x9d002820                _on_bootstrap
+                0x9d0027f4        0x8 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x9d0027f4                _on_bootstrap

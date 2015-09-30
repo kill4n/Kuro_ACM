@@ -128,7 +128,7 @@ void DRV_TMR1_Initialize(void)
 
     /* Setup Interrupt */   
     PLIB_INT_SourceEnable(INT_ID_0, INT_SOURCE_TIMER_2);
-    PLIB_INT_VectorPrioritySet(INT_ID_0, INT_VECTOR_T2, INT_PRIORITY_LEVEL1);
+    PLIB_INT_VectorPrioritySet(INT_ID_0, INT_VECTOR_T2, INT_PRIORITY_LEVEL2);
     PLIB_INT_VectorSubPrioritySet(INT_ID_0, INT_VECTOR_T2, INT_SUBPRIORITY_LEVEL0);          
 }
 

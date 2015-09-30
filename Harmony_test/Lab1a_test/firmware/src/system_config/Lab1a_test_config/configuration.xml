@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration version="1.0.6.12">
   <General>
-    <HarmonyPath path="../.."/>
+    <HarmonyPath path="../../../../../../../microchip/harmony/v1_06"/>
     <ForceOptimization flag="true"/>
   </General>
   <Manifest>
@@ -27,16 +27,16 @@
         <Path>Header Files/framework/system/ports</Path>
       </File>
       <File>
-        <Name>system.h</Name>
-        <Path>Header Files/framework/system</Path>
+        <Name>sys_int_pic32.c</Name>
+        <Path>Source Files/framework/system/int/src</Path>
       </File>
       <File>
         <Name>sys_ports.c</Name>
         <Path>Source Files/framework/system/ports/src</Path>
       </File>
       <File>
-        <Name>sys_int_pic32.c</Name>
-        <Path>Source Files/framework/system/int/src</Path>
+        <Name>system.h</Name>
+        <Path>Header Files/framework/system</Path>
       </File>
       <File>
         <Name>sys_devcon.h</Name>
@@ -53,6 +53,10 @@
         <Path>Source Files/app</Path>
       </Template>
       <Template>
+        <Name>app.c</Name>
+        <Path>Source Files/app</Path>
+      </Template>
+      <Template>
         <Name>drv_tmr_static.h</Name>
         <Path>Header Files/app/system_config/Lab1a_test_config/framework/driver/tmr</Path>
         <Checksum>1EEAFE0A143AFA7C44B680539F52062B</Checksum>
@@ -63,14 +67,18 @@
         <Checksum>999179DADE9ECD59953526F5E9F83ACC</Checksum>
       </Template>
       <Template>
+        <Name>system_init.c</Name>
+        <Path>Source Files/app/system_config/Lab1a_test_config</Path>
+        <Checksum>3924572D74E79DA71445BC9B0514CAE9</Checksum>
+      </Template>
+      <Template>
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/Lab1a_test_config</Path>
         <Checksum>CD3C3A1F0A5424247059EF7A811C39C8</Checksum>
       </Template>
       <Template>
-        <Name>system_tasks.c</Name>
-        <Path>Source Files/app/system_config/Lab1a_test_config</Path>
-        <Checksum>BE644D0142ACA48D9CA2E6255A02CDBA</Checksum>
+        <Name>app.h</Name>
+        <Path>Header Files/app</Path>
       </Template>
       <Template>
         <Name>drv_tmr_static.c</Name>
@@ -78,22 +86,14 @@
         <Checksum>71405741A001A5C7A413F4AAF84681AA</Checksum>
       </Template>
       <Template>
-        <Name>app.h</Name>
-        <Path>Header Files/app</Path>
+        <Name>system_tasks.c</Name>
+        <Path>Source Files/app/system_config/Lab1a_test_config</Path>
+        <Checksum>BE644D0142ACA48D9CA2E6255A02CDBA</Checksum>
       </Template>
       <Template>
         <Name>system_definitions.h</Name>
         <Path>Header Files/app/system_config/Lab1a_test_config</Path>
         <Checksum>8DC02B3AC60D415682554CC6B81D1636</Checksum>
-      </Template>
-      <Template>
-        <Name>app.c</Name>
-        <Path>Source Files/app</Path>
-      </Template>
-      <Template>
-        <Name>system_init.c</Name>
-        <Path>Source Files/app/system_config/Lab1a_test_config</Path>
-        <Checksum>3924572D74E79DA71445BC9B0514CAE9</Checksum>
       </Template>
       <Template>
         <Name>sys_ports_static.c</Name>

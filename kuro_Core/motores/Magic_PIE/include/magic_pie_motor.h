@@ -9,7 +9,7 @@ namespace magic_pie {
 class magic_pie_motor : public MotorInterface
 {
 public:
-    magic_pie_motor(int id = 0);
+    magic_pie_motor(int id = 0, MOTOR_TYPE type = WHEEL);
 
     //funciones de la clase padre
     virtual void startMotor();

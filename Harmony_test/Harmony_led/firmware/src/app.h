@@ -113,7 +113,7 @@ extern "C" {
 
     typedef struct {
         short cmd;
-        short data
+        short data;
     } MESSAGE_DATA;
     
     typedef struct {
