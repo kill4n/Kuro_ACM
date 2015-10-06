@@ -1,6 +1,6 @@
 #include "camaracontroller.h"
 using namespace camara;
-CamaraController::CamaraController(): _fps(30), _width(320), _height(240)
+CamaraController::CamaraController(): _fps(30), _width(320), _height(240), isRunning(false), isRun(isRunning)
 {
     printf("camara creada\r\n");
 }
@@ -26,31 +26,27 @@ bool CamaraController::startCamara()
         return true;
     }
 }
+bool CamaraController::stopCamera()
+{
+    isRunning=false;
+}
 
 void CamaraController::setCallback(void(*newFrameCallBack)(bool , Mat))
 {
     callback = newFrameCallBack;
-    printf("Definida llamada de Callback\r\n");
 }
 
 void CamaraController::InternalThreadEntry()
 {
-    printf("Hola 0 desde Hilo {%d}\r\n",isRunning);
     while (isRunning) {
-        printf("Hola 0 desde Hilo {%d}\r\n",isRunning);
         if(_camera.isOpened())
         {
             _camera >> frame;
-            printf("hay frame \r\n");
             this->callback(true, frame);
-        }
-        else
-        {
-            Mat M(20,20, CV_8UC3, Scalar(125,125,255));
-            this->callback(false, M);
         }
         usleep(1000000/_fps);
     }
+    _camera.release();
 }
 
 void CamaraController::setCameraResol(int width, int height)
@@ -73,4 +69,3 @@ int CamaraController::getFPS()
 {
     return _fps;
 }
-

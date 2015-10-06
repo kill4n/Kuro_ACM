@@ -9,10 +9,6 @@
 namespace camara {
 
 using namespace cv;
-struct CAM_STR{
-    bool isData;
-    Mat frame;
-};
 
 class CamaraController : public MyThread
 {
@@ -20,6 +16,9 @@ public:
     CamaraController();
     ~CamaraController();
     bool startCamara();
+    bool stopCamera();
+
+    const bool& isRun;
 
     void setCallback(void (*newFrameCallBack)(bool , Mat));
     virtual void InternalThreadEntry();
@@ -27,6 +26,7 @@ public:
     void setCameraResol(int width = 320, int height = 240);
     void setFPS(int fps = 30);
     int getFPS();
+
 private:
     VideoCapture _camera;
     void (*callback)(bool , Mat);

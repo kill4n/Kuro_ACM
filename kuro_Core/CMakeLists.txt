@@ -18,7 +18,7 @@ include_directories("${PROJECT_SOURCE_DIR}")
 #add_subdirectory(status)
 #add_subdirectory(comunicacion)
 
-#add_subdirectory(sensores)
+add_subdirectory(sensores)
 add_subdirectory(motores)
 add_subdirectory(perifericos)
 
