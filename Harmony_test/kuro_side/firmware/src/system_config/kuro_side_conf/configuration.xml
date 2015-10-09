@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration version="1.0.6.12">
   <General>
-    <HarmonyPath path="../.."/>
+    <HarmonyPath path="../../../../../../../microchip/harmony/v1_06"/>
     <ForceOptimization flag="true"/>
   </General>
   <Manifest>
@@ -141,7 +141,7 @@
       </Template>
     </Templates>
     <Libraries>
-      <Library value="../../../../bin/framework/peripheral/PIC32MX220F032B_peripherals.a"/>
+      <Library value="../../../../../../../../../microchip/harmony/v1_06/bin/framework/peripheral/PIC32MX220F032B_peripherals.a"/>
     </Libraries>
   </Manifest>
 </configuration>
