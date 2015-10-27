@@ -163,15 +163,15 @@
 <pin name="AN1/RA1" x="-27.94" y="10.16" visible="pin" length="middle"/>
 <pin name="AN2/RB0" x="-27.94" y="7.62" visible="pin" length="middle"/>
 <pin name="AN3/RPB1/RB1" x="-27.94" y="5.08" visible="pin" length="middle"/>
-<pin name="AN4/RPB2/SDA2RB2" x="-27.94" y="2.54" length="middle"/>
-<pin name="AN5/RPB3/SCL2/RB3" x="-27.94" y="0" length="middle"/>
-<pin name="VSS@1" x="-27.94" y="-2.54" length="middle" direction="pwr"/>
-<pin name="OSC1/RA2" x="-27.94" y="-5.08" length="middle"/>
-<pin name="OSC2/RA3" x="-27.94" y="-7.62" length="middle"/>
+<pin name="AN4/RPB2/SDA2RB2" x="-27.94" y="2.54" visible="pin" length="middle"/>
+<pin name="AN5/RPB3/SCL2/RB3" x="-27.94" y="0" visible="pin" length="middle"/>
+<pin name="VSS@1" x="-27.94" y="-2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="OSC1/RA2" x="-27.94" y="-5.08" visible="pin" length="middle"/>
+<pin name="OSC2/RA3" x="-27.94" y="-7.62" visible="pin" length="middle"/>
 <pin name="RPB4/RB4" x="-27.94" y="-10.16" length="middle"/>
-<pin name="RPA4/RA4" x="-27.94" y="-12.7" length="middle"/>
-<pin name="VDD@1" x="-27.94" y="-15.24" length="middle" direction="pwr"/>
-<pin name="RPB5/USBID/RB5" x="-27.94" y="-17.78" length="middle"/>
+<pin name="RPA4/RA4" x="-27.94" y="-12.7" visible="pin" length="middle"/>
+<pin name="VDD@1" x="-27.94" y="-15.24" visible="pin" length="middle" direction="pwr"/>
+<pin name="RPB5/USBID/RB5" x="-27.94" y="-17.78" visible="pin" length="middle"/>
 <pin name="VBUS" x="30.48" y="-17.78" length="middle" rot="R180"/>
 <pin name="RPB7/INT0/RB7" x="30.48" y="-15.24" length="middle" rot="R180"/>
 <pin name="RPB8/SCL1/RB8" x="30.48" y="-12.7" length="middle" rot="R180"/>

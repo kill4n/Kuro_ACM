@@ -95,43 +95,43 @@
 <text x="-3.175" y="-11.43" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 <package name="DIP28">
-<pad name="P$1" x="0" y="0" drill="0.8" shape="long"/>
-<pad name="P$2" x="0" y="-2.54" drill="0.8" shape="long"/>
-<pad name="P$3" x="0" y="-5.08" drill="0.8" shape="long"/>
-<pad name="P$4" x="0" y="-7.62" drill="0.8" shape="long"/>
-<pad name="P$5" x="0" y="-10.16" drill="0.8" shape="long"/>
-<pad name="P$6" x="0" y="-12.7" drill="0.8" shape="long"/>
-<pad name="P$7" x="0" y="-15.24" drill="0.8" shape="long"/>
-<pad name="P$8" x="0" y="-17.78" drill="0.8" shape="long"/>
-<pad name="P$9" x="0" y="-20.32" drill="0.8" shape="long"/>
-<pad name="P$10" x="0" y="-22.86" drill="0.8" shape="long"/>
-<pad name="P$11" x="0" y="-25.4" drill="0.8" shape="long"/>
-<pad name="P$12" x="0" y="-27.94" drill="0.8" shape="long"/>
-<pad name="P$13" x="0" y="-30.48" drill="0.8" shape="long"/>
-<pad name="P$14" x="0" y="-33.02" drill="0.8" shape="long"/>
-<pad name="P$15" x="7.62" y="-33.02" drill="0.8" shape="long"/>
-<pad name="P$16" x="7.62" y="-30.48" drill="0.8" shape="long"/>
-<pad name="P$17" x="7.62" y="-27.94" drill="0.8" shape="long"/>
-<pad name="P$18" x="7.62" y="-25.4" drill="0.8" shape="long"/>
-<pad name="P$19" x="7.62" y="-22.86" drill="0.8" shape="long"/>
-<pad name="P$20" x="7.62" y="-20.32" drill="0.8" shape="long"/>
-<pad name="P$21" x="7.62" y="-17.78" drill="0.8" shape="long"/>
-<pad name="P$22" x="7.62" y="-15.24" drill="0.8" shape="long"/>
-<pad name="P$23" x="7.62" y="-12.7" drill="0.8" shape="long"/>
-<pad name="P$24" x="7.62" y="-10.16" drill="0.8" shape="long"/>
-<pad name="P$25" x="7.62" y="-7.62" drill="0.8" shape="long"/>
-<pad name="P$26" x="7.62" y="-5.08" drill="0.8" shape="long"/>
-<pad name="P$27" x="7.62" y="-2.54" drill="0.8" shape="long"/>
-<pad name="P$28" x="7.62" y="0" drill="0.8" shape="long"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-34.29" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-34.29" x2="6.35" y2="-34.29" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-34.29" x2="6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="3.81" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="3.81" y1="0" x2="5.08" y2="1.27" width="0.127" layer="21" curve="90"/>
-<wire x1="5.08" y1="1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
-<circle x="1.905" y="0.3175" radius="0.3175" width="0.127" layer="21"/>
-<text x="4.445" y="-22.225" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<pad name="P$1" x="-3.81" y="15.24" drill="0.8" shape="long"/>
+<pad name="P$2" x="-3.81" y="12.7" drill="0.8" shape="long"/>
+<pad name="P$3" x="-3.81" y="10.16" drill="0.8" shape="long"/>
+<pad name="P$4" x="-3.81" y="7.62" drill="0.8" shape="long"/>
+<pad name="P$5" x="-3.81" y="5.08" drill="0.8" shape="long"/>
+<pad name="P$6" x="-3.81" y="2.54" drill="0.8" shape="long"/>
+<pad name="P$7" x="-3.81" y="0" drill="0.8" shape="long"/>
+<pad name="P$8" x="-3.81" y="-2.54" drill="0.8" shape="long"/>
+<pad name="P$9" x="-3.81" y="-5.08" drill="0.8" shape="long"/>
+<pad name="P$10" x="-3.81" y="-7.62" drill="0.8" shape="long"/>
+<pad name="P$11" x="-3.81" y="-10.16" drill="0.8" shape="long"/>
+<pad name="P$12" x="-3.81" y="-12.7" drill="0.8" shape="long"/>
+<pad name="P$13" x="-3.81" y="-15.24" drill="0.8" shape="long"/>
+<pad name="P$14" x="-3.81" y="-17.78" drill="0.8" shape="long"/>
+<pad name="P$15" x="3.81" y="-17.78" drill="0.8" shape="long"/>
+<pad name="P$16" x="3.81" y="-15.24" drill="0.8" shape="long"/>
+<pad name="P$17" x="3.81" y="-12.7" drill="0.8" shape="long"/>
+<pad name="P$18" x="3.81" y="-10.16" drill="0.8" shape="long"/>
+<pad name="P$19" x="3.81" y="-7.62" drill="0.8" shape="long"/>
+<pad name="P$20" x="3.81" y="-5.08" drill="0.8" shape="long"/>
+<pad name="P$21" x="3.81" y="-2.54" drill="0.8" shape="long"/>
+<pad name="P$22" x="3.81" y="0" drill="0.8" shape="long"/>
+<pad name="P$23" x="3.81" y="2.54" drill="0.8" shape="long"/>
+<pad name="P$24" x="3.81" y="5.08" drill="0.8" shape="long"/>
+<pad name="P$25" x="3.81" y="7.62" drill="0.8" shape="long"/>
+<pad name="P$26" x="3.81" y="10.16" drill="0.8" shape="long"/>
+<pad name="P$27" x="3.81" y="12.7" drill="0.8" shape="long"/>
+<pad name="P$28" x="3.81" y="15.24" drill="0.8" shape="long"/>
+<wire x1="-2.54" y1="16.51" x2="-2.54" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-19.05" x2="2.54" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-19.05" x2="2.54" y2="16.51" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="16.51" x2="-1.27" y2="16.51" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="16.51" x2="0" y2="15.24" width="0.127" layer="21" curve="90"/>
+<wire x1="0" y1="15.24" x2="1.27" y2="16.51" width="0.127" layer="21" curve="90"/>
+<wire x1="1.27" y1="16.51" x2="2.54" y2="16.51" width="0.127" layer="21"/>
+<circle x="-1.905" y="15.5575" radius="0.3175" width="0.127" layer="21"/>
+<text x="0.635" y="-6.985" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>

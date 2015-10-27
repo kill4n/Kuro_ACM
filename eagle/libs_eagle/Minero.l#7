@@ -168,24 +168,24 @@
 <pin name="VSS@1" x="-27.94" y="-2.54" visible="pin" length="middle" direction="pwr"/>
 <pin name="OSC1/RA2" x="-27.94" y="-5.08" visible="pin" length="middle"/>
 <pin name="OSC2/RA3" x="-27.94" y="-7.62" visible="pin" length="middle"/>
-<pin name="RPB4/RB4" x="-27.94" y="-10.16" length="middle"/>
+<pin name="RPB4/RB4" x="-27.94" y="-10.16" visible="pin" length="middle"/>
 <pin name="RPA4/RA4" x="-27.94" y="-12.7" visible="pin" length="middle"/>
 <pin name="VDD@1" x="-27.94" y="-15.24" visible="pin" length="middle" direction="pwr"/>
 <pin name="RPB5/USBID/RB5" x="-27.94" y="-17.78" visible="pin" length="middle"/>
-<pin name="VBUS" x="30.48" y="-17.78" length="middle" rot="R180"/>
-<pin name="RPB7/INT0/RB7" x="30.48" y="-15.24" length="middle" rot="R180"/>
-<pin name="RPB8/SCL1/RB8" x="30.48" y="-12.7" length="middle" rot="R180"/>
-<pin name="RPB9/SDA1/RB9" x="30.48" y="-10.16" length="middle" rot="R180"/>
-<pin name="VSS@2" x="30.48" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCAP" x="30.48" y="-5.08" length="middle" rot="R180"/>
-<pin name="RPB10/D+/RB10" x="30.48" y="-2.54" length="middle" rot="R180"/>
-<pin name="RPB11/D-/RB11" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="VUSB" x="30.48" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="AN11/RPB13/RB13" x="30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="AN10/RPB14/RB14" x="30.48" y="7.62" length="middle" rot="R180"/>
-<pin name="AN9/RPB15/RB15" x="30.48" y="10.16" length="middle" rot="R180"/>
-<pin name="VSS" x="30.48" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDD" x="30.48" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="VBUS" x="30.48" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB7/INT0/RB7" x="30.48" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB8/SCL1/RB8" x="30.48" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB9/SDA1/RB9" x="30.48" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="VSS@2" x="30.48" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCAP" x="30.48" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB10/D+/RB10" x="30.48" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB11/D-/RB11" x="30.48" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="VUSB" x="30.48" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="AN11/RPB13/RB13" x="30.48" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="AN10/RPB14/RB14" x="30.48" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="AN9/RPB15/RB15" x="30.48" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="VSS" x="30.48" y="12.7" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="30.48" y="15.24" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-22.86" y1="-20.32" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-20.32" x2="25.4" y2="17.78" width="0.254" layer="94"/>
 <wire x1="25.4" y1="17.78" x2="-22.86" y2="17.78" width="0.254" layer="94"/>

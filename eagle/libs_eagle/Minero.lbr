@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -149,6 +149,18 @@
 <wire x1="7.874" y1="10.16" x2="-8.636" y2="10.16" width="0.127" layer="21"/>
 <text x="-2.54" y="-7.366" size="1.27" layer="21">GY-85</text>
 <text x="-2.54" y="-5.334" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="CHB">
+<wire x1="0" y1="0" x2="28.956" y2="0" width="0.127" layer="21"/>
+<wire x1="28.956" y1="0" x2="57.912" y2="0" width="0.127" layer="21"/>
+<wire x1="57.912" y1="0" x2="57.912" y2="30.48" width="0.127" layer="21"/>
+<wire x1="57.912" y1="30.48" x2="57.912" y2="60.96" width="0.127" layer="21"/>
+<wire x1="57.912" y1="60.96" x2="28.956" y2="60.96" width="0.127" layer="21"/>
+<wire x1="28.956" y1="60.96" x2="0" y2="60.96" width="0.127" layer="21"/>
+<wire x1="0" y1="60.96" x2="0" y2="30.48" width="0.127" layer="21"/>
+<wire x1="0" y1="30.48" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="30.48" x2="57.912" y2="30.48" width="0.127" layer="21" style="dashdot"/>
+<wire x1="28.956" y1="0" x2="28.956" y2="60.96" width="0.127" layer="21" style="dashdot"/>
 </package>
 </packages>
 <symbols>
