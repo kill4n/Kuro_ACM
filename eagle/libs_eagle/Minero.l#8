@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -133,6 +133,39 @@
 <circle x="-1.905" y="15.5575" radius="0.3175" width="0.127" layer="21"/>
 <text x="0.635" y="-6.985" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 </package>
+<package name="GY-85">
+<pad name="P$1" x="-7.366" y="8.636" drill="0.8" shape="square"/>
+<pad name="P$2" x="-7.366" y="6.096" drill="0.8" shape="square"/>
+<pad name="P$3" x="-7.366" y="3.556" drill="0.8" shape="square"/>
+<pad name="P$4" x="-7.366" y="1.016" drill="0.8" shape="square"/>
+<pad name="P$5" x="-7.366" y="-1.524" drill="0.8" shape="square"/>
+<pad name="P$6" x="-7.366" y="-4.064" drill="0.8" shape="square"/>
+<pad name="P$7" x="-7.366" y="-6.604" drill="0.8" shape="square"/>
+<pad name="P$8" x="-7.366" y="-9.144" drill="0.8" shape="square"/>
+<hole x="5.08" y="8.636" drill="2.2"/>
+<wire x1="-8.89" y1="10.16" x2="-8.89" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-11.43" x2="7.874" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="7.874" y1="-11.43" x2="7.874" y2="10.16" width="0.127" layer="21"/>
+<wire x1="7.874" y1="10.16" x2="-8.636" y2="10.16" width="0.127" layer="21"/>
+<text x="-2.54" y="-7.366" size="1.27" layer="21">GY-85</text>
+<text x="-2.54" y="-5.334" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="CHB">
+<wire x1="0" y1="0" x2="28.956" y2="0" width="0.127" layer="21"/>
+<wire x1="28.956" y1="0" x2="57.912" y2="0" width="0.127" layer="21"/>
+<wire x1="57.912" y1="0" x2="57.912" y2="30.48" width="0.127" layer="21"/>
+<wire x1="57.912" y1="30.48" x2="57.912" y2="60.96" width="0.127" layer="21"/>
+<wire x1="57.912" y1="60.96" x2="28.956" y2="60.96" width="0.127" layer="21"/>
+<wire x1="28.956" y1="60.96" x2="0" y2="60.96" width="0.127" layer="21"/>
+<wire x1="0" y1="60.96" x2="0" y2="30.48" width="0.127" layer="21"/>
+<wire x1="0" y1="30.48" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="30.48" x2="57.912" y2="30.48" width="0.127" layer="21" style="dashdot"/>
+<wire x1="28.956" y1="0" x2="28.956" y2="60.96" width="0.127" layer="21" style="dashdot"/>
+<hole x="4.826" y="5.08" drill="3.2"/>
+<hole x="4.826" y="55.88" drill="3.2"/>
+<hole x="53.086" y="55.88" drill="3.2"/>
+<hole x="53.086" y="5.08" drill="3.2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MAX3100">
@@ -168,30 +201,46 @@
 <pin name="VSS@1" x="-27.94" y="-2.54" visible="pin" length="middle" direction="pwr"/>
 <pin name="OSC1/RA2" x="-27.94" y="-5.08" visible="pin" length="middle"/>
 <pin name="OSC2/RA3" x="-27.94" y="-7.62" visible="pin" length="middle"/>
-<pin name="RPB4/RB4" x="-27.94" y="-10.16" length="middle"/>
+<pin name="RPB4/RB4" x="-27.94" y="-10.16" visible="pin" length="middle"/>
 <pin name="RPA4/RA4" x="-27.94" y="-12.7" visible="pin" length="middle"/>
 <pin name="VDD@1" x="-27.94" y="-15.24" visible="pin" length="middle" direction="pwr"/>
 <pin name="RPB5/USBID/RB5" x="-27.94" y="-17.78" visible="pin" length="middle"/>
-<pin name="VBUS" x="30.48" y="-17.78" length="middle" rot="R180"/>
-<pin name="RPB7/INT0/RB7" x="30.48" y="-15.24" length="middle" rot="R180"/>
-<pin name="RPB8/SCL1/RB8" x="30.48" y="-12.7" length="middle" rot="R180"/>
-<pin name="RPB9/SDA1/RB9" x="30.48" y="-10.16" length="middle" rot="R180"/>
-<pin name="VSS@2" x="30.48" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCAP" x="30.48" y="-5.08" length="middle" rot="R180"/>
-<pin name="RPB10/D+/RB10" x="30.48" y="-2.54" length="middle" rot="R180"/>
-<pin name="RPB11/D-/RB11" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="VUSB" x="30.48" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="AN11/RPB13/RB13" x="30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="AN10/RPB14/RB14" x="30.48" y="7.62" length="middle" rot="R180"/>
-<pin name="AN9/RPB15/RB15" x="30.48" y="10.16" length="middle" rot="R180"/>
-<pin name="VSS" x="30.48" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDD" x="30.48" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="VBUS" x="30.48" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB7/INT0/RB7" x="30.48" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB8/SCL1/RB8" x="30.48" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB9/SDA1/RB9" x="30.48" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="VSS@2" x="30.48" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCAP" x="30.48" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB10/D+/RB10" x="30.48" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RPB11/D-/RB11" x="30.48" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="VUSB" x="30.48" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="AN11/RPB13/RB13" x="30.48" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="AN10/RPB14/RB14" x="30.48" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="AN9/RPB15/RB15" x="30.48" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="VSS" x="30.48" y="12.7" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="30.48" y="15.24" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-22.86" y1="-20.32" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-20.32" x2="25.4" y2="17.78" width="0.254" layer="94"/>
 <wire x1="25.4" y1="17.78" x2="-22.86" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="17.78" x2="-22.86" y2="-20.32" width="0.254" layer="94"/>
 <text x="-22.86" y="-22.86" size="1.27" layer="95">&gt;NAME</text>
 <text x="-22.86" y="-25.4" size="1.27" layer="94">PIC32MX220F032B</text>
+</symbol>
+<symbol name="GY-85">
+<pin name="VCC_IN" x="-17.78" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="3.3V" x="-17.78" y="2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-17.78" y="0" visible="pin" length="middle" direction="pwr"/>
+<pin name="SCL" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="SDA" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="M_DRDY" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="A_INT" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="G_INT" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="-12.7" size="1.27" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.27" layer="94">GY-85</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -258,6 +307,28 @@
 <connect gate="G$1" pin="VSS@1" pad="P$8"/>
 <connect gate="G$1" pin="VSS@2" pad="P$19"/>
 <connect gate="G$1" pin="VUSB" pad="P$15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GY-85">
+<gates>
+<gate name="G$1" symbol="GY-85" x="-45.72" y="-15.24"/>
+</gates>
+<devices>
+<device name="" package="GY-85">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="P$2"/>
+<connect gate="G$1" pin="A_INT" pad="P$7"/>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="G_INT" pad="P$8"/>
+<connect gate="G$1" pin="M_DRDY" pad="P$6"/>
+<connect gate="G$1" pin="SCL" pad="P$4"/>
+<connect gate="G$1" pin="SDA" pad="P$5"/>
+<connect gate="G$1" pin="VCC_IN" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
