@@ -1,0 +1,9 @@
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\bin\Debug\ServidorChat.exe.config
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\bin\Debug\ServidorChat.exe
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\bin\Debug\ServidorChat.pdb
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\obj\Debug\ServidorChat.csprojResolveAssemblyReference.cache
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\obj\Debug\ServidorChat.Form1.resources
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\obj\Debug\ServidorChat.Properties.Resources.resources
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\obj\Debug\ServidorChat.csproj.GenerateResource.Cache
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\obj\Debug\ServidorChat.exe
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\ServidorChat\ServidorChat\obj\Debug\ServidorChat.pdb

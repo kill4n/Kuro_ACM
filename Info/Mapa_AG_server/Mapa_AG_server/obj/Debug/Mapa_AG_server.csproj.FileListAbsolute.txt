@@ -1,0 +1,9 @@
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\bin\Debug\Mapa_AG_server.exe.config
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\bin\Debug\Mapa_AG_server.exe
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\bin\Debug\Mapa_AG_server.pdb
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\obj\Debug\Mapa_AG_server.csprojResolveAssemblyReference.cache
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\obj\Debug\Mapa_AG_server.Form1.resources
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\obj\Debug\Mapa_AG_server.Properties.Resources.resources
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\obj\Debug\Mapa_AG_server.csproj.GenerateResource.Cache
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\obj\Debug\Mapa_AG_server.exe
+C:\Users\crhistian\Documents\Visual Studio 2012\Projects\Mapa_AG_server\Mapa_AG_server\obj\Debug\Mapa_AG_server.pdb
