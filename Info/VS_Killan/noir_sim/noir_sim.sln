@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "noir_sim", "noir_sim\noir_sim.csproj", "{B96B1ED2-43CB-4F13-90FD-8009950BE7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "noir_WPF", "noir_WPF\noir_WPF.csproj", "{3D0A3BD4-A964-4C43-9C05-B616CDEFCD9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B96B1ED2-43CB-4F13-90FD-8009950BE7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96B1ED2-43CB-4F13-90FD-8009950BE7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96B1ED2-43CB-4F13-90FD-8009950BE7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96B1ED2-43CB-4F13-90FD-8009950BE7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0A3BD4-A964-4C43-9C05-B616CDEFCD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0A3BD4-A964-4C43-9C05-B616CDEFCD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0A3BD4-A964-4C43-9C05-B616CDEFCD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0A3BD4-A964-4C43-9C05-B616CDEFCD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
