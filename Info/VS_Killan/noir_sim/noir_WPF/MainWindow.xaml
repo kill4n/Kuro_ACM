@@ -1,16 +1,19 @@
 ﻿<Window x:Class="noir_WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Cliente" Height="319" Width="289">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="271" Margin="10,10,0,0" VerticalAlignment="Top" Width="153">
+        <StackPanel HorizontalAlignment="Stretch" Height="271" Margin="10" VerticalAlignment="Top" >
             <Label Content="Ip Servidor"/>
             <TextBox Height="23" TextWrapping="Wrap" Text="192.168.0.250" x:Name="txtIP"/>
             <Label Content="Puerto"/>
             <TextBox Height="23" TextWrapping="Wrap" Text="4433" x:Name="txtPort"/>
             <Button Content="Conectar" Click="Button_Click_1"/>
-            <Label Content="Data"/>
-            <TextBox Margin="0, 10" TextWrapping="NoWrap" Text="" Height="100" x:Name="txtData" />
+            <Label Content="Data read"/>
+            <TextBox HorizontalAlignment="Stretch" TextWrapping="NoWrap" Text="" x:Name="txtData" />
+            <Label Content="Data Send"/>
+            <TextBox HorizontalAlignment="Stretch" TextWrapping="NoWrap" Text="" x:Name="txtSend" />
+            <Button Content="Send" Click="Button_Click_2"/>
         </StackPanel>
     </Grid>
 </Window>

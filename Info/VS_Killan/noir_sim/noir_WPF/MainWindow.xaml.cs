@@ -48,7 +48,7 @@ namespace noir_WPF
                 if (clientSock.Available > 0)
                 {
                     clientSock.Receive(buff);
-                    txtData.Text += "" + string.Format("{0:X}\r\n", buff[0]);
+                    txtData.Text = "" + string.Format("{0:X} {0}", buff[0]);
                 }
             }
         }
@@ -66,6 +66,18 @@ namespace noir_WPF
             {
                 this.Title = "Desconectado";
                 dispatcherTimer.Stop();
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            byte[] buff = new byte[1];
+            if (clientSock.Connected)
+            {
+
+                buff = Encoding.Unicode.GetBytes(txtSend.Text);
+                clientSock.Send(buff);
+                txtSend.Clear();
             }
         }
     }

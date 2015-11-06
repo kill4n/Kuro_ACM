@@ -1,1 +1,13 @@
 C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\bin\Debug\noir_WPF.exe.config
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\bin\Debug\noir_WPF.exe
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\bin\Debug\noir_WPF.pdb
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\noir_WPF.csprojResolveAssemblyReference.cache
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\MainWindow.baml
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\App.g.cs
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\noir_WPF_MarkupCompile.cache
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\noir_WPF.g.resources
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\noir_WPF.Properties.Resources.resources
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\noir_WPF.csproj.GenerateResource.Cache
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\noir_WPF.exe
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\VS_Killan\noir_sim\noir_WPF\obj\Debug\noir_WPF.pdb
