@@ -1,8 +1,6 @@
 #include <iostream>
 #include <fstream>
 
-#include "logneko.h"
-
 using namespace std;
 using namespace neko;
 
