@@ -5,3 +5,8 @@ LaserController::LaserController()
 
 }
 
+void LaserController::InternalThreadEntry()
+{
+
+}
+
