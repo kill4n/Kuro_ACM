@@ -12,3 +12,4 @@ add_subdirectory(mensajes_aux)
 add_subdirectory(semaphore_aux)
 add_subdirectory(thread_aux)
 
+add_subdirectory(socket_aux)
