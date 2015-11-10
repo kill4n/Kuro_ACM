@@ -28,7 +28,7 @@ bool MySocket::Conectar()
                        &clilen);
     if (newsockfd < 0)
     {
-        error("ERROR on accept");
+        //error("ERROR on accept");
         return false;
     }
     return true;
@@ -42,15 +42,13 @@ void MySocket::closeSock()
 
 int SendData(char* data, int sizeData){
     n = write(newsockfd,data,sizeData);
-    if (n < 0)
-        error("ERROR writing to socket");
+    //if (n < 0) error("ERROR writing to socket");
     return n;
 }
 
 int readData(char* data, int sizeData){
     n = read(newsockfd,data,sizeData);
-    if (n < 0)
-        error("ERROR reading from socket");
+    //if (n < 0) error("ERROR reading from socket");
     printf("Here is the message: %s\n",buffer);
     return n;
 }
