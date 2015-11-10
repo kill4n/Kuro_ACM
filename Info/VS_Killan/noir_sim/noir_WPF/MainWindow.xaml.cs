@@ -71,7 +71,7 @@ namespace noir_WPF
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            byte[] buff = new byte[1];
+            byte[] buff2 = new byte[5];
             if (clientSock.Connected)
             {
 

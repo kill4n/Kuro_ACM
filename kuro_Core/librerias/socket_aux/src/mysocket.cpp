@@ -49,6 +49,6 @@ int SendData(char* data, int sizeData){
 int readData(char* data, int sizeData){
     n = read(newsockfd,data,sizeData);
     //if (n < 0) error("ERROR reading from socket");
-    printf("Here is the message: %s\n",buffer);
+    printf("Here is the message: %s\n",data);
     return n;
 }
