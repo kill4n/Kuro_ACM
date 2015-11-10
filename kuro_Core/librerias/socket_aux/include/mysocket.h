@@ -16,7 +16,9 @@ public:
     MySocket(TCP_TYPE tipo, int puerto=3333, String IP="127.0.0.1");
     bool Conectar();
     int SendData(char* data, int sizeData);
-    int readData(char* data);
+    int readData(char* data, int sizeData);
+
+    void closeSock();
 private:
     int sockfd, newsockfd, portno;
     socklen_t clilen;

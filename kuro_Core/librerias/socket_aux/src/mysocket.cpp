@@ -34,15 +34,21 @@ bool MySocket::Conectar()
     return true;
 }
 
+void MySocket::closeSock()
+{
+    close(newsockfd);
+    close(sockfd);
+}
+
 int SendData(char* data, int sizeData){
-    n = write(newsockfd,"I got your message",18);
+    n = write(newsockfd,data,sizeData);
     if (n < 0)
         error("ERROR writing to socket");
     return n;
 }
 
-int readData(char* data){
-    n = read(newsockfd,buffer,255);
+int readData(char* data, int sizeData){
+    n = read(newsockfd,data,sizeData);
     if (n < 0)
         error("ERROR reading from socket");
     printf("Here is the message: %s\n",buffer);
