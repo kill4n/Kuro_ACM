@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../Libs/include/alexception.h
+exception
+-
+
 ../Libs/include/matrizal.h
 iostream
 -
 
-C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/main.cpp
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/main.cpp
 stdio.h
 -
 iostream
 -
 matrizal.h
-C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/matrizal.h
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/matrizal.h
+alexception.h
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/alexception.h
 

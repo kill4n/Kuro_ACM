@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/main.cpp" "C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Progs/CMakeFiles/AlgLin_Test.dir/src/main.cpp.obj"
+  "/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/main.cpp" "/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Progs/CMakeFiles/AlgLin_Test.dir/src/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -17,8 +17,5 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/CMakeFiles/AlgLinLib.dir/DependInfo.cmake"
+  "/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/CMakeFiles/AlgLinLib.dir/DependInfo.cmake"
   )
-
-# Fortran module output directory.
-set(CMAKE_Fortran_TARGET_MODULE_DIR "")

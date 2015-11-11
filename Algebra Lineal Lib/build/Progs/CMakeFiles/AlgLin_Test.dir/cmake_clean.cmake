@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/AlgLin_Test.dir/src/main.cpp.obj"
-  "../../build_Windows/AlgLin_Test.pdb"
-  "../../build_Windows/AlgLin_Test.exe"
-  "../../build_Windows/AlgLin_Test.exe.manifest"
-  "../../build_Windows/libAlgLin_Test.dll.a"
+  "CMakeFiles/AlgLin_Test.dir/src/main.cpp.o"
+  "../../build_Darwin/AlgLin_Test.pdb"
+  "../../build_Darwin/AlgLin_Test"
 )
 
 # Per-language clean rules from dependency scanning.

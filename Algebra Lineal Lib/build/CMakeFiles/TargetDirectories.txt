@@ -1,2 +1,2 @@
-C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Progs/CMakeFiles/AlgLin_Test.dir
-C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/CMakeFiles/AlgLinLib.dir
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Progs/CMakeFiles/AlgLin_Test.dir
+/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/CMakeFiles/AlgLinLib.dir

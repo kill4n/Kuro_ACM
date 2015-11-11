@@ -1,3 +1,1 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\AlgLin_Test.dir/objects.a
-C:\Qt\Tools\mingw492_32\bin\ar.exe cr CMakeFiles\AlgLin_Test.dir/objects.a @CMakeFiles\AlgLin_Test.dir\objects1.rsp
-C:\Qt\Tools\mingw492_32\bin\g++.exe     -Wl,--whole-archive CMakeFiles\AlgLin_Test.dir/objects.a -Wl,--no-whole-archive  -o ..\..\build_Windows\AlgLin_Test.exe -Wl,--out-implib,..\..\build_Windows\libAlgLin_Test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AlgLin_Test.dir\linklibs.rsp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/AlgLin_Test.dir/src/main.cpp.o  -o ../../build_Darwin/AlgLin_Test  ../../build_Darwin/libAlgLinLib.dylib 

@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-
-
 namespace AL {
 
 class MatrizAL
@@ -15,8 +13,17 @@ public:
     ~MatrizAL();
     const int *fila;
     const int *columna;
-
-    const void imprimir();
+    //operadores
+    MatrizAL &operator+(const MatrizAL& mat1);
+    MatrizAL &operator-(const MatrizAL& mat1);
+    MatrizAL &operator*(const MatrizAL& mat1);
+    //auxiliares
+    void Limpiar();
+    void Identidad();
+    void setData(int f, int c, double val);
+    bool getDeterminante(double *det);
+    //impresion
+    const void Imprimir();
 private:
     void initData();
     int _fila, _columna;

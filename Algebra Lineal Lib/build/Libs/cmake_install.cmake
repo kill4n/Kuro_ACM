@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs
+# Install script for directory: /Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/AlgLin")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

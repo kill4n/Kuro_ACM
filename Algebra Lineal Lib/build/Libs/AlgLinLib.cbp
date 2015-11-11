@@ -8,81 +8,84 @@
       <Option virtualFolders="CMake Files\;CMake Files\Libs\;CMake Files\Progs\;" />
       <Build>
       <Target title="all">
-         <Option working_dir="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs" />
+         <Option working_dir="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 all" />
-            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="AlgLinLib">
-         <Option output="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build_Windows/libAlgLinLib.dll" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs" />
+         <Option output="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build_Darwin/libAlgLinLib.dylib" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs" />
          <Option object_output="./" />
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include" />
-            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include" />
-            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
-            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
-            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
-            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
-            <Add directory="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/include" />
-            <Add directory="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/src" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/include" />
+            <Add directory="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/src" />
+            <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 AlgLinLib" />
-            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 AlgLinLib" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="AlgLinLib/fast">
-         <Option output="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build_Windows/libAlgLinLib.dll" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs" />
+         <Option output="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build_Darwin/libAlgLinLib.dylib" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs" />
          <Option object_output="./" />
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include" />
-            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include" />
-            <Add directory="C:/Qt/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
-            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
-            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
-            <Add directory="C:/Qt/Tools/mingw492_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
-            <Add directory="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/include" />
-            <Add directory="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/src" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/include" />
+            <Add directory="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/src" />
+            <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 AlgLinLib/fast" />
-            <CompileFile command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="C:/Qt/Tools/mingw492_32/bin/mingw32-make.exe -f &quot;C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 AlgLinLib/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra\ Lineal\ Lib/build/Libs/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/include/matrizal.h">
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/include/alexception.h">
          <Option target="AlgLinLib"/>
       </Unit>
-      <Unit filename="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/src/matrizal.cpp">
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/include/matrizal.h">
          <Option target="AlgLinLib"/>
       </Unit>
-      <Unit filename="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/CMakeLists.txt">
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/src/matrizal.cpp">
+         <Option target="AlgLinLib"/>
+      </Unit>
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
       </Unit>
-      <Unit filename="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/CMakeLists.txt">
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/CMakeLists.txt">
           <Option virtualFolder="CMake Files\Libs\" />
       </Unit>
-      <Unit filename="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/CMakeLists.txt">
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Libs/CMakeLists.txt">
           <Option virtualFolder="CMake Files\Libs\" />
       </Unit>
-      <Unit filename="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/CMakeLists.txt">
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/CMakeLists.txt">
           <Option virtualFolder="CMake Files\Progs\" />
       </Unit>
-      <Unit filename="C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/CMakeLists.txt">
+      <Unit filename="/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/CMakeLists.txt">
           <Option virtualFolder="CMake Files\Progs\" />
       </Unit>
    </Project>
