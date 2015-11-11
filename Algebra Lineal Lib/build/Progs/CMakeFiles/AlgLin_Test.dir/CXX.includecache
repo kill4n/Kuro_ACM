@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Libs/include/matrizal.h
+iostream
+-
+
+C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/main.cpp
+stdio.h
+-
+iostream
+-
+matrizal.h
+C:/Users/crhistian/Documents/GitHub/Kuro_ACM/Algebra Lineal Lib/Progs/src/matrizal.h
+
