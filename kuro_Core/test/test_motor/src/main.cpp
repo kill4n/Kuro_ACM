@@ -7,6 +7,7 @@ using namespace AX_12;
 using namespace std;
 
 #define numRuedas 6
+#define DEVICE_INDEX 0
 int main()
 {
     MotorInterface *ptrMRot[numRuedas];
@@ -14,9 +15,14 @@ int main()
     AX_12_Motor ax12_Rot[numRuedas];
     AX_12_Motor ax12_Dir[numRuedas];
 
-    for (int i = 0; i < numRuedas; ++i) {
+    for (int i = 0; i < numRuedas; ++i) {        
         ptrMRot[i] = &ax12_Rot[i];
         ptrMDir[i] = &ax12_Dir[i];
+
+        ax12_Dir[i].setDeviceID(DEVICE_INDEX);
+        ax12_Rot[i].setDeviceID(DEVICE_INDEX);
+        ax12_Dir[i].setBaudSpeed(BAUD_1Mbps);
+        ax12_Rot[i].setBaudSpeed(BAUD_1Mbps);
     }
     /*
     MotorInterface *ptrMI1,*ptrMI2,*ptrMI3,*ptrMI4,*ptrMI5,*ptrMI6;
@@ -34,6 +40,7 @@ int main()
         ptrMRot[i]->setID(i+7);
         ptrMRot[i]->startMotor();
         ptrMRot[i]->setType(WHEEL);
+
 
         ptrMDir[i]->setID(i+1);
         ptrMDir[i]->startMotor();

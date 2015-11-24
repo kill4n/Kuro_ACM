@@ -16,6 +16,8 @@ void JoystickUpdate(JOY_STR joyS)
 }
 
 #define numRuedas 6
+#define DEVICE_INDEX 0
+
 int main()
 {
     joystick_helper *JoyH= new joystick_helper();
@@ -30,6 +32,11 @@ int main()
     for (int i = 0; i < numRuedas; ++i) {
         ptrMRot[i] = &ax12_Rot[i];
         ptrMDir[i] = &ax12_Dir[i];
+        ax12_Dir[i].setDeviceID(DEVICE_INDEX);
+        ax12_Rot[i].setDeviceID(DEVICE_INDEX);
+
+        ax12_Dir[i].setBaudSpeed(BAUD_1Mbps);
+        ax12_Rot[i].setBaudSpeed(BAUD_1Mbps);
     }
 
     int goalR = 0;

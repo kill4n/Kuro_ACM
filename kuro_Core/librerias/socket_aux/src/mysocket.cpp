@@ -1,21 +1,21 @@
 #include "mysocket.h"
 
-MySocket::MySocket(TCP_TYPE tipo, int puerto=3333, String IP="127.0.0.1")
+MySocket::MySocket(TCP_TYPE tipo, int puerto, string IP)
 {
     portno = puerto;
     if(tipo == SERVER)
     {
         sockfd = socket(AF_INET, SOCK_STREAM, 0);
         if (sockfd < 0)
-            error("ERROR opening socket");
+            cout<<"ERROR opening socket";
         bzero((char *) &serv_addr, sizeof(serv_addr));
-        portno = atoi(argv[1]);
+        portno = puerto;
         serv_addr.sin_family = AF_INET;
         serv_addr.sin_addr.s_addr = INADDR_ANY;
         serv_addr.sin_port = htons(portno);
         if (bind(sockfd, (struct sockaddr *) &serv_addr,
                  sizeof(serv_addr)) < 0)
-            error("ERROR on binding");
+            printf("ERROR on binding");
     }
 }
 
@@ -40,15 +40,15 @@ void MySocket::closeSock()
     close(sockfd);
 }
 
-int SendData(char* data, int sizeData){
-    n = write(newsockfd,data,sizeData);
-    //if (n < 0) error("ERROR writing to socket");
+int MySocket::SendData(char* data, int sizeData){
+    int n = write(newsockfd,data,sizeData);
+    if (n < 0) printf("ERROR writing to socket");
     return n;
 }
 
-int readData(char* data, int sizeData){
-    n = read(newsockfd,data,sizeData);
-    //if (n < 0) error("ERROR reading from socket");
+int MySocket::readData(char* data, int sizeData){
+    int n = read(newsockfd,data,sizeData);
+    if (n < 0) printf("ERROR reading from socket");
     printf("Here is the message: %s\n",data);
     return n;
 }

@@ -3,7 +3,6 @@
 
 void JoystickUpdate(JOY_STR joyS)
 {
-
     printf("JoyUpdate V[%d] D[%d]                    \r",joyS.AxisVel, joyS.AxisDir);
 }
 

@@ -1,0 +1,1 @@
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/WebUI/test_camara/build/CMakeFiles/test_camara.dir

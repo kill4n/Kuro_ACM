@@ -6,7 +6,7 @@ int main()
     MySocket ms(SERVER,3344);
 
     ms.Conectar();
-    char[] da= new char[5];
+    char *da= new char[5];
     da[0]=0x10;
     da[1]=0x20;
     da[2]=0x30;
@@ -28,6 +28,6 @@ int main()
     for (int i = 0; i < 10000000000; ++i);
     printf("\r\nFinall2\r\n");
 
-    delete JoyH;
+    //delete ms;
     return 0;
 }

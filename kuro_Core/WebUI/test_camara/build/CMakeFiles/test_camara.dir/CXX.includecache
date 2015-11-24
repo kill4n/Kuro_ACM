@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/WebUI/test_camara/src/main.cpp
+opencv/cv.h
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/WebUI/test_camara/src/opencv/cv.h
+opencv/highgui.h
+/home/killan/kuro_min/Kuro_ACM/kuro_Core/WebUI/test_camara/src/opencv/highgui.h
+iostream
+-
+

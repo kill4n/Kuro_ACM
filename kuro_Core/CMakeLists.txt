@@ -10,11 +10,12 @@ set(LIBS_DIR ${CMAKE_SOURCE_DIR}/librerias)
 set(MOTOR_DIR ${CMAKE_SOURCE_DIR}/motores)
 set(PRIF_DIR ${CMAKE_SOURCE_DIR}/perifericos)
 set(SENS_DIR ${CMAKE_SOURCE_DIR}/sensores)
+set(KINE_DIR ${CMAKE_SOURCE_DIR}/sensores)
 
 include_directories("${PROJECT_INCLUDE_DIR}")
 include_directories("${PROJECT_SOURCE_DIR}")
 
-#add_subdirectory(master)
+add_subdirectory(master)
 
 #add_subdirectory(status)
 #add_subdirectory(comunicacion)
@@ -23,7 +24,7 @@ add_subdirectory(sensores)
 add_subdirectory(motores)
 add_subdirectory(perifericos)
 
-#add_subdirectory(cinematica)
+add_subdirectory(cinematica)
 
 add_subdirectory(librerias)
 

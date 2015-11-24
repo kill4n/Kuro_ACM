@@ -40,7 +40,7 @@ enum BAUD_RATE{
 class AX_12_Motor : public MotorInterface
 {
 public:
-    AX_12_Motor(int id = 0, MOTOR_TYPE type = WHEEL);
+    AX_12_Motor(int id = 0, MOTOR_TYPE type = WHEEL,int deviceID=0);
     void setBaudSpeed(BAUD_RATE br = BAUD_1Mbps);
     //funciones de la clase padre
     virtual void startMotor();
@@ -54,6 +54,10 @@ public:
     //set get tipo de motor
     virtual void setType(MOTOR_TYPE type = WHEEL);
     virtual MOTOR_TYPE getType();
+    //definir tty de comunicacion
+    void setDeviceID(int deviceID = 0);
+    int getDeviceID();
+
 
 private:
     int _ID_motor;

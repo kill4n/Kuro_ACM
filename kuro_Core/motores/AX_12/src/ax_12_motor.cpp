@@ -2,8 +2,8 @@
 
 using namespace AX_12;
 
-AX_12_Motor::AX_12_Motor(int id, MOTOR_TYPE type)
-    :_ID_motor(id), _motor(type),_deviceIndex(0), _baud_speed(BAUD_115200)
+AX_12_Motor::AX_12_Motor(int id, MOTOR_TYPE type, int deviceID)
+    :_ID_motor(id), _motor(type),_deviceIndex(deviceID), _baud_speed(BAUD_115200)
 {
 }
 
@@ -89,6 +89,16 @@ void AX_12_Motor::setType(MOTOR_TYPE type)
 MOTOR_TYPE AX_12_Motor::getType()
 {
     return _motor;
+}
+
+void AX_12_Motor::setDeviceID(int deviceID)
+{
+    _deviceIndex = deviceID;
+}
+
+int AX_12_Motor::getDeviceID()
+{
+    return _deviceIndex;
 }
 
 void AX_12_Motor::setID(int id)
