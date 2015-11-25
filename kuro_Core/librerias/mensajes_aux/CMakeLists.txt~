@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(mensaje_aux)
+project(neko)
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") # Mirar el SO
     cmake_policy(SET CMP0042 NEW)

@@ -16,7 +16,6 @@ include_directories(${LIBS_DIR})
 include_directories(${PERIF_DIR})
 include_directories(${KINE_DIR})
 
-
 add_executable(${PROJECT_NAME} ${MASTER_SRCS} ${MASTER_HEADS})
 
-target_link_libraries(${PROJECT_NAME} joystick omni_model)
+target_link_libraries(${PROJECT_NAME} joystick omni_model difer_model acker_model)

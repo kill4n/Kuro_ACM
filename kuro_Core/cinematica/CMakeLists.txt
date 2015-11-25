@@ -6,3 +6,6 @@ set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 add_subdirectory(omni)
+add_subdirectory(difer)
+add_subdirectory(acker)
+add_subdirectory(modeloInterface)

@@ -1,6 +1,6 @@
-#include "omnimodel.h"
+#include "difermodel.h"
 
-OmniModel::OmniModel()
+DiferModel::DiferModel()
 {    
     printf("iniciando omni\r\n");
     for (int i = 0; i < numRuedas; ++i) {
@@ -25,43 +25,43 @@ OmniModel::OmniModel()
     setDirection(0);
 }
 
-OmniModel::~OmniModel()
+DiferModel::~DiferModel()
 {
     stopModel();
 }
 
-void OmniModel::setSpeed(int goalSpeed)
+void DiferModel::setSpeed(int goalSpeed)
 {
     //printf("Definiendo velocidad = %d \r\n", goalSpeed);
     _speed = goalSpeed;
     for (int i = 0; i < numRuedas; ++i) {
         if (i%2)
-            ptrMRot[i]->moveMotor(-goalSpeed);
+            ptrMRot[i]->moveMotor(-_speed);
         else
-            ptrMRot[i]->moveMotor(goalSpeed);
+            ptrMRot[i]->moveMotor(_speed);
     }
 }
 
-int OmniModel::getSpeed()
+int DiferModel::getSpeed()
 {
     return _speed;
 }
 
-void OmniModel::setDirection(int goalDir)
+void DiferModel::setDirection(int goalDir)
 {
     //printf("Definiendo direccion = %d \r\n", goalDir);
-    _direction = (goalDir*222)/1023;
+    _direction = goalDir;
     for (int i = 0; i < numRuedas; ++i) {
-        ptrMDir[i]->moveMotor(_direction);
+        ptrMRot[i]->moveMotor(_direction);
     }
 }
 
-int OmniModel::getDirection()
+int DiferModel::getDirection()
 {
     return _direction;
 }
 
-void OmniModel::stopModel()
+void DiferModel::stopModel()
 {
     for (int i = 0; i < numRuedas; ++i) {
         ptrMRot[i]->stopMotor();

@@ -1,6 +1,6 @@
-#include "omnimodel.h"
+#include "ackermodel.h"
 
-OmniModel::OmniModel()
+AckerModel::AckerModel()
 {    
     printf("iniciando omni\r\n");
     for (int i = 0; i < numRuedas; ++i) {
@@ -25,43 +25,45 @@ OmniModel::OmniModel()
     setDirection(0);
 }
 
-OmniModel::~OmniModel()
+AckerModel::~AckerModel()
 {
     stopModel();
 }
 
-void OmniModel::setSpeed(int goalSpeed)
+void AckerModel::setSpeed(int goalSpeed)
 {
     //printf("Definiendo velocidad = %d \r\n", goalSpeed);
     _speed = goalSpeed;
     for (int i = 0; i < numRuedas; ++i) {
         if (i%2)
-            ptrMRot[i]->moveMotor(-goalSpeed);
+            ptrMRot[i]->moveMotor(-_speed);
         else
-            ptrMRot[i]->moveMotor(goalSpeed);
+            ptrMRot[i]->moveMotor(_speed);
     }
 }
 
-int OmniModel::getSpeed()
+int AckerModel::getSpeed()
 {
     return _speed;
 }
 
-void OmniModel::setDirection(int goalDir)
+void AckerModel::setDirection(int goalDir)
 {
     //printf("Definiendo direccion = %d \r\n", goalDir);
-    _direction = (goalDir*222)/1023;
-    for (int i = 0; i < numRuedas; ++i) {
-        ptrMDir[i]->moveMotor(_direction);
-    }
+    _direction = (goalDir*111)/1023;
+    ptrMDir[0]->moveMotor(_direction);
+    ptrMDir[1]->moveMotor(_direction);
+
+    ptrMDir[4]->moveMotor(-_direction);
+    ptrMDir[5]->moveMotor(-_direction);
 }
 
-int OmniModel::getDirection()
+int AckerModel::getDirection()
 {
     return _direction;
 }
 
-void OmniModel::stopModel()
+void AckerModel::stopModel()
 {
     for (int i = 0; i < numRuedas; ++i) {
         ptrMRot[i]->stopMotor();

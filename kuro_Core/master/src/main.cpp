@@ -5,11 +5,10 @@
 
 JOY_STR joyGlob;
 
-masterStr masterData;
-Master M;
+Master M(OMNIDIRECCIONAL);
 void JoystickActual(JOY_STR joyS)
 {
-     joyGlob = joyS;
+    joyGlob = joyS;
 }
 
 using namespace std;   
@@ -35,12 +34,9 @@ int main()
 
     //Ciclo Principal
     while (1) {
-        goalD=(int)((joyGlob.AxisDir*222)/32767);
+        goalD=(int)((joyGlob.AxisDir*1023)/32767);
         goalR=(int)((joyGlob.AxisVel*1023)/32767);
-        printf("dir [%d],vel[%d]            \r",goalD,goalR);
-        M.OM->setSpeed(goalR);
-        M.OM->setDirection(goalD);
-
+        M.moveRobot(goalR, goalD);
     }
     return 0;
 }

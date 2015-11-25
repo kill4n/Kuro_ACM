@@ -1,5 +1,5 @@
-#ifndef OMNIMODEL_H
-#define OMNIMODEL_H
+#ifndef DIFERMODEL_H
+#define DIFERMODEL_H
 
 #include "motores/motorinterface/include/motorinterface.h"
 #include "motores/AX_12/include/ax_12_motor.h"
@@ -11,11 +11,11 @@ using namespace std;
 #define numRuedas 6
 #define DEVICE_INDEX 0
 
-class OmniModel : public ModeloInterface
+class DiferModel : public ModeloInterface
 {
 public:
-    OmniModel();
-    ~OmniModel();
+    DiferModel();
+    ~DiferModel();
     virtual void setSpeed(int goalSpeed);
     virtual int getSpeed();
 
@@ -31,4 +31,4 @@ private:
     int _speed, _direction;
 };
 
-#endif // OMNIMODEL_H
+#endif // DIFERMODEL_H
