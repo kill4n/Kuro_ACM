@@ -33,6 +33,7 @@ void Master::inicializar()
     JoyH->openJoy();
     camaraCon = new CamaraController();
     camaraCon->setFPS(100);
+    camaraCon->setCameraResol();
     camaraCon->startCamara();
 }
 
