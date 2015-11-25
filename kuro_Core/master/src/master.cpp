@@ -19,17 +19,30 @@ Master::Master(MODELO_TYPE config):_conf(config)
     }
 }
 
+Master::~Master()
+{
+    delete JoyH;
+    delete MI;
+    delete camaraCon;
+}
+
 void Master::inicializar()
 {
-    printf("inicializando kuro ...");
+    printf("inicializando kuro ...\r\n");
     JoyH = new joystick_helper();
     JoyH->openJoy();
+    camaraCon = new CamaraController();
+    camaraCon->setFPS(100);
+    camaraCon->startCamara();
 }
 
 void Master::conectar()
 {
-    printf("joystick iniciado()");
     JoyH->StartInternalThread();
+    printf("joystick conectado\r\n");
+    camaraCon->StartInternalThread();
+    printf("camara conectada\r\n");
+
 }
 
 void Master::moveRobot(int vel, int dir)

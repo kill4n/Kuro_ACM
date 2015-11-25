@@ -6,7 +6,7 @@ class MiMensaje
 public:
     MiMensaje();
     void decodeMensaje(short *datos);
-    short* encodeMensaje();
+    short *encodeMensaje();
 private:
     short m_CMD;
     short m_NumDat;

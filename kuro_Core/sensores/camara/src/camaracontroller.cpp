@@ -7,9 +7,10 @@ CamaraController::CamaraController(): _fps(30), _width(320), _height(240), isRun
 
 CamaraController::~CamaraController()
 {
+    printf("Cerrando hilo camara\r\n");
     isRunning = false;
     this->WaitForInternalThreadToExit();
-    printf("Cerrando_hilo\r\n");
+    printf("Cerrando camara\r\n");
 }
 
 bool CamaraController::startCamara()

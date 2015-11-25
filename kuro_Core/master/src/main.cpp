@@ -5,10 +5,16 @@
 
 JOY_STR joyGlob;
 
-Master M(OMNIDIRECCIONAL);
+Master masterObject(ACKERMKAN);
 void JoystickActual(JOY_STR joyS)
 {
     joyGlob = joyS;
+}
+Mat M(4,4, CV_8UC3, Scalar(0,0,255));
+void newFrameCallBack(bool isFrame, Mat imagen)
+{
+    startWindowThread();
+    M = imagen;
 }
 
 using namespace std;   
@@ -19,10 +25,12 @@ int main()
 
     cout << "Buen día, desde kuro!" << endl;
     //inicializar perifericos
-    M.inicializar();
-    M.JoyH->setCallback(JoystickActual);
+    masterObject.inicializar();
+    masterObject.JoyH->setCallback(JoystickActual);
+    masterObject.camaraCon->setCallback(newFrameCallBack);
     //correr hilos
-    M.conectar();
+    masterObject.conectar();
+    startWindowThread();
 
     //
 
@@ -36,7 +44,10 @@ int main()
     while (1) {
         goalD=(int)((joyGlob.AxisDir*1023)/32767);
         goalR=(int)((joyGlob.AxisVel*1023)/32767);
-        M.moveRobot(goalR, goalD);
+        masterObject.moveRobot(goalR, goalD);
+        imshow("salida",M);
+        if(waitKey(1)>27)
+            break;
     }
     return 0;
 }
