@@ -31,9 +31,6 @@ int main()
     //correr hilos
     masterObject.conectar();
     startWindowThread();
-
-    //
-
     //
 
     //
@@ -45,9 +42,7 @@ int main()
         goalD=(int)((joyGlob.AxisDir*1023)/32767);
         goalR=(int)((joyGlob.AxisVel*1023)/32767);
         masterObject.moveRobot(goalR, goalD);
-        imshow("salida",M);
-        if(waitKey(1)>27)
-            break;
+        cout<< M;
     }
     return 0;
 }
