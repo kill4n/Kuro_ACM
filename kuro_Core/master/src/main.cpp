@@ -42,7 +42,10 @@ int main()
         goalD=(int)((joyGlob.AxisDir*1023)/32767);
         goalR=(int)((joyGlob.AxisVel*1023)/32767);
         masterObject.moveRobot(goalR, goalD);
-        cout<< M;
+        //cout<< M;
+        imshow("test",M);
+        if(waitKey(1)>27)
+            break;
     }
     return 0;
 }
