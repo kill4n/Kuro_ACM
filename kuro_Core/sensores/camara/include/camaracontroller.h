@@ -27,6 +27,7 @@ public:
     void setFPS(int fps = 30);
     int getFPS();
 
+    void getResol(int &ancho, int &alto);
 private:
     VideoCapture _camera;
     void (*callback)(bool , Mat);
