@@ -60,12 +60,6 @@ void CamaraController::setCameraResol(int width, int height)
     printf("camara definida W[%d], H[%d]\r\n",_width,_height);
 }
 
-void getResol(int &ancho, int &alto)
-{
-    ancho = _width;
-    alto = _height;
-}
-
 void CamaraController::setFPS(int fps)
 {
     _fps = fps;

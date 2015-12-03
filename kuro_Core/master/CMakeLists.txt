@@ -19,4 +19,4 @@ include_directories(${KINE_DIR})
 
 add_executable(${PROJECT_NAME} ${MASTER_SRCS} ${MASTER_HEADS})
 
-target_link_libraries(${PROJECT_NAME} joystick omni_model difer_model acker_model  camara ${OpenCV_LIBS})
+target_link_libraries(${PROJECT_NAME} joystick omni_model difer_model acker_model camara socket_aux ${OpenCV_LIBS})

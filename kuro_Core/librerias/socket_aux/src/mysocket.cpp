@@ -19,18 +19,14 @@ MySocket::MySocket(TCP_TYPE tipo, int puerto, string IP)
     }
 }
 
+MySocket::~MySocket()
+{
+
+}
+
 bool MySocket::Conectar()
 {
-    listen(sockfd,5);
-    clilen = sizeof(cli_addr);
-    newsockfd = accept(sockfd,
-                       (struct sockaddr *) &cli_addr,
-                       &clilen);
-    if (newsockfd < 0)
-    {
-        //error("ERROR on accept");
-        return false;
-    }
+    isRunning = true;
     return true;
 }
 
@@ -38,6 +34,54 @@ void MySocket::closeSock()
 {
     close(newsockfd);
     close(sockfd);
+}
+
+void MySocket::setCallback(void (*cb)(MensajesEventArgs))
+{
+    callback = cb;
+}
+
+void MySocket::InternalThreadEntry()
+{
+    printf("Hola  sd desde Hilo {%d}\r\n",isRunning);
+
+
+    listen(sockfd,5);
+    clilen = sizeof(cli_addr);
+    newsockfd = accept(sockfd,
+                       (struct sockaddr *) &cli_addr,
+                       &clilen);
+    if (newsockfd < 0)
+    {
+        isRunning = false;
+    }
+    printf("Cliente Aceptado \r\n");
+    while (isRunning) {
+        char *d= new char[1];
+        readData(d,1);
+        switch ((int)d[0]) {
+        case 0x10://seleccion modo operacion
+            d= new char[1];
+            readData(d,1);
+            printf("Cambiar Modo \r\n");
+
+            e.setData(0x10, 1, d);
+            break;
+        case 0x11:
+            d= new char[1];
+            readData(d,1);
+            printf("Pedir foto \r\n");
+
+            e.setData(0x11, 1, d);
+            break;
+        default:
+            break;
+        }
+
+        this->callback(e);
+        usleep(10000);
+    }
+    this->closeSock();
 }
 
 int MySocket::SendData(char* data, int sizeData){
@@ -49,6 +93,6 @@ int MySocket::SendData(char* data, int sizeData){
 int MySocket::readData(char* data, int sizeData){
     int n = read(newsockfd,data,sizeData);
     if (n < 0) printf("ERROR reading from socket");
-    printf("Here is the message: %s\n",data);
+    //printf("Here is the message: %s\n",data);
     return n;
 }

@@ -22,6 +22,9 @@ public:
     void inicializar();
     void conectar();
     void moveRobot(int vel, int dir);
+
+    void setMode(MODELO_TYPE config);
+
     joystick_helper *JoyH;
     CamaraController *camaraCon;
 

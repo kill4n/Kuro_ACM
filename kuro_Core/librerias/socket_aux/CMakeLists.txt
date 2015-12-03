@@ -11,8 +11,10 @@ include_directories("${PROJECT_SOURCE_DIR}")
 aux_source_directory(${PROJECT_SOURCE_DIR} ${PROJECT_NAME}_SRCS)
 file(GLOB ${PROJECT_NAME}_HEADS "${PROJECT_INCLUDE_DIR}/*.h")
 
+include_directories(${LIBS_DIR})
+
 #add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SRCS} ${${PROJECT_NAME}_HEADS})
 ADD_LIBRARY(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_SRCS} ${${PROJECT_NAME}_HEADS})
-target_link_libraries(${PROJECT_NAME} )
+target_link_libraries(${PROJECT_NAME} thread_aux)
 #MESSAGE( STATUS "SRC:" ${${PROJECT_NAME}_SRCS} )
 #set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)

@@ -3,7 +3,7 @@
 Master::Master(MODELO_TYPE config):_conf(config)
 {
     printf("Bienvenido al robot kuro");
-    switch (config) {
+    switch (_conf) {
     case OMNIDIRECCIONAL:
         MI = &OM;
         break;
@@ -75,6 +75,29 @@ void Master::moveRobot(int vel, int dir)
         MI->setDirection(dir);
         break;
     default:
+        break;
+    }
+}
+
+void Master::setMode(MODELO_TYPE config)
+{
+    //MI->stopModel();
+    _conf= config;
+    switch (_conf) {
+    case OMNIDIRECCIONAL:
+        printf("Cambio modo a OMNIDIRECCIONAL\r\n");
+        MI = &OM;
+        break;
+    case DIFERENCIAL:
+        printf("Cambio modo a DIFERENCIAL\r\n");
+        MI = &DM;
+        break;
+    case ACKERMKAN:
+        printf("Cambio modo a ACKERMKAN\r\n");
+        MI = &AM;
+        break;
+    default:
+        MI = &DM;
         break;
     }
 }
