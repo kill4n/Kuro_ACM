@@ -39,16 +39,23 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_modelo = new System.Windows.Forms.Button();
+            this.rb_ack = new System.Windows.Forms.RadioButton();
+            this.rb_dif = new System.Windows.Forms.RadioButton();
+            this.rb_omn = new System.Windows.Forms.RadioButton();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -58,6 +65,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -147,21 +155,6 @@
             this.tabPage1.Text = "Robot";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(235, 174);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Laser";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(36, 102);
@@ -178,7 +171,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(112, 20);
             this.textBox3.TabIndex = 16;
-            this.textBox3.Text = "192.168.0.200";
+            this.textBox3.Text = "192.168.0.101";
             // 
             // textBox4
             // 
@@ -206,11 +199,87 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Puerto";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(235, 174);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Laser";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_modelo);
+            this.groupBox1.Controls.Add(this.rb_ack);
+            this.groupBox1.Controls.Add(this.rb_dif);
+            this.groupBox1.Controls.Add(this.rb_omn);
+            this.groupBox1.Location = new System.Drawing.Point(463, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(154, 134);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Modo de Operacion";
+            // 
+            // btn_modelo
+            // 
+            this.btn_modelo.Enabled = false;
+            this.btn_modelo.Location = new System.Drawing.Point(6, 93);
+            this.btn_modelo.Name = "btn_modelo";
+            this.btn_modelo.Size = new System.Drawing.Size(137, 23);
+            this.btn_modelo.TabIndex = 3;
+            this.btn_modelo.Text = "Cambiar Modo";
+            this.btn_modelo.UseVisualStyleBackColor = true;
+            this.btn_modelo.Click += new System.EventHandler(this.btn_modelo_Click);
+            // 
+            // rb_ack
+            // 
+            this.rb_ack.AutoSize = true;
+            this.rb_ack.Location = new System.Drawing.Point(6, 70);
+            this.rb_ack.Name = "rb_ack";
+            this.rb_ack.Size = new System.Drawing.Size(73, 17);
+            this.rb_ack.TabIndex = 2;
+            this.rb_ack.Text = "Ackerman";
+            this.rb_ack.UseVisualStyleBackColor = true;
+            // 
+            // rb_dif
+            // 
+            this.rb_dif.AutoSize = true;
+            this.rb_dif.Location = new System.Drawing.Point(6, 45);
+            this.rb_dif.Name = "rb_dif";
+            this.rb_dif.Size = new System.Drawing.Size(75, 17);
+            this.rb_dif.TabIndex = 1;
+            this.rb_dif.Text = "Diferencial";
+            this.rb_dif.UseVisualStyleBackColor = true;
+            // 
+            // rb_omn
+            // 
+            this.rb_omn.AutoSize = true;
+            this.rb_omn.Checked = true;
+            this.rb_omn.Location = new System.Drawing.Point(6, 22);
+            this.rb_omn.Name = "rb_omn";
+            this.rb_omn.Size = new System.Drawing.Size(100, 17);
+            this.rb_omn.TabIndex = 0;
+            this.rb_omn.TabStop = true;
+            this.rb_omn.Text = "Onmidireccional";
+            this.rb_omn.UseVisualStyleBackColor = true;
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 433);
+            this.ClientSize = new System.Drawing.Size(624, 433);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.glControl1);
             this.Controls.Add(this.pictureBox1);
@@ -222,6 +291,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -244,6 +315,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rb_ack;
+        private System.Windows.Forms.RadioButton rb_dif;
+        private System.Windows.Forms.RadioButton rb_omn;
+        private System.Windows.Forms.Button btn_modelo;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

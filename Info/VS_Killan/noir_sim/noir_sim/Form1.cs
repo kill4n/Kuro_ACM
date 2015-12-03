@@ -19,12 +19,18 @@ namespace noir_sim
         minero_class minACM1PT;
         SickEventArgs sea;
         bool loaded = false;
+        Bitmap frame;
         public Form1()
         {
             InitializeComponent();
+
             CheckForIllegalCrossThreadCalls = false;
             sickTim351 = new sick_class(textBox1.Text, int.Parse(textBox2.Text));
             sickTim351.SickEvent += sickTim351_SickEvent;
+
+            frame = new Bitmap(640, 480);
+            //g = Graphics.FromImage(frame);
+            pictureBox1.Image = frame;
 
             minACM1PT = new minero_class(textBox3.Text, int.Parse(textBox4.Text));
             minACM1PT.MineroEvent += minACM1PT_MineroEvent;
@@ -34,9 +40,29 @@ namespace noir_sim
 
         void minACM1PT_MineroEvent(object sender, mineroEventArgs e)
         {
-            var mb = Message.ToByteArray(e.m);
+            try
+            {
+                if (e.cmd == 0x13)
+                {
+                    int cont = 0;
+                    for (int i = 0; i < 480; i++)
+                    {
+                        for (int j = 0; j < 640; j++)
+                        {
+                            frame.SetPixel(j, i, Color.FromArgb(e.data[cont + 2], e.data[cont + 1], e.data[cont]));
+                            cont += 3;
+                        }
+                    }
+                }
+                pictureBox1.Image = frame;
+            }
+            catch (Exception ex)
+            {
+
+            }
+
         }
-        
+
         #region sickEvento y timer
         void sickTim351_SickEvent(object sender, SickEventArgs e)
         {
@@ -76,7 +102,7 @@ namespace noir_sim
                 timer1.Stop();
             }
         }
-        #endregion         
+        #endregion
 
         #region Opengl
         private void glControl1_Resize(object sender, EventArgs e)
@@ -130,7 +156,7 @@ namespace noir_sim
             GL.Viewport(0, 0, glControl1.Width, glControl1.Height);
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadIdentity();
-            double wld = 5500.0;
+            double wld = 10000.0;
             GL.Ortho(-wld, wld, -wld, wld, 5.0, 15.0);
             GL.MatrixMode(MatrixMode.Modelview);
         }
@@ -142,14 +168,46 @@ namespace noir_sim
         {
             minACM1PT.setEP(textBox3.Text, int.Parse(textBox4.Text));
             if (minACM1PT.connect())
-            {                
+            {
                 ((Button)sender).Text = "Desconectar";
                 this.Text = "Conectado: OK";
+                btn_modelo.Enabled = true;
+                timer2.Start();
             }
             else
             {
-                ((Button)sender).Text = "Conectar";                
+                ((Button)sender).Text = "Conectar";
+                btn_modelo.Enabled = false;
+                timer2.Stop();
             }
+        }
+
+        private void btn_modelo_Click(object sender, EventArgs e)
+        {
+            List<byte> data = new List<byte>();
+            if (rb_omn.Checked)
+            {
+                data.Add(0x21);
+                minACM1PT.writeMessage(0x10, data);
+            }
+            if (rb_dif.Checked)
+            {
+                data.Add(0x22);
+                minACM1PT.writeMessage(0x10, data);
+            }
+            if (rb_ack.Checked)
+            {
+                data.Add(0x23);
+                minACM1PT.writeMessage(0x10, data);
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            List<byte> data = new List<byte>();
+            data.Add(0x13);
+            minACM1PT.writeMessage(0x11, data);
+
         }
     }
 }

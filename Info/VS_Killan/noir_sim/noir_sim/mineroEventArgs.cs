@@ -9,5 +9,7 @@ namespace noir_sim
     class mineroEventArgs : EventArgs
     {
         public Message m;
+        public byte[]data;
+        public int cmd;
     }
 }
