@@ -1,10 +1,13 @@
 #include <iostream>
 #include <fstream>
+#include <signal.h>
 
 #include "master.h"
 #include "librerias/socket_aux/include/mysocket.h"
 
 JOY_STR joyGlob;
+
+int isAlive = 1;
 
 Master masterObject(ACKERMKAN);
 MySocket ms(SERVER, 2134);
@@ -46,7 +49,7 @@ void socketCallback(MensajesEventArgs e)
     case 0x11:
         M = (M.reshape(0,1));
         imgsize = M.total()*M.elemSize();
-        printf("tamano a enviar [%d] {%lu}\r\n",M.total(),M.elemSize());
+        printf("tamano a enviar [%d] {%d}\r\n",M.total(),M.elemSize());
         daaa= new char[1];
         daaa[0] = 0x13;
         ms.SendData(daaa,1);
@@ -57,12 +60,18 @@ void socketCallback(MensajesEventArgs e)
     }
 }
 
+void catch_close(int sig)
+{
+    printf("capture el errorr \r\n");
+    isAlive = 0;
+}
+
 using namespace std;   
 int main()
 {
     int goalR = 0;
     int goalD = 0;
-
+    signal(SIGINT, catch_close);
     cout << "Buen día, desde kuro!" << endl;
     //inicializar perifericos
     masterObject.inicializar();
@@ -82,7 +91,7 @@ int main()
     //
     masterObject.setMode(OMNIDIRECCIONAL);
     //Ciclo Principal
-    while (1) {
+    while (isAlive) {
         goalD=(int)((joyGlob.AxisDir*1023)/32767);
         goalR=(int)((joyGlob.AxisVel*1023)/32767);
         masterObject.moveRobot(goalR, goalD);
