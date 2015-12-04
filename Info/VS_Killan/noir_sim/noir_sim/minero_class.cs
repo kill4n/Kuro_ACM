@@ -46,13 +46,13 @@ namespace noir_sim
                 ev.cmd = dat[0];
                 if (dat[0] == 0x13)
                 {
-                    //clientSock.Receive(ev.data);
-                    while (datos.Count < (640 * 480 * 3))
+                    clientSock.Receive(ev.data);
+                    /*while (datos.Count < (640 * 480 * 3))
                     {
                         clientSock.Receive(dat);
                         datos.Add(dat[0]);
                     }
-                    ev.data = datos.ToArray();
+                    ev.data = datos.ToArray();*/
                 }
 
             }
