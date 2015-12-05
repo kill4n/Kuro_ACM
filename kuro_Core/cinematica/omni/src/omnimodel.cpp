@@ -1,8 +1,13 @@
 #include "omnimodel.h"
 
 OmniModel::OmniModel()
-{    
-    printf("iniciando omni\r\n");
+{
+    printf("Creando modelo Omnidireccional\r\n");
+}
+void OmniModel::startModel()
+{
+    printf("iniciando omnidireccional\r\n");
+
     for (int i = 0; i < numRuedas; ++i) {
         ptrMRot[i] = &ax12_Rot[i];
         ptrMDir[i] = &ax12_Dir[i];
@@ -27,7 +32,10 @@ OmniModel::OmniModel()
 
 OmniModel::~OmniModel()
 {
+    printf("Muriendo modelo Omnidireccional\r\n");
     stopModel();
+    delete *ptrMDir;
+    delete *ptrMRot;
 }
 
 void OmniModel::setSpeed(int goalSpeed)
@@ -66,7 +74,5 @@ void OmniModel::stopModel()
     for (int i = 0; i < numRuedas; ++i) {
         ptrMRot[i]->stopMotor();
         ptrMDir[i]->stopMotor();
-    }
-    delete *ptrMDir;
-    delete *ptrMRot;
+    }    
 }

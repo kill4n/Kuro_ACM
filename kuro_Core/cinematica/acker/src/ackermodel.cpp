@@ -2,7 +2,11 @@
 
 AckerModel::AckerModel()
 {    
-    printf("iniciando omni\r\n");
+    printf("Creando modelo Ackerman\r\n");
+}
+void AckerModel::startModel()
+{
+    printf("iniciando ackerman\r\n");
     for (int i = 0; i < numRuedas; ++i) {
         ptrMRot[i] = &ax12_Rot[i];
         ptrMDir[i] = &ax12_Dir[i];
@@ -27,7 +31,10 @@ AckerModel::AckerModel()
 
 AckerModel::~AckerModel()
 {
+    printf("Muriendo modelo Ackerman\r\n");
     stopModel();
+    delete *ptrMDir;
+    delete *ptrMRot;
 }
 
 void AckerModel::setSpeed(int goalSpeed)
@@ -69,6 +76,4 @@ void AckerModel::stopModel()
         ptrMRot[i]->stopMotor();
         ptrMDir[i]->stopMotor();
     }
-    delete *ptrMDir;
-    delete *ptrMRot;
 }

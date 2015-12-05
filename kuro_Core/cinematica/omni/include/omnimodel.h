@@ -16,6 +16,8 @@ class OmniModel : public ModeloInterface
 public:
     OmniModel();
     ~OmniModel();
+    virtual void startModel();
+
     virtual void setSpeed(int goalSpeed);
     virtual int getSpeed();
 

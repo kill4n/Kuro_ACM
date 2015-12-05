@@ -16,6 +16,7 @@ class AckerModel : public ModeloInterface
 public:
     AckerModel();
     ~AckerModel();
+    virtual void startModel();
     virtual void setSpeed(int goalSpeed);
     virtual int getSpeed();
 
