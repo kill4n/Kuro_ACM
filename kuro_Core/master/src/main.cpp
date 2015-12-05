@@ -12,7 +12,7 @@ JOY_STR joyGlob;
 int isAlive = 1;
 Master masterObject;
 MySocket ms(SERVER, 2134);
-Mat M(4,4, CV_8UC3, Scalar(0,0,255));
+Mat M(640,480, CV_8UC3, Scalar(100,130,250));
 
 void JoystickActual(JOY_STR joyS)
 {
@@ -21,9 +21,12 @@ void JoystickActual(JOY_STR joyS)
 void newFrameCallBack(bool isFrame, Mat imagen)
 {
     startWindowThread();
-    M = imagen;
+    cvtColor(imagen, M, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
+    //M = imagen;
 
 }
+Mat imageTest(640,480, CV_8UC3, Scalar(100,130,250));
+Mat image2Send(640,480, CV_8UC3, Scalar(100,130,250));
 void socketCallback(MensajesEventArgs e)
 {
     printf("llego dato del cliente \r\n");
@@ -47,13 +50,15 @@ void socketCallback(MensajesEventArgs e)
         break;
 
     case 0x11:
-        M = (M.reshape(0,1));
-        imgsize = M.total()*M.elemSize();
-        printf("tamano a enviar [%d] {%d}\r\n",M.total(),M.elemSize());
+        cvtColor(image2Send, imageTest, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
+
+        //M = (M.reshape(0,1));
+        imgsize = image2Send.total()*image2Send.elemSize();
+        printf("tamano a enviar [%d] {%d}\r\n",image2Send.total(),image2Send.elemSize());
         daaa= new char[1];
         daaa[0] = 0x13;
         ms.SendData(daaa,1);
-        ms.SendData((char*)M.data,imgsize);
+        ms.SendData((char*)image2Send.data,imgsize);
         break;
     default:
         break;
@@ -70,15 +75,13 @@ int main()
     int goalD = 0;
     signal(SIGINT, catch_close);
     cout << "Buen día, desde kuro!" << endl;
-    //inicializar perifericos
-    //            masterObject.setMode(OMNIDIRECCIONAL);
-
-/*    masterObject.inicializar();
-    masterObject.JoyH->setCallback(JoystickActual);
+    // ----- inicializar perifericos  ------
+    //masterObject.setMode(OMNIDIRECCIONAL);
+    masterObject.inicializar(ENABLE_CAMERA);
+    //masterObject.JoyH->setCallback(JoystickActual);
     masterObject.camaraCon->setCallback(newFrameCallBack);
-
     ms.setCallback(socketCallback);
-    //correr hilos
+    // ------ correr hilos -------
     masterObject.conectar();
     ms.Conectar();
     ms.StartInternalThread();
@@ -88,7 +91,7 @@ int main()
     //
 
     //
-    masterObject.setMode(OMNIDIRECCIONAL);*/
+    masterObject.setMode(OMNIDIRECCIONAL);
     //Ciclo Principal
     while (isAlive) {
         //goalD=(int)((joyGlob.AxisDir*1023)/32767);

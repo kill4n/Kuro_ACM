@@ -13,24 +13,42 @@ Master::~Master()
     delete camaraCon;
 }
 
-void Master::inicializar()
+void Master::inicializar(MASTER_FLAGS flags)
 {
-    printf("inicializando kuro ...\r\n");   
-    JoyH = new joystick_helper();
-    JoyH->openJoy();
-    camaraCon = new CamaraController();
-    camaraCon->setFPS(100);
-    camaraCon->setCameraResol();
-    camaraCon->startCamara();
+    _flags = flags;
+    printf("inicializando kuro ...\r\n");
+    if(flags & ENABLE_JOYSTICK)
+    {
+        printf("Iniciando joystick ...\r\n");
+        JoyH = new joystick_helper();
+        JoyH->openJoy();
+    }
+    if(flags & ENABLE_CAMERA)
+    {
+        printf("Iniciando camara ...\r\n");
+        camaraCon = new CamaraController();
+        camaraCon->setFPS(100);
+        camaraCon->setCameraResol();
+        camaraCon->startCamara();
+    }
+    if(flags & ENABLE_MOTORS)
+    {
+        printf("Iniciando motores ...\r\n");
+        MI->startModel();
+    }
 }
 
 void Master::conectar()
 {
-    JoyH->StartInternalThread();
-    printf("joystick conectado\r\n");
-    camaraCon->StartInternalThread();
-    printf("camara conectada\r\n");
-
+    if (_flags & ENABLE_JOYSTICK) {
+        JoyH->StartInternalThread();
+        printf("joystick conectado\r\n");
+    }
+    if(_flags & ENABLE_CAMERA)
+    {
+        camaraCon->StartInternalThread();
+        printf("camara conectada\r\n");
+    }
 }
 
 void Master::moveRobot(int vel, int dir)
