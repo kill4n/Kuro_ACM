@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
 
+using System.IO;
+
 namespace noir_sim
 {
     public partial class Form1 : Form
@@ -42,6 +44,7 @@ namespace noir_sim
         {
             try
             {
+                frame = new Bitmap(640, 480);
                 if (e.cmd == 0x13)
                 {
                     int cont = 0;
@@ -49,16 +52,18 @@ namespace noir_sim
                     {
                         for (int j = 0; j < 640; j++)
                         {
-                            frame.SetPixel(j, i, Color.FromArgb(e.data[cont + 2], e.data[cont + 1], e.data[cont]));
+                            frame.SetPixel(j, i, Color.FromArgb(e.data[cont], e.data[cont + 1], e.data[cont+2]));
                             cont += 3;
                         }
                     }
                 }
+                
                 pictureBox1.Image = frame;
+                pictureBox1.Refresh();
             }
             catch (Exception ex)
             {
-
+                var q = "asd";
             }
 
         }

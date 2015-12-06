@@ -46,7 +46,20 @@ namespace noir_sim
                 ev.cmd = dat[0];
                 if (dat[0] == 0x13)
                 {
-                    clientSock.Receive(ev.data);
+                    var total = 0;
+                    var size = 921600;
+                    do
+                    {
+                        var read = clientSock.Receive(ev.data, total, size - total, SocketFlags.None);                        
+                        if (read == 0)
+                        {
+                            //If it gets here and you received 0 bytes it means that the Socket has Disconnected gracefully (without throwing exception) so you will need to handle that here
+                        }
+                        total += read;
+                        //If you have sent 1024 bytes and Receive only 512 then it wil continue to recieve in the correct index thus when total is equal to 1024 you will have recieved all the bytes
+                    } while (total != size);
+                    //while (clientSock.Available < 307200) ;
+                    //clientSock.Receive(ev.data);
                     /*while (datos.Count < (640 * 480 * 3))
                     {
                         clientSock.Receive(dat);
