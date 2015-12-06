@@ -13,6 +13,8 @@ int isAlive = 1;
 Master masterObject;
 MySocket ms(SERVER, 2134);
 Mat M(640,480, CV_8UC3, Scalar(100,130,250));
+Mat imageTest(640,480, CV_8UC3, Scalar(220,110,250));
+Mat image2Send(640,480, CV_8UC3, Scalar(0,0,0));
 
 void JoystickActual(JOY_STR joyS)
 {
@@ -21,12 +23,12 @@ void JoystickActual(JOY_STR joyS)
 void newFrameCallBack(bool isFrame, Mat imagen)
 {
     startWindowThread();
-    cvtColor(imagen, M, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
+    //cvtColor(imagen, M, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
+    imageTest = M.clone();
     //M = imagen;
 
 }
-Mat imageTest(640,480, CV_8UC3, Scalar(100,130,250));
-Mat image2Send(640,480, CV_8UC3, Scalar(100,130,250));
+
 void socketCallback(MensajesEventArgs e)
 {
     printf("llego dato del cliente \r\n");
@@ -50,7 +52,7 @@ void socketCallback(MensajesEventArgs e)
         break;
 
     case 0x11:
-        cvtColor(image2Send, imageTest, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
+        cvtColor(imageTest, image2Send, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
 
         //M = (M.reshape(0,1));
         imgsize = image2Send.total()*image2Send.elemSize();
@@ -79,19 +81,21 @@ int main()
     //masterObject.setMode(OMNIDIRECCIONAL);
     masterObject.inicializar(ENABLE_CAMERA);
     //masterObject.JoyH->setCallback(JoystickActual);
-    masterObject.camaraCon->setCallback(newFrameCallBack);
+    //masterObject.camaraCon->setCallback(newFrameCallBack);
+    cout << "kuro creado!" << endl;
     ms.setCallback(socketCallback);
     // ------ correr hilos -------
-    masterObject.conectar();
+    //masterObject.conectar();
     ms.Conectar();
     ms.StartInternalThread();
-    startWindowThread();
+    cout << "kuro ms start!" << endl;
+    //startWindowThread();
     //
 
     //
 
     //
-    masterObject.setMode(OMNIDIRECCIONAL);
+
     //Ciclo Principal
     while (isAlive) {
         //goalD=(int)((joyGlob.AxisDir*1023)/32767);
