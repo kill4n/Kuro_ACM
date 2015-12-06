@@ -16,6 +16,7 @@ class DiferModel : public ModeloInterface
 public:
     DiferModel();
     ~DiferModel();
+    virtual void startModel();
     virtual void setSpeed(int goalSpeed);
     virtual int getSpeed();
 

@@ -5,25 +5,25 @@
 #include "master.h"
 #include "librerias/socket_aux/include/mysocket.h"
 
+using namespace std;
+
 JOY_STR joyGlob;
 
 int isAlive = 1;
-
-Master masterObject(ACKERMKAN);
+Master masterObject;
 MySocket ms(SERVER, 2134);
+Mat M(4,4, CV_8UC3, Scalar(0,0,255));
 
 void JoystickActual(JOY_STR joyS)
 {
     joyGlob = joyS;
 }
-Mat M(4,4, CV_8UC3, Scalar(0,0,255));
 void newFrameCallBack(bool isFrame, Mat imagen)
 {
     startWindowThread();
     M = imagen;
 
 }
-
 void socketCallback(MensajesEventArgs e)
 {
     printf("llego dato del cliente \r\n");
@@ -59,14 +59,11 @@ void socketCallback(MensajesEventArgs e)
         break;
     }
 }
-
 void catch_close(int sig)
 {
     printf("capture el errorr \r\n");
     isAlive = 0;
 }
-
-using namespace std;   
 int main()
 {
     int goalR = 0;
@@ -74,7 +71,9 @@ int main()
     signal(SIGINT, catch_close);
     cout << "Buen día, desde kuro!" << endl;
     //inicializar perifericos
-    masterObject.inicializar();
+    //            masterObject.setMode(OMNIDIRECCIONAL);
+
+/*    masterObject.inicializar();
     masterObject.JoyH->setCallback(JoystickActual);
     masterObject.camaraCon->setCallback(newFrameCallBack);
 
@@ -89,17 +88,18 @@ int main()
     //
 
     //
-    masterObject.setMode(OMNIDIRECCIONAL);
+    masterObject.setMode(OMNIDIRECCIONAL);*/
     //Ciclo Principal
     while (isAlive) {
-        goalD=(int)((joyGlob.AxisDir*1023)/32767);
-        goalR=(int)((joyGlob.AxisVel*1023)/32767);
-        masterObject.moveRobot(goalR, goalD);
+        //goalD=(int)((joyGlob.AxisDir*1023)/32767);
+        //goalR=(int)((joyGlob.AxisVel*1023)/32767);
+        //masterObject.moveRobot(goalR, goalD);
         //cout<< M;
         /*imshow("lados",M);
         if (waitKey(1)>27) {
             break;
         }*/
     }
+    printf("Saliendo del main\r\n");
     return 0;
 }

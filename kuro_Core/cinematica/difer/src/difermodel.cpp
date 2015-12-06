@@ -2,7 +2,11 @@
 
 DiferModel::DiferModel()
 {    
-    printf("iniciando omni\r\n");
+    printf("Creando modelo Diferencial\r\n");
+}
+void DiferModel::startModel()
+{
+    printf("iniciando diferencial\r\n");
     for (int i = 0; i < numRuedas; ++i) {
         ptrMRot[i] = &ax12_Rot[i];
         ptrMDir[i] = &ax12_Dir[i];
@@ -27,7 +31,10 @@ DiferModel::DiferModel()
 
 DiferModel::~DiferModel()
 {
+    printf("Muriendo modelo Diferencial\r\n");
     stopModel();
+    delete *ptrMDir;
+    delete *ptrMRot;
 }
 
 void DiferModel::setSpeed(int goalSpeed)
@@ -67,6 +74,5 @@ void DiferModel::stopModel()
         ptrMRot[i]->stopMotor();
         ptrMDir[i]->stopMotor();
     }
-    delete *ptrMDir;
-    delete *ptrMRot;
 }
+

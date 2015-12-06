@@ -11,6 +11,7 @@ class ModeloInterface
 {
 public:
     virtual ~ModeloInterface(){}
+    virtual void startModel() = 0;
     virtual void setSpeed(int goalSpeed) = 0;
     virtual int getSpeed() = 0;
     virtual void setDirection(int goalDir) = 0;

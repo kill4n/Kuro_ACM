@@ -1,26 +1,13 @@
 #include "master.h"
 
-Master::Master(MODELO_TYPE config):_conf(config)
+Master::Master():_conf(DIFERENCIAL)
 {
-    printf("Bienvenido al robot kuro");
-    switch (_conf) {
-    case OMNIDIRECCIONAL:
-        MI = &OM;
-        break;
-    case DIFERENCIAL:
-        MI = &DM;
-        break;
-    case ACKERMKAN:
-        MI = &AM;
-        break;
-    default:
-        MI = &DM;
-        break;
-    }
+    printf("Bienvenido al robot kuro\r\n");
 }
 
 Master::~Master()
 {
+    printf("Master muriendo...\r\n");
     delete JoyH;
     delete MI;
     delete camaraCon;
@@ -28,7 +15,7 @@ Master::~Master()
 
 void Master::inicializar()
 {
-    printf("inicializando kuro ...\r\n");
+    printf("inicializando kuro ...\r\n");   
     JoyH = new joystick_helper();
     JoyH->openJoy();
     camaraCon = new CamaraController();
@@ -81,7 +68,7 @@ void Master::moveRobot(int vel, int dir)
 
 void Master::setMode(MODELO_TYPE config)
 {
-    //MI->stopModel();
+    MI->stopModel();
     _conf= config;
     switch (_conf) {
     case OMNIDIRECCIONAL:
@@ -100,4 +87,5 @@ void Master::setMode(MODELO_TYPE config)
         MI = &DM;
         break;
     }
+    MI->startModel();
 }
