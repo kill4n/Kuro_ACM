@@ -85,7 +85,7 @@ int main()
     cout << "kuro creado!" << endl;
     ms.setCallback(socketCallback);
     // ------ correr hilos -------
-    //masterObject.conectar();
+    masterObject.conectar();
     ms.Conectar();
     ms.StartInternalThread();
     cout << "kuro ms start!" << endl;
