@@ -34,7 +34,7 @@ public:
     CamaraController *camaraCon;
     ModeloInterface *MI;
 private:
-    MASTER_FLAGS _flags;
+    int _flags;
     OmniModel OM;
     DiferModel DM;
     AckerModel AM;

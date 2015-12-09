@@ -3,7 +3,7 @@
 using namespace AX_12;
 
 AX_12_Motor::AX_12_Motor(int id, MOTOR_TYPE type, int deviceID)
-    :_ID_motor(id), _motor(type),_deviceIndex(deviceID), _baud_speed(BAUD_115200)
+    :_ID_motor(id), _motor(type),_deviceIndex(deviceID), _baud_speed(BAUD_1Mbps)
 {
 }
 

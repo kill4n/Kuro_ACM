@@ -79,7 +79,7 @@ int main()
     cout << "Buen día, desde kuro!" << endl;
     // ----- inicializar perifericos  ------
     //masterObject.setMode(OMNIDIRECCIONAL);
-    masterObject.inicializar(ENABLE_CAMERA);
+    masterObject.inicializar(ENABLE_MOTORS);
     //masterObject.JoyH->setCallback(JoystickActual);
     masterObject.camaraCon->setCallback(newFrameCallBack);
     cout << "kuro creado!" << endl;

@@ -13,7 +13,7 @@ Master::~Master()
     delete camaraCon;
 }
 
-void Master::inicializar(MASTER_FLAGS flags)
+void Master::inicializar(int flags)
 {
     _flags = flags;
     printf("inicializando kuro ...\r\n");
