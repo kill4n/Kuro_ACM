@@ -24,7 +24,7 @@ void newFrameCallBack(bool isFrame, Mat imagen)
 {
     startWindowThread();
     //cvtColor(imagen, M, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
-    imageTest = M.clone();
+    imageTest = imagen.clone();
     //M = imagen;
 
 }
@@ -81,7 +81,7 @@ int main()
     //masterObject.setMode(OMNIDIRECCIONAL);
     masterObject.inicializar(ENABLE_CAMERA);
     //masterObject.JoyH->setCallback(JoystickActual);
-    //masterObject.camaraCon->setCallback(newFrameCallBack);
+    masterObject.camaraCon->setCallback(newFrameCallBack);
     cout << "kuro creado!" << endl;
     ms.setCallback(socketCallback);
     // ------ correr hilos -------
@@ -102,7 +102,7 @@ int main()
         //goalR=(int)((joyGlob.AxisVel*1023)/32767);
         //masterObject.moveRobot(goalR, goalD);
         //cout<< M;
-        /*imshow("lados",M);
+        /*imshow("lados",imageTest);
         if (waitKey(1)>27) {
             break;
         }*/
