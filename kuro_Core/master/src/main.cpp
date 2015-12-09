@@ -78,10 +78,12 @@ int main()
     signal(SIGINT, catch_close);
     cout << "Buen día, desde kuro!" << endl;
     // ----- inicializar perifericos  ------
-    //masterObject.setMode(OMNIDIRECCIONAL);
-    masterObject.inicializar(ENABLE_MOTORS);
-    //masterObject.JoyH->setCallback(JoystickActual);
+    masterObject.inicializar(ENABLE_MOTORS | ENABLE_JOYSTICK | ENABLE_CAMERA);
+    printf("creando callBacks\r\n");
+    masterObject.JoyH->setCallback(JoystickActual);
     masterObject.camaraCon->setCallback(newFrameCallBack);
+    //masterObject.setMode(OMNIDIRECCIONAL);
+
     cout << "kuro creado!" << endl;
     ms.setCallback(socketCallback);
     // ------ correr hilos -------
@@ -98,9 +100,9 @@ int main()
 
     //Ciclo Principal
     while (isAlive) {
-        //goalD=(int)((joyGlob.AxisDir*1023)/32767);
-        //goalR=(int)((joyGlob.AxisVel*1023)/32767);
-        //masterObject.moveRobot(goalR, goalD);
+        goalD=(int)((joyGlob.AxisDir*1023)/32767);
+        goalR=(int)((joyGlob.AxisVel*1023)/32767);
+        masterObject.moveRobot(goalR, goalD);
         //cout<< M;
         /*imshow("lados",imageTest);
         if (waitKey(1)>27) {

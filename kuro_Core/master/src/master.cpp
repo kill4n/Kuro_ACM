@@ -33,8 +33,9 @@ void Master::inicializar(int flags)
     }
     if(flags & ENABLE_MOTORS)
     {
-        printf("Iniciando motores ...\r\n");
-        MI->startModel();
+        printf("Iniciando motores q...\r\n");
+        setMode(_conf);
+        printf("Fin inicio motores ...\r\n");
     }
 }
 
@@ -86,7 +87,9 @@ void Master::moveRobot(int vel, int dir)
 
 void Master::setMode(MODELO_TYPE config)
 {
-    MI->stopModel();
+    if (MI!=NULL)
+    {MI->stopModel();
+    }
     _conf= config;
     switch (_conf) {
     case OMNIDIRECCIONAL:

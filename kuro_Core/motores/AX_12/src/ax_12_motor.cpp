@@ -14,7 +14,7 @@ void AX_12_Motor::setBaudSpeed(BAUD_RATE br)
 
 void AX_12_Motor::startMotor()
 {
-    printf( "\n\nStart Motor AX_12\n\n" );
+    printf( "Start Motor AX_12_-_" );
     ///////// Open USB2Dynamixel ////////////
     if( dxl_initialize(_deviceIndex, _baud_speed) == 0 )
     {
