@@ -25,7 +25,7 @@ class Master
 public:
     Master();
     ~Master();
-    void inicializar(MASTER_FLAGS flags = DISABLE_ALL);
+    void inicializar(int flags = DISABLE_ALL);
     void conectar();
     void moveRobot(int vel, int dir);
     void setMode(MODELO_TYPE config);
