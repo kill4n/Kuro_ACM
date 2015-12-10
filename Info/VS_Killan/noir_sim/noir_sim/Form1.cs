@@ -12,6 +12,7 @@ using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
 
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace noir_sim
 {
@@ -22,6 +23,7 @@ namespace noir_sim
         SickEventArgs sea;
         bool loaded = false;
         Bitmap frame;
+        int contFrames = 0;
         public Form1()
         {
             InitializeComponent();
@@ -47,25 +49,41 @@ namespace noir_sim
                 frame = new Bitmap(640, 480);
                 if (e.cmd == 0x13)
                 {
-                    int cont = 0;
+                    /*int cont = 0;
                     for (int i = 0; i < 480; i++)
                     {
                         for (int j = 0; j < 640; j++)
                         {
-                            frame.SetPixel(j, i, Color.FromArgb(e.data[cont], e.data[cont + 1], e.data[cont+2]));
+                            frame.SetPixel(j, i, Color.FromArgb(e.data[cont], e.data[cont + 1], e.data[cont + 2]));
                             cont += 3;
                         }
-                    }
+                    }*/
+                    frame = ShowImage(e.data);
                 }
-                
                 pictureBox1.Image = frame;
                 pictureBox1.Refresh();
+                contFrames++;
+                this.Text = "frames recibidos" + contFrames;
             }
             catch (Exception ex)
             {
                 var q = "asd";
             }
 
+        }
+
+        public Bitmap ShowImage(byte[] sender)
+        {
+            Bitmap bitmap = new Bitmap(640, 480, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+            System.Drawing.Imaging.BitmapData bmData = bitmap.LockBits(new Rectangle(0, 0, bitmap.Width, bitmap.Height),
+                                                System.Drawing.Imaging.ImageLockMode.ReadWrite, bitmap.PixelFormat);
+            IntPtr pNative = bmData.Scan0;
+
+            Marshal.Copy(sender, 0, pNative, (640 * 480 * 3));
+            //    
+            bitmap.UnlockBits(bmData);
+
+            return bitmap;
         }
 
         #region sickEvento y timer

@@ -30,7 +30,7 @@ namespace noir_sim
         {
             while (clientSock.Connected)
             {
-                readFoto();                
+                readFoto();
                 if (MineroEvent != null)
                     MineroEvent(this, ev);
             }
@@ -38,36 +38,43 @@ namespace noir_sim
 
         public void readFoto()
         {
-            List<byte> datos = new List<byte>();
-            byte[] dat = new byte[1];
-            if (clientSock.Connected)
+            try
             {
-                clientSock.Receive(dat);
-                ev.cmd = dat[0];
-                if (dat[0] == 0x13)
+                List<byte> datos = new List<byte>();
+                byte[] dat = new byte[1];
+                if (clientSock.Connected)
                 {
-                    var total = 0;
-                    var size = 921600;
-                    do
+                    clientSock.Receive(dat);
+                    ev.cmd = dat[0];
+                    if (dat[0] == 0x13)
                     {
-                        var read = clientSock.Receive(ev.data, total, size - total, SocketFlags.None);                        
-                        if (read == 0)
+                        var total = 0;
+                        var size = 921600;
+                        do
                         {
-                            //If it gets here and you received 0 bytes it means that the Socket has Disconnected gracefully (without throwing exception) so you will need to handle that here
+                            var read = clientSock.Receive(ev.data, total, size - total, SocketFlags.None);
+                            if (read == 0)
+                            {
+                                //If it gets here and you received 0 bytes it means that the Socket has Disconnected gracefully (without throwing exception) so you will need to handle that here
+                            }
+                            total += read;
+                            //If you have sent 1024 bytes and Receive only 512 then it wil continue to recieve in the correct index thus when total is equal to 1024 you will have recieved all the bytes
+                        } while (total != size);
+                        //while (clientSock.Available < 307200) ;
+                        //clientSock.Receive(ev.data);
+                        /*while (datos.Count < (640 * 480 * 3))
+                        {
+                            clientSock.Receive(dat);
+                            datos.Add(dat[0]);
                         }
-                        total += read;
-                        //If you have sent 1024 bytes and Receive only 512 then it wil continue to recieve in the correct index thus when total is equal to 1024 you will have recieved all the bytes
-                    } while (total != size);
-                    //while (clientSock.Available < 307200) ;
-                    //clientSock.Receive(ev.data);
-                    /*while (datos.Count < (640 * 480 * 3))
-                    {
-                        clientSock.Receive(dat);
-                        datos.Add(dat[0]);
+                        ev.data = datos.ToArray();*/
                     }
-                    ev.data = datos.ToArray();*/
-                }
 
+                }
+            }
+            catch (Exception ex)
+            {
+                
             }
         }
         public void setEP(String host, int port)
@@ -76,13 +83,20 @@ namespace noir_sim
         }
         public void writeMessage(int cmd, List<byte> data)
         {
-            if (clientSock.Connected)
+            try
             {
-                byte[] b = new byte[1];
-                b[0] = (byte)cmd;
-                clientSock.Send(b);
-                var d = data.ToArray();
-                clientSock.Send(d);
+                if (clientSock.Connected)
+                {
+                    byte[] b = new byte[1];
+                    b[0] = (byte)cmd;
+                    clientSock.Send(b);
+                    var d = data.ToArray();
+                    clientSock.Send(d);
+                }
+            }
+            catch (Exception EX)
+            {
+                clientSock.Close();
             }
         }
         public Message readMessage()
