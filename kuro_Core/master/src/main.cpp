@@ -12,7 +12,9 @@ JOY_STR joyGlob;
 int isAlive = 1;
 Master masterObject;
 MySocket ms(SERVER, 2134);
-Mat M(4,4, CV_8UC3, Scalar(0,0,255));
+Mat M(640,480, CV_8UC3, Scalar(100,130,250));
+Mat imageTest(640,480, CV_8UC3, Scalar(220,110,250));
+Mat image2Send(640,480, CV_8UC3, Scalar(0,0,0));
 
 void JoystickActual(JOY_STR joyS)
 {
@@ -21,9 +23,12 @@ void JoystickActual(JOY_STR joyS)
 void newFrameCallBack(bool isFrame, Mat imagen)
 {
     startWindowThread();
-    M = imagen;
+    //cvtColor(imagen, M, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
+    imageTest = imagen.clone();
+    //M = imagen;
 
 }
+
 void socketCallback(MensajesEventArgs e)
 {
     printf("llego dato del cliente \r\n");
@@ -47,13 +52,15 @@ void socketCallback(MensajesEventArgs e)
         break;
 
     case 0x11:
-        M = (M.reshape(0,1));
-        imgsize = M.total()*M.elemSize();
-        printf("tamano a enviar [%d] {%d}\r\n",M.total(),M.elemSize());
+        cvtColor(imageTest, image2Send, cv::COLOR_BGR2RGB); // rearranges B and R in the appropriate order
+
+        //M = (M.reshape(0,1));
+        imgsize = image2Send.total()*image2Send.elemSize();
+        printf("tamano a enviar [%d] {%d}\r\n",image2Send.total(),image2Send.elemSize());
         daaa= new char[1];
         daaa[0] = 0x13;
         ms.SendData(daaa,1);
-        ms.SendData((char*)M.data,imgsize);
+        ms.SendData((char*)image2Send.data,imgsize);
         break;
     default:
         break;
@@ -70,32 +77,34 @@ int main()
     int goalD = 0;
     signal(SIGINT, catch_close);
     cout << "Buen día, desde kuro!" << endl;
-    //inicializar perifericos
-    //            masterObject.setMode(OMNIDIRECCIONAL);
-
-/*    masterObject.inicializar();
+    // ----- inicializar perifericos  ------
+    masterObject.inicializar(ENABLE_MOTORS | ENABLE_JOYSTICK | ENABLE_CAMERA);
+    printf("creando callBacks\r\n");
     masterObject.JoyH->setCallback(JoystickActual);
     masterObject.camaraCon->setCallback(newFrameCallBack);
+    //masterObject.setMode(OMNIDIRECCIONAL);
 
+    cout << "kuro creado!" << endl;
     ms.setCallback(socketCallback);
-    //correr hilos
+    // ------ correr hilos -------
     masterObject.conectar();
     ms.Conectar();
     ms.StartInternalThread();
-    startWindowThread();
+    cout << "kuro ms start!" << endl;
+    //startWindowThread();
     //
 
     //
 
     //
-    masterObject.setMode(OMNIDIRECCIONAL);*/
+
     //Ciclo Principal
     while (isAlive) {
-        //goalD=(int)((joyGlob.AxisDir*1023)/32767);
-        //goalR=(int)((joyGlob.AxisVel*1023)/32767);
-        //masterObject.moveRobot(goalR, goalD);
+        goalD=(int)((joyGlob.AxisDir*1023)/32767);
+        goalR=(int)((joyGlob.AxisVel*1023)/32767);
+        masterObject.moveRobot(goalR, goalD);
         //cout<< M;
-        /*imshow("lados",M);
+        /*imshow("lados",imageTest);
         if (waitKey(1)>27) {
             break;
         }*/
