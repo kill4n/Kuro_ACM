@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AckerModel.cs" />
     <Compile Include="AX_12_Motor.cs" />
     <Compile Include="DifferModel.cs" />
     <Compile Include="dynamixel.cs" />
