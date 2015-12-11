@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO.Ports;
+
 using AX_12;
 
 namespace fit_acm1pt
@@ -56,6 +58,18 @@ namespace fit_acm1pt
         {
             ax12_Rot.moveMotor(int.Parse(textBox1.Text));
             ax12_Dir.moveMotor(int.Parse(textBox2.Text));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var s = SerialPort.GetPortNames();
+            comboBox1.Items.Clear();
+            foreach (var item in s)
+            {
+                comboBox1.Items.Add(item);
+            }
+            if (comboBox1.Items.Count > 0)
+                comboBox1.SelectedIndex = 0;
         }
     }
 }
