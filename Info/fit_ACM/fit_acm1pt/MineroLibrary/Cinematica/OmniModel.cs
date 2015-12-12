@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AX_12;
+using System.Diagnostics;
 
 namespace MineroLibrary
 {
@@ -25,17 +26,18 @@ namespace MineroLibrary
 
         public bool isConected
         {
-            set { _isConected = value; }
+            get { return _isConected; }
         }
         #endregion
         public OmniModel()
         {
             ax12_Dir = new List<AX_12_Motor>();
             ax12_Rot = new List<AX_12_Motor>();
+            _isConected = false;
         }
         public void startModel()
         {
-            Console.WriteLine("iniciando omnidireccional");
+            Debug.WriteLine("iniciando omnidireccional");
             for (int i = 0; i < numRuedas; ++i)
             {
                 ax12_Dir.Add(new AX_12_Motor());
@@ -61,6 +63,7 @@ namespace MineroLibrary
             }
             setSpeed(0);
             setDirection(0);
+            _isConected = true;
         }
 
         public void setSpeed(int goalSpeed)
@@ -71,7 +74,7 @@ namespace MineroLibrary
                 if ((i % 2) != 0)
                     ax12_Rot[i].moveMotor(-goalSpeed);
                 else
-                    ax12_Dir[i].moveMotor(goalSpeed);
+                    ax12_Rot[i].moveMotor(goalSpeed);
             }
         }
 
@@ -96,8 +99,10 @@ namespace MineroLibrary
 
         public void stopModel()
         {
+            setDirection(0);
+            setSpeed(0);
             for (int i = 0; i < numRuedas; ++i)
-            {
+            {              
                 ax12_Rot[i].stopMotor();
                 ax12_Dir[i].stopMotor();
             }
@@ -106,6 +111,11 @@ namespace MineroLibrary
         public void setDeviceIndex(int devInd)
         {
             _device_index = devInd;
+        }
+        
+        public bool isStarted()
+        {
+            return _isConected;
         }
     }
 }

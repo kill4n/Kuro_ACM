@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using ROBOTIS; // for dynamixel sdk
+using ROBOTIS;
+using System.Diagnostics; // for dynamixel sdk
 
 namespace AX_12
 {
@@ -76,13 +77,10 @@ namespace AX_12
             // Open device
             if (dynamixel.dxl_initialize(_deviceIndex, (int)_baud_speed) == 0)
             {
-                Console.WriteLine("Failed to open USB2Dynamixel!");
-                Console.WriteLine("Press any key to terminate...");
-                Console.ReadKey(true);
+                Debug.WriteLine("Failed to open USB2Dynamixel!");
+                Debug.WriteLine("Press any key to terminate...");                
                 return;
-            }
-            else
-                Console.WriteLine("Succeed to open USB2Dynamixel!");
+            }            
             _isConected = true;
         }
 
@@ -119,7 +117,7 @@ namespace AX_12
         public void stopMotor()
         {
             dynamixel.dxl_terminate();
-            Console.WriteLine("Terminar motor\r\n");
+            Debug.WriteLine("Terminar motor\r\n");
             _isConected = false;
         }
 

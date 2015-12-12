@@ -16,7 +16,9 @@ namespace fit_acm1pt
 {
     public partial class Form1 : Form
     {
-        DifferModel dm = new DifferModel();
+        int devIndeex = 0;
+
+        IModeloInterface dm = new OmniModel();
         /*AX_12_Motor ax12_Rot;
         AX_12_Motor ax12_Dir;*/
 
@@ -24,6 +26,7 @@ namespace fit_acm1pt
         {
             InitializeComponent();
             dm.setDeviceIndex(3);
+            comboBox2.DataSource = Enum.GetValues(typeof(MODELO_TYPE));
             /*ax12_Rot = new AX_12_Motor();
             ax12_Dir = new AX_12_Motor();
 
@@ -39,8 +42,18 @@ namespace fit_acm1pt
             //1 rueda
             String s = comboBox1.SelectedItem.ToString();
             string d = s.Remove(0, 3);
-            dm.Device_Index = int.Parse(d);
-            dm.startModel();
+            devIndeex = int.Parse(d);
+            dm.setDeviceIndex(devIndeex);
+            if (!((OmniModel)dm).isConected)
+            {
+                dm.startModel();
+                button1.Text = "Desconectar";
+            }
+            else
+            {
+                dm.stopModel();
+                button1.Text = "Conectar";
+            }
             //2 joint
             /*if (!ax12_Rot.isConected & !ax12_Dir.isConected)
             {
@@ -66,8 +79,10 @@ namespace fit_acm1pt
 
         private void button2_Click(object sender, EventArgs e)
         {
-           /* ax12_Rot.moveMotor(int.Parse(textBox1.Text));
-            ax12_Dir.moveMotor(int.Parse(textBox2.Text));*/
+            dm.setSpeed(int.Parse(textBox1.Text));
+            dm.setDirection(int.Parse(textBox2.Text));
+            /* ax12_Rot.moveMotor(int.Parse(textBox1.Text));
+             ax12_Dir.moveMotor(int.Parse(textBox2.Text));*/
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -80,6 +95,32 @@ namespace fit_acm1pt
             }
             if (comboBox1.Items.Count > 0)
                 comboBox1.SelectedIndex = 0;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var mod = ((MODELO_TYPE)comboBox2.SelectedItem);
+            if (dm.isStarted())
+            {
+                dm.stopModel();
+            }
+            switch (mod)
+            {
+                case MODELO_TYPE.OMNIDIRECCIONAL:
+                    dm = new OmniModel();
+                    break;
+                case MODELO_TYPE.DIFERENCIAL:
+                    dm = new DifferModel();
+                    break;
+                case MODELO_TYPE.ACKERMKAN:
+                    dm = new AckerModel();
+                    break;
+                default:
+                    break;
+            }
+            dm.setDeviceIndex(devIndeex);
+            dm.startModel();
+            button1.Text = "Desconectar";
         }
     }
 }

@@ -12,7 +12,7 @@ namespace MineroLibrary
         ACKERMKAN
     };
 
-    interface IModeloInterface
+    public interface IModeloInterface
     {
         void setDeviceIndex(int devInd);
         void startModel();
@@ -21,5 +21,7 @@ namespace MineroLibrary
         void setDirection(int goalDir);
         int getDirection();
         void stopModel();
+
+        bool isStarted();
     }
 }
