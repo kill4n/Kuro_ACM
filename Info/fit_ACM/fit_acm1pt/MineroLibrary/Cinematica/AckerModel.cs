@@ -5,9 +5,9 @@ using System.Text;
 
 using AX_12;
 
-namespace fit_acm1pt
+namespace MineroLibrary
 {
-    public class DifferModel : IModeloInterface
+    public class AckerModel : IModeloInterface
     {
         #region Variables
         const int numRuedas = 6;
@@ -20,9 +20,21 @@ namespace fit_acm1pt
             get { return _device_index; }
             set { _device_index = value; }
         }
+
+        private bool _isConected;
+
+        public bool isConected
+        {
+            set { _isConected = value; }
+        }
+
         #endregion
 
-
+        public AckerModel()
+        {
+            ax12_Dir = new List<AX_12_Motor>();
+            ax12_Rot = new List<AX_12_Motor>();       
+        }
         public void startModel()
         {
             Console.WriteLine("iniciando omnidireccional");
@@ -51,6 +63,7 @@ namespace fit_acm1pt
             }
             setSpeed(0);
             setDirection(0);
+            _isConected = true;
         }
 
         public void setSpeed(int goalSpeed)
@@ -59,7 +72,7 @@ namespace fit_acm1pt
             for (int i = 0; i < numRuedas; ++i)
             {
                 if ((i % 2) != 0)
-                    ax12_Rot[i].moveMotor(-_speed);
+                    ax12_Dir[i].moveMotor(-_speed);
                 else
                     ax12_Rot[i].moveMotor(_speed);
             }
@@ -72,11 +85,13 @@ namespace fit_acm1pt
 
         public void setDirection(int goalDir)
         {
-            _direction = goalDir;
-            for (int i = 0; i < numRuedas; ++i)
-            {
-                ax12_Rot[i].moveMotor(_direction);
-            }
+            //printf("Definiendo direccion = %d \r\n", goalDir);
+            _direction = (goalDir * 111) / 1023;
+            ax12_Dir[0].moveMotor(_direction);
+            ax12_Dir[1].moveMotor(_direction);
+
+            ax12_Dir[4].moveMotor(-_direction);
+            ax12_Dir[5].moveMotor(-_direction);
         }
 
         public int getDirection()
@@ -91,6 +106,11 @@ namespace fit_acm1pt
                 ax12_Rot[i].stopMotor();
                 ax12_Dir[i].stopMotor();
             }
+            _isConected = false;
+        }
+        public void setDeviceIndex(int devInd)
+        {
+            _device_index = devInd;
         }
     }
 }

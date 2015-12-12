@@ -1,0 +1,5 @@
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\MineroLibrary.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\MineroLibrary.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\obj\Debug\MineroLibrary.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\obj\Debug\MineroLibrary.pdb

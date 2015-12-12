@@ -9,26 +9,29 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 
+using MineroLibrary;
 using AX_12;
 
 namespace fit_acm1pt
 {
     public partial class Form1 : Form
     {
-        AX_12_Motor ax12_Rot;
-        AX_12_Motor ax12_Dir;
+        DifferModel dm = new DifferModel();
+        /*AX_12_Motor ax12_Rot;
+        AX_12_Motor ax12_Dir;*/
 
         public Form1()
         {
             InitializeComponent();
-            ax12_Rot = new AX_12_Motor();
+            dm.setDeviceIndex(3);
+            /*ax12_Rot = new AX_12_Motor();
             ax12_Dir = new AX_12_Motor();
 
             ax12_Dir.setDeviceID(3);
             ax12_Rot.setDeviceID(3);
             ax12_Dir.setBaudSpeed(BAUD_RATE.BAUD_1Mbps);
-            ax12_Rot.setBaudSpeed(BAUD_RATE.BAUD_1Mbps);
-            button3_Click(null, null);
+            ax12_Rot.setBaudSpeed(BAUD_RATE.BAUD_1Mbps);*/
+            //button3_Click(null, null);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,8 +39,10 @@ namespace fit_acm1pt
             //1 rueda
             String s = comboBox1.SelectedItem.ToString();
             string d = s.Remove(0, 3);
+            dm.Device_Index = int.Parse(d);
+            dm.startModel();
             //2 joint
-            if (!ax12_Rot.isConected & !ax12_Dir.isConected)
+            /*if (!ax12_Rot.isConected & !ax12_Dir.isConected)
             {
                 ax12_Dir.setDeviceID(int.Parse(d));
                 ax12_Rot.setDeviceID(int.Parse(d));
@@ -55,14 +60,14 @@ namespace fit_acm1pt
                 ax12_Dir.stopMotor();
                 ax12_Rot.stopMotor();
                 ((Button)sender).Text = "Conectar";
-            }
+            }*/
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ax12_Rot.moveMotor(int.Parse(textBox1.Text));
-            ax12_Dir.moveMotor(int.Parse(textBox2.Text));
+           /* ax12_Rot.moveMotor(int.Parse(textBox1.Text));
+            ax12_Dir.moveMotor(int.Parse(textBox2.Text));*/
         }
 
         private void button3_Click(object sender, EventArgs e)

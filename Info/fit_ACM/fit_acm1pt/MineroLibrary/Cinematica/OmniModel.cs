@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using AX_12;
 
-namespace fit_acm1pt
+namespace MineroLibrary
 {
     public class OmniModel : IModeloInterface
     {
@@ -21,7 +21,18 @@ namespace fit_acm1pt
             set { _device_index = value; }
         }
 
+        private bool _isConected;
+
+        public bool isConected
+        {
+            set { _isConected = value; }
+        }
         #endregion
+        public OmniModel()
+        {
+            ax12_Dir = new List<AX_12_Motor>();
+            ax12_Rot = new List<AX_12_Motor>();
+        }
         public void startModel()
         {
             Console.WriteLine("iniciando omnidireccional");
@@ -90,6 +101,11 @@ namespace fit_acm1pt
                 ax12_Rot[i].stopMotor();
                 ax12_Dir[i].stopMotor();
             }
+        }
+
+        public void setDeviceIndex(int devInd)
+        {
+            _device_index = devInd;
         }
     }
 }

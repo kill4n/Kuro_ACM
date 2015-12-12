@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace fit_acm1pt
+namespace MineroLibrary
 {
     public enum MODELO_TYPE
     {
@@ -14,6 +14,7 @@ namespace fit_acm1pt
 
     interface IModeloInterface
     {
+        void setDeviceIndex(int devInd);
         void startModel();
         void setSpeed(int goalSpeed);
         int getSpeed();
