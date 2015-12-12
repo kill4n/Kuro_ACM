@@ -17,7 +17,7 @@ namespace Read_Write
         // Defulat setting
         public const int DEFAULT_PORTNUM    = 3; // COM3
         public const int DEFAULT_BAUDNUM    = 1; // 1Mbps
-        public const int DEFAULT_ID         = 1;
+        public const int DEFAULT_ID         = 2;
 
         static void Main(string[] args)
         {
