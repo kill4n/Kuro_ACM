@@ -9,3 +9,8 @@ C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\obj
 C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\obj\Debug\fit_acm1pt.pdb
 C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\obj\Debug\fit_acm1pt.exe
 C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\obj\Debug\fit_acm1pt.pdb
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\fit_acm1pt.exe
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\fit_acm1pt.pdb
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\obj\Debug\fit_acm1pt.Form1.resources
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\obj\Debug\fit_acm1pt.Properties.Resources.resources
+C:\Users\crhistian\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\obj\Debug\fit_acm1pt.csproj.GenerateResource.Cache

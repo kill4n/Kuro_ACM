@@ -28,14 +28,19 @@ namespace fit_acm1pt
             ax12_Rot.setDeviceID(3);
             ax12_Dir.setBaudSpeed(BAUD_RATE.BAUD_1Mbps);
             ax12_Rot.setBaudSpeed(BAUD_RATE.BAUD_1Mbps);
+            button3_Click(null, null);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //1 rueda
+            String s = comboBox1.SelectedItem.ToString();
+            string d = s.Remove(0, 3);
             //2 joint
             if (!ax12_Rot.isConected & !ax12_Dir.isConected)
             {
+                ax12_Dir.setDeviceID(int.Parse(d));
+                ax12_Rot.setDeviceID(int.Parse(d));
                 ax12_Rot.setID(1);
                 ax12_Rot.startMotor();
                 ax12_Rot.setType(MOTOR_TYPE.WHEEL);
