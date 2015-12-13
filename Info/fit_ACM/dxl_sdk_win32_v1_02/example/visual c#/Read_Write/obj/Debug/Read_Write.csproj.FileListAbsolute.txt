@@ -1,0 +1,6 @@
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\dxl_sdk_win32_v1_02\example\visual c#\Read_Write\bin\Debug\Read_Write.exe
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\dxl_sdk_win32_v1_02\example\visual c#\Read_Write\bin\Debug\Read_Write.pdb
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\dxl_sdk_win32_v1_02\example\visual c#\Read_Write\obj\Debug\Read_Write.csprojResolveAssemblyReference.cache
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\dxl_sdk_win32_v1_02\example\visual c#\Read_Write\obj\Debug\Read_Write.exe
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\dxl_sdk_win32_v1_02\example\visual c#\Read_Write\obj\Debug\Read_Write.pdb
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\dxl_sdk_win32_v1_02\example\visual c#\Read_Write\bin\Debug\Read_Write.exe.config
