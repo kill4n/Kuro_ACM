@@ -26,3 +26,12 @@ C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_
 C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\fit_acm1pt.pdb
 C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\MineroLibrary.dll
 C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\MineroLibrary.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\AForge.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\AForge.Video.DirectShow.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\AForge.Video.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\OpenTK.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\AForge.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\AForge.Video.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\AForge.Video.DirectShow.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\OpenTK.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\fit_acm1pt\bin\Debug\OpenTK.xml
