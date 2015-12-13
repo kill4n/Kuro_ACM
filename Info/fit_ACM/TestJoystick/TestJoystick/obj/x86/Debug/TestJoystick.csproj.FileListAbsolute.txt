@@ -1,0 +1,11 @@
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\TestJoystick.exe
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\TestJoystick.pdb
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\OpenTK.dll
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\OpenTK.pdb
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\OpenTK.xml
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.csprojResolveAssemblyReference.cache
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.Form1.resources
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.Properties.Resources.resources
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.csproj.GenerateResource.Cache
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.exe
+C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.pdb
