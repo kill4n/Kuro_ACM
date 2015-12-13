@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cinematica\AckerModel.cs" />
+    <Compile Include="MineroEventArgs.cs" />
+    <Compile Include="minero_class.cs" />
     <Compile Include="Motores\AX_12_Motor.cs" />
     <Compile Include="Cinematica\DifferModel.cs" />
     <Compile Include="Motores\dynamixel.cs" />
