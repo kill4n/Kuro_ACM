@@ -9,3 +9,15 @@ C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystic
 C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.csproj.GenerateResource.Cache
 C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.exe
 C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.Form1.resources
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.Properties.Resources.resources
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\TestJoystick.exe
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\TestJoystick.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\OpenTK.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\OpenTK.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\bin\Debug\OpenTK.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.exe
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestJoystick\obj\x86\Debug\TestJoystick.pdb

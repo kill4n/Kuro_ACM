@@ -12,6 +12,12 @@ using System.IO.Ports;
 using MineroLibrary;
 using AX_12;
 
+using AForge;
+using AForge.Video;
+using AForge.Video.DirectShow;
+
+using OpenTK.Input;
+
 namespace fit_acm1pt
 {
     public partial class Form1 : Form
@@ -21,12 +27,24 @@ namespace fit_acm1pt
         IModeloInterface dm = new OmniModel();
         /*AX_12_Motor ax12_Rot;
         AX_12_Motor ax12_Dir;*/
-
+        FilterInfoCollection videoDevices;
+        VideoCaptureDevice videoSource;
         public Form1()
         {
             InitializeComponent();
+            
             dm.setDeviceIndex(3);
             comboBox2.DataSource = Enum.GetValues(typeof(MODELO_TYPE));
+
+            // enumerate video devices
+            videoDevices = new FilterInfoCollection(
+                     FilterCategory.VideoInputDevice);
+            // create video source
+            videoSource = new VideoCaptureDevice(
+                    videoDevices[0].MonikerString);
+            // set NewFrame event handler
+            videoSource.NewFrame += new NewFrameEventHandler(video_NewFrame);
+
             /*ax12_Rot = new AX_12_Motor();
             ax12_Dir = new AX_12_Motor();
 
@@ -37,6 +55,7 @@ namespace fit_acm1pt
             //button3_Click(null, null);
         }
 
+       
         private void button1_Click(object sender, EventArgs e)
         {
             //1 rueda
@@ -48,11 +67,15 @@ namespace fit_acm1pt
             {
                 dm.startModel();
                 button1.Text = "Desconectar";
+                videoSource.Start();
+                timer1.Start();
             }
             else
             {
+                videoSource.Stop();
                 dm.stopModel();
                 button1.Text = "Conectar";
+                timer1.Stop();
             }
             //2 joint
             /*if (!ax12_Rot.isConected & !ax12_Dir.isConected)
@@ -121,6 +144,51 @@ namespace fit_acm1pt
             dm.setDeviceIndex(devIndeex);
             dm.startModel();
             button1.Text = "Desconectar";
+        }
+
+        private void video_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            // get new frame
+
+            pictureBox1.Image = (Bitmap)eventArgs.Frame.Clone();
+            // process the frame
+        }
+        float x, y;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                var state = Joystick.GetState(i);
+                if (state.IsConnected)
+                {
+                    x = (int)(state.GetAxis(JoystickAxis.Axis1) * 101);
+                    y = (int)(state.GetAxis(JoystickAxis.Axis4) * 101);
+                }
+            }
+            var mod = ((MODELO_TYPE)comboBox2.SelectedItem);
+            switch (mod)
+            {
+                case MODELO_TYPE.OMNIDIRECCIONAL:
+                    dm.setSpeed((int)(x * 1023 / 100));
+                    dm.setDirection((int)(y * 1023 / 100));
+                    break;
+                case MODELO_TYPE.DIFERENCIAL:
+                    if (x != 0)
+                    {
+                        dm.setSpeed((int)(x * 1023 / 100));
+                    }
+                    else
+                    {
+                        dm.setDirection((int)(y * 1023 / 100));
+                    }
+                    break;
+                case MODELO_TYPE.ACKERMKAN:
+                    dm.setSpeed((int)(x * 1023 / 100));
+                    dm.setDirection((int)(y * 1023 / 100));
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

@@ -12,3 +12,18 @@ C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystic
 C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\TestVideo.exe
 C:\Users\crhistian.killan.000\Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\TestVideo.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\TestVideo.Form1.resources
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\TestVideo.Properties.Resources.resources
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\TestVideo.exe
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\TestVideo.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\AForge.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\AForge.Video.DirectShow.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\AForge.Video.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\AForge.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\AForge.Video.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\bin\Debug\AForge.Video.DirectShow.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\TestVideo.exe
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\TestJoystick\TestVideo\obj\x86\Debug\TestVideo.pdb

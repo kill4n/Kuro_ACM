@@ -32,8 +32,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\fit_acm1pt\bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\fit_acm1pt\bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\fit_acm1pt\bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\fit_acm1pt\bin\Debug\OpenTK.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cinematica\AckerModel.cs" />
+    <Compile Include="JoyHelper.cs" />
+    <Compile Include="MineroEventArgs.cs" />
+    <Compile Include="minero_class.cs" />
     <Compile Include="Motores\AX_12_Motor.cs" />
     <Compile Include="Cinematica\DifferModel.cs" />
     <Compile Include="Motores\dynamixel.cs" />

@@ -48,22 +48,12 @@ namespace noir_sim
             {
                 frame = new Bitmap(640, 480);
                 if (e.cmd == 0x13)
-                {
-                    /*int cont = 0;
-                    for (int i = 0; i < 480; i++)
-                    {
-                        for (int j = 0; j < 640; j++)
-                        {
-                            frame.SetPixel(j, i, Color.FromArgb(e.data[cont], e.data[cont + 1], e.data[cont + 2]));
-                            cont += 3;
-                        }
-                    }*/
+                {                   
                     frame = ShowImage(e.data);
                 }
                 pictureBox1.Image = frame;
                 pictureBox1.Refresh();
-                contFrames++;
-                this.Text = "frames recibidos" + contFrames;
+                contFrames++;                
             }
             catch (Exception ex)
             {

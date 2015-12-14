@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fit_acm1pt", "fit_acm1pt\fit_acm1pt.csproj", "{E079F313-3606-4DF3-80CA-5005B74BA03E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineroLibrary", "MineroLibrary\MineroLibrary.csproj", "{F78D2211-F005-4260-B0FE-BEDE81DA1FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIV2", "GUIV2\GUIV2.csproj", "{23492DFF-F2BE-42F6-86C8-A6A6099C1BE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{F78D2211-F005-4260-B0FE-BEDE81DA1FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F78D2211-F005-4260-B0FE-BEDE81DA1FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F78D2211-F005-4260-B0FE-BEDE81DA1FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23492DFF-F2BE-42F6-86C8-A6A6099C1BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23492DFF-F2BE-42F6-86C8-A6A6099C1BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23492DFF-F2BE-42F6-86C8-A6A6099C1BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23492DFF-F2BE-42F6-86C8-A6A6099C1BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

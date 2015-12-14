@@ -28,7 +28,7 @@ namespace TestVideo
                      FilterCategory.VideoInputDevice);
             // create video source
             videoSource = new VideoCaptureDevice(
-                    videoDevices[1].MonikerString);
+                    videoDevices[0].MonikerString);
             // set NewFrame event handler
             videoSource.NewFrame += new NewFrameEventHandler(video_NewFrame);
             // start the video source
