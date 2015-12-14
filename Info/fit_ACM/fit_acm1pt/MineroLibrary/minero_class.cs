@@ -82,7 +82,7 @@ namespace MineroLibrary
             //jo¿ystick
             joy.JoystickEvent += joy_JoystickEvent;
         }
-        
+
         void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             bmp1 = (Bitmap)eventArgs.Frame.Clone();
@@ -91,28 +91,31 @@ namespace MineroLibrary
         void joy_JoystickEvent(object sender, JoystickEventArgs e)
         {
             //recibi datos
-            switch (mod)
+            if (modeloRobot.isStarted())
             {
-                case MODELO_TYPE.OMNIDIRECCIONAL:
-                    modeloRobot.setSpeed((int)(e.axisVertical * 1023) - 3);
-                    modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
-                    break;
-                case MODELO_TYPE.DIFERENCIAL:
-                    if (((int)(e.axisVertical * 1023) - 3) != 0)
-                    {
+                switch (mod)
+                {
+                    case MODELO_TYPE.OMNIDIRECCIONAL:
                         modeloRobot.setSpeed((int)(e.axisVertical * 1023) - 3);
-                    }
-                    else
-                    {
                         modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
-                    }
-                    break;
-                case MODELO_TYPE.ACKERMKAN:
-                    modeloRobot.setSpeed((int)(e.axisVertical * 1023) - 3);
-                    modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
-                    break;
-                default:
-                    break;
+                        break;
+                    case MODELO_TYPE.DIFERENCIAL:
+                        if (((int)(e.axisVertical * 1023) - 3) != 0)
+                        {
+                            modeloRobot.setSpeed((int)(e.axisVertical * 1023) - 3);
+                        }
+                        else
+                        {
+                            modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
+                        }
+                        break;
+                    case MODELO_TYPE.ACKERMKAN:
+                        modeloRobot.setSpeed((int)(e.axisVertical * 1023) - 3);
+                        modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
+                        break;
+                    default:
+                        break;
+                } 
             }
         }
 
@@ -135,6 +138,26 @@ namespace MineroLibrary
                             data = new byte[1];
                             clientSock.Receive(data);
                             mod = (MODELO_TYPE)data[0];
+                            if (modeloRobot.isStarted())
+                            {
+                                modeloRobot.stopModel();
+                            }
+                            switch (mod)
+                            {
+                                case MODELO_TYPE.OMNIDIRECCIONAL:
+                                    modeloRobot = new OmniModel();
+                                    break;
+                                case MODELO_TYPE.DIFERENCIAL:
+                                    modeloRobot = new DifferModel();
+                                    break;
+                                case MODELO_TYPE.ACKERMKAN:
+                                    modeloRobot = new AckerModel();
+                                    break;
+                                default:
+                                    break;
+                            }
+                            modeloRobot.setDeviceIndex(3);
+                            modeloRobot.startModel();
                             mEA = new MineroEventArgs(CMD_MINERO.CMD_MODE, data, 1);
                             break;
                         case CMD_MINERO.CMD_FOTO:
@@ -161,7 +184,8 @@ namespace MineroLibrary
                 }
             }
             catch (Exception ex)
-            {                
+            {
+                var mes = ex.Message;
             }
         }
 

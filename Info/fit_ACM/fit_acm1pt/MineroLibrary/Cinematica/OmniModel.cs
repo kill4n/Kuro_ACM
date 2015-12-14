@@ -99,13 +99,14 @@ namespace MineroLibrary
 
         public void stopModel()
         {
+            _isConected = true;
             setDirection(0);
             setSpeed(0);
             for (int i = 0; i < numRuedas; ++i)
             {              
                 ax12_Rot[i].stopMotor();
                 ax12_Dir[i].stopMotor();
-            }
+              }
         }
 
         public void setDeviceIndex(int devInd)
