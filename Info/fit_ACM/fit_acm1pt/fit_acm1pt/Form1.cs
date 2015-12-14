@@ -32,6 +32,7 @@ namespace fit_acm1pt
         public Form1()
         {
             InitializeComponent();
+            
             dm.setDeviceIndex(3);
             comboBox2.DataSource = Enum.GetValues(typeof(MODELO_TYPE));
 
@@ -54,6 +55,7 @@ namespace fit_acm1pt
             //button3_Click(null, null);
         }
 
+       
         private void button1_Click(object sender, EventArgs e)
         {
             //1 rueda

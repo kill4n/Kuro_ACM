@@ -16,5 +16,10 @@ namespace MineroLibrary
             data = datos;
             dataL = dataLenght;
         }
+
+        public MineroEventArgs()
+        {
+            // TODO: Complete member initialization
+        }
     }
 }

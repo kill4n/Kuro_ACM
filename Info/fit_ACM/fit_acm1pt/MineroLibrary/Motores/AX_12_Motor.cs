@@ -75,6 +75,7 @@ namespace AX_12
         public void startMotor()
         {
             // Open device
+            
             if (dynamixel.dxl_initialize(_deviceIndex, (int)_baud_speed) == 0)
             {
                 Debug.WriteLine("Failed to open USB2Dynamixel!");
