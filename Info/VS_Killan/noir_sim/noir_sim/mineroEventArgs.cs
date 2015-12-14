@@ -8,6 +8,10 @@ namespace noir_sim
 {
     class mineroEventArgs : EventArgs
     {
+        public mineroEventArgs()
+        {
+            data = new byte[921600];
+        }
         public Message m;
         public byte[]data;
         public int cmd;

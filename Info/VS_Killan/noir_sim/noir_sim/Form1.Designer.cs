@@ -171,7 +171,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(112, 20);
             this.textBox3.TabIndex = 16;
-            this.textBox3.Text = "192.168.0.101";
+            this.textBox3.Text = "10.1.1.100";
             // 
             // textBox4
             // 
@@ -272,6 +272,7 @@
             // 
             // timer2
             // 
+            this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
