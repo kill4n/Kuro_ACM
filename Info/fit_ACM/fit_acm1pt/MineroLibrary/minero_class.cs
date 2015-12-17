@@ -16,6 +16,13 @@ using System.IO;
 
 namespace MineroLibrary
 {
+
+    public enum GLOBAL_MODE
+    {
+        MINERO,
+        MINI_MINERO
+    }
+
     public enum CMD_MINERO
     {
         CMD_MODE = 0x10,//cambio modo
@@ -34,7 +41,16 @@ namespace MineroLibrary
             set { _puerto = value; }
         }
 
-        MODELO_TYPE mod = MODELO_TYPE.OMNIDIRECCIONAL;
+        private GLOBAL_MODE _modoOperacion;
+
+        public GLOBAL_MODE ModoOperacion
+        {
+            get { return _modoOperacion; }
+            set { _modoOperacion = value; }
+        }
+
+
+        MODELO_TYPE mod = MODELO_TYPE.DIFERENCIAL;
 
         IPEndPoint ipEnd;
         BackgroundWorker bw;
@@ -55,17 +71,19 @@ namespace MineroLibrary
 
         Bitmap bmp1, bmp;
 
-        public minero_class(int puerto = 2134)
+        public minero_class(int puerto = 2134, GLOBAL_MODE modo = GLOBAL_MODE.MINI_MINERO)
         {
-
+            _modoOperacion = modo;
             bmp1 = new Bitmap(640, 480, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
             bw = new BackgroundWorker();
             _puerto = puerto;
             ipEnd = new IPEndPoint(IPAddress.Any, _puerto);
             bw.DoWork += new DoWorkEventHandler(bw_DoWork);
 
-            modeloRobot.setDeviceIndex(3);
-
+            if (_modoOperacion == GLOBAL_MODE.MINI_MINERO)
+            {
+                modeloRobot.setDeviceIndex(3); 
+            }
             try
             {
                 // enumerate video devices
@@ -115,7 +133,7 @@ namespace MineroLibrary
                         break;
                     default:
                         break;
-                } 
+                }
             }
         }
 

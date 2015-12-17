@@ -3,9 +3,6 @@ C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\
 C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\obj\Debug\MineroLibrary.csprojResolveAssemblyReference.cache
 C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\obj\Debug\MineroLibrary.dll
 C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\obj\Debug\MineroLibrary.pdb
-C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\AForge.dll
-C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\AForge.Video.DirectShow.dll
-C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\AForge.Video.dll
 C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\OpenTK.dll
 C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\AForge.xml
 C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\MineroLibrary\bin\Debug\AForge.Video.xml
