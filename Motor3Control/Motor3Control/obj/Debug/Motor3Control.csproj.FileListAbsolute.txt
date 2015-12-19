@@ -8,3 +8,6 @@ c:\users\killan\documents\visual studio 2012\Projects\Motor3Control\Motor3Contro
 c:\users\killan\documents\visual studio 2012\Projects\Motor3Control\Motor3Control\obj\Debug\Motor3Control.csproj.GenerateResource.Cache
 c:\users\killan\documents\visual studio 2012\Projects\Motor3Control\Motor3Control\obj\Debug\Motor3Control.exe
 c:\users\killan\documents\visual studio 2012\Projects\Motor3Control\Motor3Control\obj\Debug\Motor3Control.pdb
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Motor3Control\Motor3Control\bin\Debug\Motor3Control.exe.config
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Motor3Control\Motor3Control\obj\Debug\Motor3Control.exe
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Motor3Control\Motor3Control\obj\Debug\Motor3Control.pdb

@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fit_acm1pt", "fit_acm1pt\fit_acm1pt.csproj", "{E079F313-3606-4DF3-80CA-5005B74BA03E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineroLibrary", "MineroLibrary\MineroLibrary.csproj", "{F78D2211-F005-4260-B0FE-BEDE81DA1FA5}"

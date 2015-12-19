@@ -29,6 +29,16 @@ namespace MineroLibrary
             get { return _isConected; }
         }
 
+        List<MagicPie> mp_rot;
+
+        private GLOBAL_MODE _modo;
+
+        public GLOBAL_MODE ModoOper
+        {
+            get { return _modo; }
+            set { _modo = value; }
+        }
+
         #endregion
 
         public AckerModel()
@@ -120,6 +130,11 @@ namespace MineroLibrary
         public bool isStarted()
         {
             return _isConected;
+        }
+
+        public void setModoOperacion(GLOBAL_MODE modoOperacion)
+        {
+            _modo = modoOperacion;
         }
     }
 }

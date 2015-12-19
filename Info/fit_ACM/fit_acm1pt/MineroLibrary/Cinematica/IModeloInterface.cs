@@ -23,5 +23,7 @@ namespace MineroLibrary
         void stopModel();
 
         bool isStarted();
+
+        void setModoOperacion(GLOBAL_MODE modoOperacion);
     }
 }

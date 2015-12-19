@@ -19,7 +19,7 @@ namespace GUIV2
 
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
             mc.MineroEvent += mc_MineroEvent;
             mc.conectar();
         }

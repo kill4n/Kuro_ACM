@@ -28,7 +28,18 @@ namespace MineroLibrary
         {
             get { return _isConected; }
         }
+
+        List<MagicPie> mp_rot;
+
+        private GLOBAL_MODE _modo;
+
+        public GLOBAL_MODE ModoOper
+        {
+            get { return _modo; }
+            set { _modo = value; }
+        }
         #endregion
+    
         public OmniModel()
         {
             ax12_Dir = new List<AX_12_Motor>();
@@ -99,13 +110,14 @@ namespace MineroLibrary
 
         public void stopModel()
         {
+            _isConected = true;
             setDirection(0);
             setSpeed(0);
             for (int i = 0; i < numRuedas; ++i)
             {              
                 ax12_Rot[i].stopMotor();
                 ax12_Dir[i].stopMotor();
-            }
+              }
         }
 
         public void setDeviceIndex(int devInd)
@@ -116,6 +128,11 @@ namespace MineroLibrary
         public bool isStarted()
         {
             return _isConected;
+        }
+
+        public void setModoOperacion(GLOBAL_MODE modoOperacion)
+        {
+            _modo = modoOperacion;
         }
     }
 }

@@ -26,7 +26,7 @@ namespace AX_12
         PRESENT_SPEED_L_R = 38,
         PRESENT_SPEED_H_R = 39
     }
-
+        
     public enum BAUD_RATE
     {
         BAUD_1Mbps = 1,
