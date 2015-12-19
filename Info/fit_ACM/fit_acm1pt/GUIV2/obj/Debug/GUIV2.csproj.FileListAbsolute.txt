@@ -1,0 +1,39 @@
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\GUIV2.exe.config
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\GUIV2.exe
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\GUIV2.pdb
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\MineroLibrary.dll
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.dll
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.dll
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\MineroLibrary.pdb
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.xml
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.xml
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.csprojResolveAssemblyReference.cache
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.Properties.Resources.resources
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.csproj.GenerateResource.Cache
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.exe
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.pdb
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\OpenTK.dll
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\OpenTK.pdb
+C:\Users\killan\Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\OpenTK.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.Properties.Resources.resources
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\GUIV2.exe.config
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\GUIV2.exe
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\GUIV2.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\MineroLibrary.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.DirectShow.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\OpenTK.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.dll
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\MineroLibrary.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.DirectShow.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.Video.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\OpenTK.pdb
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\OpenTK.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\bin\Debug\AForge.xml
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.exe
+C:\Documents and Settings\davinci\My Documents\GitHub\Kuro_ACM\Info\fit_ACM\fit_acm1pt\GUIV2\obj\Debug\GUIV2.pdb
