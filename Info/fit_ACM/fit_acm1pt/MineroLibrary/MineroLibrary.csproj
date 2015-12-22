@@ -66,6 +66,7 @@
     <Compile Include="Cinematica\OmniModel.cs" />
     <Compile Include="Motores\IMotorInterface.cs" />
     <Compile Include="Motores\MagicPie.cs" />
+    <Compile Include="Motores\Motores_arduino.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MineroLibrary.Motores
 {
-    interface IMotorInterface
+    public interface IMotorInterface
     {
     }
 }

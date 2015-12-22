@@ -59,7 +59,7 @@ namespace MineroLibrary
 
         Socket clientSock;
 
-        IModeloInterface modeloRobot = new OmniModel();
+        IModeloInterface modeloRobot = new DifferModel();
 
         FilterInfoCollection videoDevices;
         VideoCaptureDevice videoSource;
@@ -82,7 +82,11 @@ namespace MineroLibrary
 
             if (_modoOperacion == GLOBAL_MODE.MINI_MINERO)
             {
-                modeloRobot.setDeviceIndex(3); 
+                modeloRobot.setDeviceIndex(3);
+            }
+            else
+            {
+                modeloRobot.setDeviceIndex(4);
             }
             try
             {
@@ -100,10 +104,10 @@ namespace MineroLibrary
             //jo¿ystick
             joy.JoystickEvent += joy_JoystickEvent;
         }
-
+        
         void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            bmp1 = (Bitmap)eventArgs.Frame.Clone();
+            bmp1 = (Bitmap)eventArgs.Frame.Clone();          
         }
 
         void joy_JoystickEvent(object sender, JoystickEventArgs e)
@@ -118,13 +122,27 @@ namespace MineroLibrary
                         modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
                         break;
                     case MODELO_TYPE.DIFERENCIAL:
-                        if (((int)(e.axisVertical * 1023) - 3) != 0)
+                        if (_modoOperacion == GLOBAL_MODE.MINI_MINERO)
                         {
-                            modeloRobot.setSpeed((int)(e.axisVertical * 1023) - 3);
+                            if (((int)(e.axisVertical * 1023) - 3) != 0)
+                            {
+                                modeloRobot.setSpeed((int)(e.axisVertical * 1023) - 3);
+                            }
+                            else
+                            {
+                                modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
+                            }
                         }
                         else
                         {
-                            modeloRobot.setDirection((int)(e.axisHorizontal * 1023) - 3);
+                            if (((int)(e.axisVertical * 1023) - 3) != 0)
+                            {
+                                modeloRobot.setSpeed((int)(((e.axisVertical * 1023) - 3) * (255 / 1023)));
+                            }
+                            else
+                            {
+                                modeloRobot.setDirection((int)(((e.axisHorizontal * 1023) - 3) * (255 / 1023)));
+                            }
                         }
                         break;
                     case MODELO_TYPE.ACKERMKAN:
@@ -164,17 +182,24 @@ namespace MineroLibrary
                             {
                                 case MODELO_TYPE.OMNIDIRECCIONAL:
                                     modeloRobot = new OmniModel();
+                                    modeloRobot.setModoOperacion(this._modoOperacion);
                                     break;
                                 case MODELO_TYPE.DIFERENCIAL:
                                     modeloRobot = new DifferModel();
+                                    modeloRobot.setModoOperacion(this._modoOperacion);
                                     break;
                                 case MODELO_TYPE.ACKERMKAN:
                                     modeloRobot = new AckerModel();
+                                    modeloRobot.setModoOperacion(this._modoOperacion);
                                     break;
                                 default:
                                     break;
                             }
-                            modeloRobot.setDeviceIndex(3);
+                            if (_modoOperacion == GLOBAL_MODE.MINI_MINERO)
+                                modeloRobot.setDeviceIndex(3);
+                            else
+                                modeloRobot.setDeviceIndex(4);
+
                             modeloRobot.startModel();
                             mEA = new MineroEventArgs(CMD_MINERO.CMD_MODE, data, 1);
                             break;
@@ -242,6 +267,10 @@ namespace MineroLibrary
             if (clientSock.Connected)
             {
                 clientSock.Close();
+            }
+            if (modeloRobot.isStarted())
+            {
+                modeloRobot.stopModel();
             }
         }
 
